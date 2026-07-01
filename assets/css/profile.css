@@ -144,24 +144,24 @@ body {
     font-weight: 700;
     font-size: 17px;
     color: #333;
-    display: inline;
-}
-
-.main-content li em {
     display: block;
-    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.main-content li em,
+.main-content .publication-author,
+.main-content .publication-venue,
+.main-content .education-period {
     font-size: 14px;
-    color: #666;
+    color: #888;
     font-style: italic;
+    margin: 4px 0 0;
 }
 
-.main-content li strong.author-name {
-    white-space: nowrap;
-}
-
-.main-content li em span.impact {
-    color: #a34d4d;
-    font-weight: 600;
+.main-content .publication-author,
+.main-content .publication-venue,
+.main-content .education-period {
+    margin-left: 20px;
 }
 
 .main-content p + p {
