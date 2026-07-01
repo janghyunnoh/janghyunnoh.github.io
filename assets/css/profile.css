@@ -213,6 +213,13 @@ body {
     font-style: italic;
     margin-top: 4px;
 }
+.main-content .education-advisor {
+    display: block;
+    margin-left: 0; /* align with title start */
+    margin-top: 6px;
+    color: #666;
+    font-weight: 600;
+}
 
 .main-content p + p {
     margin-top: 15px;

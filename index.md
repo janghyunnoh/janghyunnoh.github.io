@@ -9,8 +9,8 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Education
 
-- **M.S. in Artificial Intelligence** Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
-  <div class="entry-detail"><em>Thesis: Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data</em><br>Advisor: Prof. Minsik Oh</div>
+-- **M.S. in Artificial Intelligence** Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
+  <div class="education-advisor">Advisor: Prof. Minsik Oh</div>
 
 - **B.S. in Data Technology** Myongji University <span class="education-period"><em>(Mar. 2018 – Aug. 2024)</em></span>
 
@@ -18,10 +18,10 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 - **Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data**
   <div class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></div>
-  <div class="entry-venue"><em>Accepted in Briefings in Bioinformatics (<span class="impact">(5-Year IF: 8.1, Q1[Top 4.7%])</span>)</em></div>
+  <div class="entry-venue"><em>Accepted in Briefings in Bioinformatics <span class="impact">(5-Year IF: 8.1, Q1[Top 4.7%])</span></em></div>
 
 - **Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids**
-  <div class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee</em></div>
+  <div class="entry-authors"><em>J. Choi, K. Lee, M. Oh, <span class="author-name">J. Noh</span>, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee</em></div>
   <div class="entry-venue"><em>Published in Journal of Experimental & Clinical Cancer Research <span class="impact">(5-Year IF: 14.3, Q1[Top 6.9%])</span></em></div>
 
 ## Conferences
