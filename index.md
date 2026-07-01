@@ -76,6 +76,27 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </li>
 </ul>
 
+## Technical Skills
+
+<div class="honors-list">
+  <div class="entry">
+    <span class="entry-title">Programming</span>
+    <span class="entry-venue">Python, R</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">Frameworks</span>
+    <span class="entry-venue">PyTorch, TensorFlow, scikit-learn, Scanpy</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">Tools</span>
+    <span class="entry-venue">Linux, Git</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">Research</span>
+    <span class="entry-venue">Medical AI, Bioinformatics, Deep Learning, Single-cell RNA Sequencing Analysis</span>
+  </div>
+</div>
+
 ## Honors & Awards
 
 ### Awards
@@ -117,6 +138,34 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   <div class="entry">
     <span class="entry-title">Academic Excellence Scholarship</span>
     <span class="entry-venue">RED School, 2015-2016</span>
+  </div>
+</div>
+
+## Additional Information
+
+### Languages
+
+<div class="honors-list">
+  <div class="entry">
+    <span class="entry-title">Korean</span>
+    <span class="entry-venue">Native</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">English</span>
+    <span class="entry-venue">TOEIC 920 (RC 430, LC 490), 2023</span>
+  </div>
+</div>
+
+### Certifications
+
+<div class="honors-list">
+  <div class="entry">
+    <span class="entry-title">Engineer Information Processing</span>
+    <span class="entry-venue">Human Resources Development Service of Korea, 2023</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">SQL Developer (SQLD)</span>
+    <span class="entry-venue">Korea Data Industry Promotion Agency, 2023</span>
   </div>
 </div>
 
