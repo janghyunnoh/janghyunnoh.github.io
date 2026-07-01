@@ -170,14 +170,14 @@ body {
 .main-content .publication-author,
 .main-content .entry-authors {
     margin: 0 0 4px 0;
-    margin-left: calc(var(--list-indent));
+    margin-left: 0;
     padding-left: 0;
     display: block;
 }
 .main-content .publication-venue,
 .main-content .entry-venue {
     margin: 0 0 12px 0;
-    margin-left: calc(var(--list-indent));
+    margin-left: 0;
     padding-left: 0;
     display: block;
 }
