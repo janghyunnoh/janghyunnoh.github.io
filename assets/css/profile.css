@@ -149,13 +149,12 @@ body {
 
 .main-content li em {
     display: block;
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 14px;
     color: #666;
     font-style: italic;
 }
 
-.main-content li em strong.author-name,
 .main-content li strong.author-name {
     white-space: nowrap;
 }
