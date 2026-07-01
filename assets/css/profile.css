@@ -208,18 +208,33 @@ body {
 
 /* Entry blocks for honors/awards/activities to match publications style */
 .main-content .honors-list .entry {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    padding-left: 14px;
+    position: relative;
 }
+
+.main-content .honors-list .entry::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    color: #999;
+    font-size: 13px;
+}
+
 .main-content .entry-title {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 15px;
     color: #333;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
+    line-height: 1.4;
 }
+
 .main-content .entry-venue {
     font-style: italic;
     color: #666;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .main-content .entry-detail {

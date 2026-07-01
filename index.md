@@ -10,7 +10,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 ## Education
 
 - **M.S. in Artificial Intelligence** Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
-  <div class="education-advisor">Advisor: Prof. Minsik Oh</div>
+  <div class="entry-authors">Advisor: Prof. Minsik Oh</div>
 
 - **B.S. in Data Technology** Myongji University <span class="education-period"><em>(Mar. 2018 – Aug. 2024)</em></span>
 
