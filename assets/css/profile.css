@@ -206,6 +206,22 @@ body {
     font-weight: 700;
 }
 
+/* Entry blocks for honors/awards/activities to match publications style */
+.main-content .honors-list .entry {
+    margin-bottom: 12px;
+}
+.main-content .entry-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+.main-content .entry-venue {
+    font-style: italic;
+    color: #666;
+    font-size: 15px;
+}
+
 .main-content .entry-detail {
     margin-left: calc(var(--list-indent));
     font-size: 15px;

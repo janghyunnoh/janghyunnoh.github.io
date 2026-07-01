@@ -54,31 +54,84 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ### Awards
 
-- Best Poster Award, KIISE Korea Software Congress (KSC, 2025)
-- Excellent Poster Award, BIOINFO (Korean Society for Bioinformatics, 2025)
-- Best Presentation Award, KIISE Korea Computer Congress (KCC, 2025)
-- President's Merit Award, Korea Trade-Investment Promotion Agency (KOTRA, 2022)
+<div class="honors-list">
+  <div class="entry">
+    <div class="entry-title">Best Poster Award</div>
+    <div class="entry-venue">KIISE Korea Software Congress (KSC, 2025)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Excellent Poster Award</div>
+    <div class="entry-venue">BIOINFO — Korean Society for Bioinformatics (2025)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Best Presentation Award</div>
+    <div class="entry-venue">KIISE Korea Computer Congress (KCC, 2025)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">President's Merit Award</div>
+    <div class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</div>
+  </div>
+</div>
 
 ### Scholarships
 
-- TriBIG Project Scholarship, Korea Trade-Investment Promotion Agency (KOTRA, 2022)
-- Globalization Scholarship, Myongji University (2019)
-- Scholarship III, Myongji University (2018)
-- Academic Excellence Scholarship, RED School (2016)
-- Academic Excellence Scholarship, RED School (2015)
+<div class="honors-list">
+  <div class="entry">
+    <div class="entry-title">TriBIG Project Scholarship</div>
+    <div class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Globalization Scholarship</div>
+    <div class="entry-venue">Myongji University (2019)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Scholarship III</div>
+    <div class="entry-venue">Myongji University (2018)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Academic Excellence Scholarship</div>
+    <div class="entry-venue">RED School (2016)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Academic Excellence Scholarship</div>
+    <div class="entry-venue">RED School (2015)</div>
+  </div>
+</div>
 
 ## Extracurricular Activities
 
 ### Domestic
 
 
-- Google Developer Student Clubs, Myongji University (AI Team Member, 2022–2023)
-- Big Leader AI Academy (Project Member, Jul. 2022–Oct. 2022)
-- Data Youth Campus, Dongguk University (Participant, Jul. 2022–Aug. 2022)
+<div class="honors-list">
+  <div class="entry">
+    <div class="entry-title">Google Developer Student Clubs</div>
+    <div class="entry-venue">Myongji University (AI Team Member, 2022–2023)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Big Leader AI Academy</div>
+    <div class="entry-venue">(Project Member, Jul. 2022–Oct. 2022)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Data Youth Campus</div>
+    <div class="entry-venue">Dongguk University (Participant, Jul. 2022–Aug. 2022)</div>
+  </div>
+</div>
 
 ### International
 
 
-- Medical Mission Trip to the Philippines, GMMA (Volunteer, Jan. 2024)
-- International Work Camp in Iceland (Volunteer, Dec. 2019–Jan. 2020)
-- Mission Trip to Vietnam (Volunteer, Aug. 2018)
+<div class="honors-list">
+  <div class="entry">
+    <div class="entry-title">Medical Mission Trip to the Philippines</div>
+    <div class="entry-venue">GMMA (Volunteer, Jan. 2024)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">International Work Camp in Iceland</div>
+    <div class="entry-venue">(Volunteer, Dec. 2019–Jan. 2020)</div>
+  </div>
+  <div class="entry">
+    <div class="entry-title">Mission Trip to Vietnam</div>
+    <div class="entry-venue">(Volunteer, Aug. 2018)</div>
+  </div>
+</div>
