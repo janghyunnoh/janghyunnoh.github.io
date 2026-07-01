@@ -5,7 +5,7 @@ title: "Janghyun Noh"
 
 ## About Me
 
-I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at Myongji University, advised by Prof. [Minsik Oh](https://minsik-bioinfo.github.io/online-cv/) in the [Artificial Intelligence and Data Analytics (AIDA)](https://ailab-mju.github.io/). My research interests center on Bioinformatics, Medical AI, Deep Learning, and Single-cell RNA Sequencing Analysis.
+I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at Myongji University, advised by Prof. [Minsik Oh](https://minsik-bioinfo.github.io/online-cv/) in the [Artificial Intelligence and Data Analytics (AIDA) Lab](https://ailab-mju.github.io/). My research interests center on Bioinformatics, Medical AI, Deep Learning, and Single-cell RNA Sequencing Analysis.
 
 ## Education
 
