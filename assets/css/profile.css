@@ -183,6 +183,13 @@ body {
     display: inline-block;
 }
 
+/* General author-name rule for non-strong markup */
+.main-content .author-name {
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: 700; /* maintain emphasis previously provided by strong */
+}
+
 .main-content p + p {
     margin-top: 15px;
 }
