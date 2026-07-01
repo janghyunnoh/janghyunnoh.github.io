@@ -20,11 +20,11 @@ _Mar. 2018 – Aug. 2024_
 ## Publications
 
 - **Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data**<br>
-_Accepted in Briefings in Bioinformatics (5-Year IF: 8.1, Top 4.7%)_<br>
+_Accepted in Briefings in Bioinformatics (<span class="impact">5-Year IF: 8.1, Top 4.7%</span>)_<br>
 _**J. Noh**, Y. Shin, M. Kim, and M. Oh_
 
 - **Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids**<br>
-_Published in Journal of Experimental & Clinical Cancer Research (5-Year IF: 14.3, Top 6.9%)_<br>
+_Published in Journal of Experimental & Clinical Cancer Research (<span class="impact">5-Year IF: 14.3, Top 6.9%</span>)_<br>
 _J. Choi, K. Lee, M. Oh, **J. Noh**, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee_
 
 

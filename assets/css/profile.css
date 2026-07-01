@@ -144,14 +144,20 @@ body {
     font-weight: 700;
     font-size: 17px;
     color: #333;
-    display: block;
-    margin-bottom: 5px;
+    display: inline;
 }
 
 .main-content li em {
+    display: block;
+    margin-top: 6px;
     font-size: 14px;
-    color: #888;
+    color: #666;
     font-style: italic;
+}
+
+.main-content li em span.impact {
+    color: #a34d4d;
+    font-weight: 600;
 }
 
 .main-content p + p {
