@@ -5,19 +5,12 @@ title: "Janghyun Noh"
 
 ## About Me
 
-I'm Janghyun Noh, an M.S. student in Artificial Intelligence at Myongji University. My research interests center on Bioinformatics, Medical AI, Deep Learning, and Single-cell RNA Sequencing Analysis.
-
-Advisor: Prof. Minsik Oh
+I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at Myongji University, advised by Prof. Minsik Oh in the Artificial Intelligence and Data Analytics (AIDA). My research interests center on Bioinformatics, Medical AI, Deep Learning, and Single-cell RNA Sequencing Analysis.
 
 ## Education
 
-- **M.S. in Artificial Intelligence**
-  Myongji University, Seoul, S.Korea
-  <div class="education-period"><em>Sep. 2024 – Aug. 2026</em></div>
-
-- **B.S. in Data Technology**
-  Myongji University, Seoul, S.Korea
-  <div class="education-period"><em>Mar. 2018 – Aug. 2024</em></div>
+- **M.S. in Artificial Intelligence** Myongji University, <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
+- **B.S. in Data Technology** Myongji University, <span class="education-period"><em>(Mar. 2018 – Aug. 2024)</em></span>
 
 ## Publications
 
