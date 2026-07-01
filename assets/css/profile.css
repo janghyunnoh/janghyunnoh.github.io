@@ -114,19 +114,19 @@ body {
 }
 
 .main-content h2 {
-    font-size: 24px;
+    font-size: 26px;
     color: #333;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 700;
     border-bottom: 1px solid #e7e7e7;
     padding-bottom: 10px;
 }
 
 .main-content p {
-    font-size: 16px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.85;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .main-content a {
@@ -149,26 +149,38 @@ body {
 
 .main-content li strong {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 19px;
     color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .main-content li em,
 .main-content .publication-author,
 .main-content .publication-venue,
 .main-content .education-period {
-    font-size: 14px;
-    color: #888;
+    font-size: 15px;
+    color: #666;
     font-style: italic;
-    margin: 4px 0 0;
+    margin: 2px 0 0;
 }
 
-.main-content .publication-author,
-.main-content .publication-venue,
+/* Keep author name on one line and reduce blank gaps */
+.main-content .publication-author {
+    margin: 0 0 2px 16px;
+}
+.main-content .publication-venue {
+    margin: 0 0 10px 16px;
+}
 .main-content .education-period {
-    margin-left: 20px;
+    margin: 2px 0 10px 16px;
+    display: inline-block;
+}
+
+.main-content .publication-author strong.author-name,
+.main-content .publication-venue strong.author-name {
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .main-content p + p {
