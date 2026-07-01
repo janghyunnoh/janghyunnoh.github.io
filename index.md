@@ -12,11 +12,12 @@ My research interests center on Bioinformatics, Medical AI, Deep Learning, and S
 ## Education
 
 - **M.S. in Artificial Intelligence** 
-  Myongji University, Seoul, S.Korea<br>
+- **M.S. in Artificial Intelligence** 
+  Myongji University, Seoul, S.Korea
   <span class="education-period"><em>Sep. 2024 – Aug. 2026</em></span>
 
 - **B.S. in Data Technology** 
-  Myongji University, Seoul, S.Korea<br>
+  Myongji University, Seoul, S.Korea
   <span class="education-period"><em>Mar. 2018 – Aug. 2024</em></span>
 
 ## Publications
@@ -33,25 +34,25 @@ My research interests center on Bioinformatics, Medical AI, Deep Learning, and S
 ## Conferences
 
 - **Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq**
-  <p class="publication-venue"><em>Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026</em></p>
   <p class="publication-author"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></p>
+  <p class="publication-venue"><em>Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026</em></p>
 
 - **Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques**
-  <p class="publication-venue"><em>Poster Accepted (Best Poster Award) at KIISE Korea Software Congress (KSC), 2025</em></p>
   <p class="publication-author"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></p>
+  <p class="publication-venue"><em>Poster Accepted (Best Poster Award) at KIISE Korea Software Congress (KSC), 2025</em></p>
 
 - **An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data**
-  <p class="publication-venue"><em>Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025</em></p>
   <p class="publication-author"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></p>
+  <p class="publication-venue"><em>Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025</em></p>
 
 - **Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning**
-  <p class="publication-venue"><em>Poster Presentation (Excellent Poster Award) at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025</em></p>
   <p class="publication-author"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></p>
+  <p class="publication-venue"><em>Poster Presentation (Excellent Poster Award) at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025</em></p>
 
 - **AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning**
-  <p class="publication-venue"><em>Oral Presentation (Best Presentation Award) at KIISE Korea Computer Congress (KCC), 2025</em></p>
   <p class="publication-author"><em><span class="author-name">J. Noh</span>, M. Kim, and M. Oh</em></p>
+  <p class="publication-venue"><em>Oral Presentation (Best Presentation Award) at KIISE Korea Computer Congress (KCC), 2025</em></p>
 
 - **Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies**
-  <p class="publication-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></p>
   <p class="publication-author"><em><span class="author-name">J. Noh</span>, G. Choi, and M. Oh</em></p>
+  <p class="publication-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></p>
