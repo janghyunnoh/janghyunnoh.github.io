@@ -56,20 +56,20 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <div class="entry-title">Best Poster Award</div>
-    <div class="entry-venue">KIISE Korea Software Congress (KSC, 2025)</div>
+    <span class="entry-title">Best Poster Award</span>
+    <span class="entry-venue">KIISE Korea Software Congress (KSC, 2025)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Excellent Poster Award</div>
-    <div class="entry-venue">BIOINFO — Korean Society for Bioinformatics (2025)</div>
+    <span class="entry-title">Excellent Poster Award</span>
+    <span class="entry-venue">BIOINFO — Korean Society for Bioinformatics (2025)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Best Presentation Award</div>
-    <div class="entry-venue">KIISE Korea Computer Congress (KCC, 2025)</div>
+    <span class="entry-title">Best Presentation Award</span>
+    <span class="entry-venue">KIISE Korea Computer Congress (KCC, 2025)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">President's Merit Award</div>
-    <div class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</div>
+    <span class="entry-title">President's Merit Award</span>
+    <span class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</span>
   </div>
 </div>
 
@@ -77,24 +77,24 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <div class="entry-title">TriBIG Project Scholarship</div>
-    <div class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</div>
+    <span class="entry-title">TriBIG Project Scholarship</span>
+    <span class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA, 2022)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Globalization Scholarship</div>
-    <div class="entry-venue">Myongji University (2019)</div>
+    <span class="entry-title">Globalization Scholarship</span>
+    <span class="entry-venue">Myongji University (2019)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Scholarship III</div>
-    <div class="entry-venue">Myongji University (2018)</div>
+    <span class="entry-title">Scholarship III</span>
+    <span class="entry-venue">Myongji University (2018)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Academic Excellence Scholarship</div>
-    <div class="entry-venue">RED School (2016)</div>
+    <span class="entry-title">Academic Excellence Scholarship</span>
+    <span class="entry-venue">RED School (2016)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Academic Excellence Scholarship</div>
-    <div class="entry-venue">RED School (2015)</div>
+    <span class="entry-title">Academic Excellence Scholarship</span>
+    <span class="entry-venue">RED School (2015)</span>
   </div>
 </div>
 
@@ -105,16 +105,16 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <div class="entry-title">Google Developer Student Clubs</div>
-    <div class="entry-venue">Myongji University (AI Team Member, 2022–2023)</div>
+    <span class="entry-title">Google Developer Student Clubs</span>
+    <span class="entry-venue">Myongji University (AI Team Member, 2022–2023)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Big Leader AI Academy</div>
-    <div class="entry-venue">(Project Member, Jul. 2022–Oct. 2022)</div>
+    <span class="entry-title">Big Leader AI Academy</span>
+    <span class="entry-venue">(Project Member, Jul. 2022–Oct. 2022)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Data Youth Campus</div>
-    <div class="entry-venue">Dongguk University (Participant, Jul. 2022–Aug. 2022)</div>
+    <span class="entry-title">Data Youth Campus</span>
+    <span class="entry-venue">Dongguk University (Participant, Jul. 2022–Aug. 2022)</span>
   </div>
 </div>
 
@@ -123,15 +123,15 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <div class="entry-title">Medical Mission Trip to the Philippines</div>
-    <div class="entry-venue">GMMA (Volunteer, Jan. 2024)</div>
+    <span class="entry-title">Medical Mission Trip to the Philippines</span>
+    <span class="entry-venue">GMMA (Volunteer, Jan. 2024)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">International Work Camp in Iceland</div>
-    <div class="entry-venue">(Volunteer, Dec. 2019–Jan. 2020)</div>
+    <span class="entry-title">International Work Camp in Iceland</span>
+    <span class="entry-venue">(Volunteer, Dec. 2019–Jan. 2020)</span>
   </div>
   <div class="entry">
-    <div class="entry-title">Mission Trip to Vietnam</div>
-    <div class="entry-venue">(Volunteer, Aug. 2018)</div>
+    <span class="entry-title">Mission Trip to Vietnam</span>
+    <span class="entry-venue">(Volunteer, Aug. 2018)</span>
   </div>
 </div>
