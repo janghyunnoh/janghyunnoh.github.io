@@ -155,6 +155,10 @@ body {
     font-style: italic;
 }
 
+.main-content li em strong.author-name {
+    white-space: nowrap;
+}
+
 .main-content li em span.impact {
     color: #a34d4d;
     font-weight: 600;
