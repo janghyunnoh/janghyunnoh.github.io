@@ -168,23 +168,42 @@ body {
     margin-bottom: 0;
 }
 
-.main-content .conference-list > li,
-.main-content .conference-list > div {
-    margin-bottom: 16px;
+.main-content .conference-list > li {
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+    list-style: none;
+}
+
+.main-content .conference-list > li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    color: #999;
+    font-size: 12px;
+}
+
+.main-content .conference-list strong {
+    font-weight: 700;
+    font-size: 15px;
+    color: #333;
+    display: block;
+    margin-bottom: 2px;
+    line-height: 1.3;
 }
 
 .main-content .conference-list .entry-authors,
 .main-content .conference-list .entry-venue {
+    display: block;
     margin: 0;
-}
-
-.main-content .conference-list .entry-authors {
     font-size: 14px;
-    margin-top: 4px;
+    color: #666;
+    line-height: 1.35;
 }
 
 .main-content .conference-list .entry-venue {
-    font-size: 14px;
+    font-style: italic;
     margin-top: 2px;
 }
 
