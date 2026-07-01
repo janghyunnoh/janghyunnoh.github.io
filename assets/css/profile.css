@@ -182,9 +182,9 @@ body {
     display: block;
 }
 .main-content .education-period {
-    margin: 6px 0 14px 0;
-    display: block;
-    margin-left: calc(var(--list-indent));
+    font-style: italic;
+    margin-left: 0;
+    display: inline;
 }
 
 .main-content .publication-author strong.author-name,
@@ -201,6 +201,19 @@ body {
     display: inline-block;
     font-weight: 700;
     color: #666;
+}
+
+.main-content .impact {
+    color: #b54949;
+    font-weight: 700;
+}
+
+.main-content .entry-detail {
+    margin-left: calc(var(--list-indent));
+    font-size: 15px;
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
 }
 
 .main-content p + p {
