@@ -67,21 +67,28 @@ body {
 }
 
 .links {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .link-item {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #000000;
     text-decoration: none;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 14px;
     transition: color 0.2s;
+    gap: 10px;
 }
 
 .link-item:hover {
     color: #333333;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.link-item i {
+    width: auto;
+    min-width: 20px;
 }
 
 .link-item i {
