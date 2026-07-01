@@ -167,13 +167,15 @@ body {
 }
 
 /* Keep author name on one line and reduce blank gaps */
-.main-content .publication-author {
+.main-content .publication-author,
+.main-content .entry-authors {
     margin: 0 0 4px 0;
     margin-left: calc(var(--list-indent));
     padding-left: 0;
     display: block;
 }
-.main-content .publication-venue {
+.main-content .publication-venue,
+.main-content .entry-venue {
     margin: 0 0 12px 0;
     margin-left: calc(var(--list-indent));
     padding-left: 0;
@@ -186,7 +188,9 @@ body {
 }
 
 .main-content .publication-author strong.author-name,
-.main-content .publication-venue strong.author-name {
+.main-content .entry-authors strong.author-name,
+.main-content .publication-venue strong.author-name,
+.main-content .entry-venue strong.author-name {
     white-space: nowrap;
     display: inline-block;
 }
@@ -195,11 +199,8 @@ body {
 .main-content .author-name {
     white-space: nowrap;
     display: inline-block;
-    font-weight: 700; /* maintain emphasis previously provided by strong */
-}
-
-.main-content .author-name {
-    color: #666; /* keep same gray as surrounding author text */
+    font-weight: 700;
+    color: #666;
 }
 
 .main-content p + p {
