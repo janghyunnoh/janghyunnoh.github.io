@@ -76,7 +76,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </li>
 </ul>
 
-## Technical Skills
+<!-- ## Technical Skills
 
 <div class="honors-list">
   <div class="entry">
@@ -95,7 +95,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-title">Research</span>
     <span class="entry-venue">Medical AI, Bioinformatics, Deep Learning, Single-cell RNA Sequencing Analysis</span>
   </div>
-</div>
+</div> -->
 
 ## Honors & Awards
 
@@ -141,7 +141,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </div>
 </div>
 
-## Additional Information
+<!-- ## Additional Information
 
 ### Languages
 
@@ -167,7 +167,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-title">SQL Developer (SQLD)</span>
     <span class="entry-venue">Korea Data Industry Promotion Agency, 2023</span>
   </div>
-</div>
+</div> -->
 
 ## Extracurricular Activities
 
