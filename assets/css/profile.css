@@ -193,6 +193,10 @@ body {
     font-weight: 700; /* maintain emphasis previously provided by strong */
 }
 
+.main-content .author-name {
+    color: #666; /* keep same gray as surrounding author text */
+}
+
 .main-content p + p {
     margin-top: 15px;
 }
