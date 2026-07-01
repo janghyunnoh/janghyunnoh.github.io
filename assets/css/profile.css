@@ -173,27 +173,23 @@ body {
     margin-bottom: 10px;
     position: relative;
     list-style: none;
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    gap: 0 8px;
-    padding-left: 0;
+    display: block;
+    padding-left: 18px;
 }
 
 .main-content .conference-list > li::before {
     content: "•";
-    position: relative;
+    position: absolute;
     left: 0;
-    top: 0.15em;
+    top: 0.35em;
     color: #999;
     font-size: 12px;
-    grid-column: 1;
-    grid-row: 1 / span 3;
 }
 
 .main-content .conference-list strong,
 .main-content .conference-list .entry-authors,
 .main-content .conference-list .entry-venue {
-    grid-column: 2;
+    display: block;
 }
 
 .main-content .conference-list strong {
