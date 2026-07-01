@@ -406,6 +406,11 @@ body {
     
     .sidebar {
         position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 360px;
+        margin: 0 auto;
         text-align: center;
     }
     
@@ -413,8 +418,27 @@ body {
         margin: 0 auto 20px;
     }
     
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .info-item,
+    .links {
+        width: min(100%, 300px);
+    }
+
     .info-item {
-        justify-content: center;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .links {
+        margin-top: 12px;
+    }
+
+    .link-item {
+        text-align: left;
+        margin-bottom: 8px;
     }
     
     .main-content {
