@@ -9,7 +9,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Education
 
--- **M.S. in Artificial Intelligence** Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
+- **M.S. in Artificial Intelligence** Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
   <div class="education-advisor">Advisor: Prof. Minsik Oh</div>
 
 - **B.S. in Data Technology** Myongji University <span class="education-period"><em>(Mar. 2018 – Aug. 2024)</em></span>
@@ -49,3 +49,36 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 - **Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies**
   <div class="entry-authors"><em><span class="author-name">J. Noh</span>, G. Choi, and M. Oh</em></div>
   <div class="entry-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></div>
+
+## Honors & Awards
+
+### Awards
+
+- Best Poster Award, KIISE Korea Software Congress (KSC, 2025)
+- Excellent Poster Award, BIOINFO (Korean Society for Bioinformatics, 2025)
+- Best Presentation Award, KIISE Korea Computer Congress (KCC, 2025)
+- President's Merit Award, Korea Trade-Investment Promotion Agency (KOTRA, 2022)
+
+### Scholarships
+
+- TriBIG Project Scholarship, Korea Trade-Investment Promotion Agency (KOTRA, 2022)
+- Globalization Scholarship, Myongji University (2019)
+- Scholarship III, Myongji University (2018)
+- Academic Excellence Scholarship, RED School (2016)
+- Academic Excellence Scholarship, RED School (2015)
+
+## Extracurricular Activities
+
+### Domestic
+
+
+- Google Developer Student Clubs, Myongji University (AI Team Member, 2022–2023)
+- Big Leader AI Academy (Project Member, Jul. 2022–Oct. 2022)
+- Data Youth Campus, Dongguk University (Participant, Jul. 2022–Aug. 2022)
+
+### International
+
+
+- Medical Mission Trip to the Philippines, GMMA (Volunteer, Jan. 2024)
+- International Work Camp in Iceland (Volunteer, Dec. 2019–Jan. 2020)
+- Mission Trip to Vietnam (Volunteer, Aug. 2018)
