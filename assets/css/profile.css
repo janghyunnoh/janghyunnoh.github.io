@@ -73,27 +73,25 @@ body {
 .link-item {
     display: flex;
     align-items: center;
-    color: #000000;
+    color: #555;
     text-decoration: none;
     margin-bottom: 10px;
     font-size: 14px;
+    line-height: 1.4;
     transition: color 0.2s;
     gap: 10px;
 }
 
 .link-item:hover {
-    color: #333333;
+    color: #333;
     text-decoration: none;
 }
 
 .link-item i {
-    width: auto;
-    min-width: 20px;
-}
-
-.link-item i {
     width: 20px;
-    margin-right: 8px;
+    margin-right: 10px;
+    color: #666;
+    flex-shrink: 0;
 }
 
 /* LinkedIn icon color */
