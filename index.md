@@ -154,6 +154,6 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </div>
   <div class="entry">
     <span class="entry-title">Mission Trip to Vietnam</span>
-    <span class="entry-venue">(Volunteer, Aug. 2018)</span>
+    <span class="entry-venue">Volunteer, Aug. 2018</span>
   </div>
 </div>
