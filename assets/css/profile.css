@@ -155,7 +155,8 @@ body {
     font-style: italic;
 }
 
-.main-content li em strong.author-name {
+.main-content li em strong.author-name,
+.main-content li strong.author-name {
     white-space: nowrap;
 }
 
