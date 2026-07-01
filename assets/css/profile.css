@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 0px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: sticky;
+    top: 60px;
+    height: fit-content;
+    margin-top: 60px; 
+}
+
+.profile-image {
+    width: 120%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.info-item i {
+    width: 20px;
+    margin-right: 10px;
+    color: #666;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.link-item {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.link-item:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.link-item i {
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* LinkedIn icon color */
+.link-item.linkedin i {
+    color: #0077b5;
+}
+
+/* Main Content Styles */
+.main-content {
+    background: white;
+    padding: 50px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.main-content section {
+    margin-bottom: 50px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 700;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.main-content a {
+    color: #0099cc;
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.main-content ul {
+    list-style: disc;
+    padding: 0;
+}
+
+.main-content li {
+    margin-bottom: 30px;
+}
+
+.main-content li strong {
+    font-weight: 700;
+    font-size: 17px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-content li em {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+
+.main-content p + p {
+    margin-top: 15px;
+}
+
+.main-content > h2:not(:first-child) {
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .sidebar {
+        position: static;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin: 0 auto 20px;
+    }
+    
+    .info-item {
+        justify-content: center;
+    }
+    
+    .main-content {
+        padding: 30px;
+    }
+}

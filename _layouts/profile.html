@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Janghyun Noh" class="profile-image">
+            <h1 class="name">Janghyun Noh</h1>
+            <p class="title">M.S. student at Myongji University</p>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Seoul, Korea</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-university"></i>
+                <span>AIDA, Myongji University</span>
+            </div>
+            
+            <div class="links">
+                <a href="mailto:watercar99@naver.com" class="link-item">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://scholar.google.com/citations?user=NPIG8VoAAAAJ&hl=ko&oi=ao" class="link-item" target="_blank">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <a href="https://github.com/janghyunnoh" class="link-item" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <!-- 
+                <a href="https://linkedin.com/in/YOUR_PROFILE" class="link-item linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                -->
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            {{ content }}
+        </main>
+    </div>
+</body>
+</html>
