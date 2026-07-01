@@ -26,6 +26,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Conferences
 
+<div class="conference-list">
 - **Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq**
   <div class="entry-authors"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></div>
   <div class="entry-venue"><em>Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026</em></div>
@@ -49,6 +50,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 - **Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies**
   <div class="entry-authors"><em><span class="author-name">J. Noh</span>, G. Choi, and M. Oh</em></div>
   <div class="entry-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></div>
+</div>
 
 ## Honors & Awards
 

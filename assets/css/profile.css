@@ -164,6 +164,30 @@ body {
     margin: 2px 0 0;
 }
 
+.main-content .conference-list {
+    margin-bottom: 0;
+}
+
+.main-content .conference-list > li,
+.main-content .conference-list > div {
+    margin-bottom: 16px;
+}
+
+.main-content .conference-list .entry-authors,
+.main-content .conference-list .entry-venue {
+    margin: 0;
+}
+
+.main-content .conference-list .entry-authors {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.main-content .conference-list .entry-venue {
+    font-size: 14px;
+    margin-top: 2px;
+}
+
 /* Keep author name on one line and reduce blank gaps */
 .main-content .publication-author,
 .main-content .entry-authors {
