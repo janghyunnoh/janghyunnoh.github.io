@@ -12,10 +12,12 @@ My research interests center on Bioinformatics, Medical AI, Deep Learning, and S
 ## Education
 
 - **M.S. in Artificial Intelligence** Myongji University, Seoul, S.Korea
-  <p class="education-period"><em>Sep. 2024 – Aug. 2026</em></p>
+  Myongji University, Seoul, S.Korea<br>
+  <span class="education-period"><em>Sep. 2024 – Aug. 2026</em></span>
 
 - **B.S. in Convergence Software and Data Technology** Myongji University, Seoul, S.Korea
-  <p class="education-period"><em>Mar. 2018 – Aug. 2024</em></p>
+  Myongji University, Seoul, S.Korea<br>
+  <span class="education-period"><em>Mar. 2018 – Aug. 2024</em></span>
 
 ## Publications
 
