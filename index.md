@@ -26,31 +26,38 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Conferences
 
-<div class="conference-list">
-- **Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq**
-  <div class="entry-authors"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></div>
-  <div class="entry-venue"><em>Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026</em></div>
-
-- **Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques**
-  <div class="entry-authors"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></div>
-  <div class="entry-venue"><em>Poster Accepted (Best Poster Award) at KIISE Korea Software Congress (KSC), 2025</em></div>
-
-- **An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data**
-  <div class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></div>
-  <div class="entry-venue"><em>Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025</em></div>
-
-- **Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning**
-  <div class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></div>
-  <div class="entry-venue"><em>Poster Presentation (Excellent Poster Award) at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025</em></div>
-
-- **AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning**
-  <div class="entry-authors"><em><span class="author-name">J. Noh</span>, M. Kim, and M. Oh</em></div>
-  <div class="entry-venue"><em>Oral Presentation (Best Presentation Award) at KIISE Korea Computer Congress (KCC), 2025</em></div>
-
-- **Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies**
-  <div class="entry-authors"><em><span class="author-name">J. Noh</span>, G. Choi, and M. Oh</em></div>
-  <div class="entry-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></div>
-</div>
+<ul class="conference-list">
+  <li>
+    <strong>Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq</strong>
+    <span class="entry-authors"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></span>
+    <span class="entry-venue"><em>Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026</em></span>
+  </li>
+  <li>
+    <strong>Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques</strong>
+    <span class="entry-authors"><em>Y. Shin, <span class="author-name">J. Noh</span>, and M. Oh</em></span>
+    <span class="entry-venue"><em>Poster Accepted (Best Poster Award) at KIISE Korea Software Congress (KSC), 2025</em></span>
+  </li>
+  <li>
+    <strong>An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data</strong>
+    <span class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></span>
+    <span class="entry-venue"><em>Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025</em></span>
+  </li>
+  <li>
+    <strong>Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning</strong>
+    <span class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></span>
+    <span class="entry-venue"><em>Poster Presentation (Excellent Poster Award) at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025</em></span>
+  </li>
+  <li>
+    <strong>AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning</strong>
+    <span class="entry-authors"><em><span class="author-name">J. Noh</span>, M. Kim, and M. Oh</em></span>
+    <span class="entry-venue"><em>Oral Presentation (Best Presentation Award) at KIISE Korea Computer Congress (KCC), 2025</em></span>
+  </li>
+  <li>
+    <strong>Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies</strong>
+    <span class="entry-authors"><em><span class="author-name">J. Noh</span>, G. Choi, and M. Oh</em></span>
+    <span class="entry-venue"><em>Poster Presentation at KIISE Korea Software Congress (KSC), 2023</em></span>
+  </li>
+</ul>
 
 ## Honors & Awards
 
@@ -92,11 +99,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </div>
   <div class="entry">
     <span class="entry-title">Academic Excellence Scholarship</span>
-    <span class="entry-venue">RED School (2016)</span>
-  </div>
-  <div class="entry">
-    <span class="entry-title">Academic Excellence Scholarship</span>
-    <span class="entry-venue">RED School (2015)</span>
+    <span class="entry-venue">RED School (2015-2016)</span>
   </div>
 </div>
 
