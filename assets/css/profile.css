@@ -140,7 +140,8 @@ body {
 
 .main-content ul {
     list-style: disc;
-    padding: 0;
+    --list-indent: 1.2em;
+    padding-left: var(--list-indent);
 }
 
 .main-content li {
@@ -167,17 +168,21 @@ body {
 
 /* Keep author name on one line and reduce blank gaps */
 .main-content .publication-author {
-    margin: 0 0 2px 0;
+    margin: 0 0 4px 0;
+    margin-left: calc(var(--list-indent));
     padding-left: 0;
+    display: block;
 }
 .main-content .publication-venue {
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
+    margin-left: calc(var(--list-indent));
     padding-left: 0;
+    display: block;
 }
 .main-content .education-period {
-    margin: 2px 0 10px 0;
-    display: inline-block;
-    padding-left: 0;
+    margin: 6px 0 14px 0;
+    display: block;
+    margin-left: calc(var(--list-indent));
 }
 
 .main-content .publication-author strong.author-name,
