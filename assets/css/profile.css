@@ -259,6 +259,10 @@ body {
     line-height: 1.25;
 }
 
+.main-content .conference-list .entry-title::after {
+    content: none;
+}
+
 .main-content .conference-list .entry-authors,
 .main-content .conference-list .entry-venue {
     display: block;
