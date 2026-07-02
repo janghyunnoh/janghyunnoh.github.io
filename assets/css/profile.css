@@ -349,7 +349,7 @@ body {
     line-height: 1.2;
 }
 
-.main-content .entry-title::after {
+.main-content .honors-list .entry-title::after {
     content: ",";
     margin-left: 2px;
 }

@@ -99,8 +99,6 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Honors & Awards
 
-### Awards
-
 <div class="honors-list">
   <div class="entry">
     <span class="entry-title">Best Poster Award</span>
@@ -118,11 +116,6 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-title">President's Merit Award</span>
     <span class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA), 2022</span>
   </div>
-</div>
-
-### Scholarships
-
-<div class="honors-list">
   <div class="entry">
     <span class="entry-title">TriBIG Project Scholarship</span>
     <span class="entry-venue">Korea Trade-Investment Promotion Agency (KOTRA), 2022</span>
