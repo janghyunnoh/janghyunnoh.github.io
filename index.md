@@ -11,11 +11,11 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <ul class="section-list">
   <li>
-    <strong>M.S. in Artificial Intelligence</strong> Myongji University <span class="education-period"><em>(Sep. 2024 – Aug. 2026)</em></span>
+    <strong>M.S. in Artificial Intelligence</strong> Myongji University <span class="education-period"><em>(Sep. 2024 - Aug. 2026)</em></span>
     <div class="education-advisor">Advisor: Prof. Minsik Oh</div>
   </li>
   <li>
-    <strong>B.S. in Data Technology</strong> Myongji University <span class="education-period"><em>(Mar. 2018 – Aug. 2024)</em></span>
+    <strong>B.S. in Data Technology</strong> Myongji University <span class="education-period"><em>(Mar. 2018 - Aug. 2024)</em></span>
   </li>
 </ul>
 
@@ -130,7 +130,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </div>
   <div class="entry">
     <span class="entry-title">Academic Excellence Scholarship</span>
-    <span class="entry-venue">RED School, 2015-2016</span>
+    <span class="entry-venue">RED School, 2015 - 2016</span>
   </div>
 </div>
 
@@ -170,15 +170,15 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 <div class="honors-list">
   <div class="entry">
     <span class="entry-title">Google Developer Student Clubs</span>
-    <span class="entry-venue">Myongji University, AI Team Member, Oct. 2022‑Dec. 2023</span>
+    <span class="entry-venue">Myongji University, AI Team Member, Oct. 2022 - Dec. 2023</span>
   </div>
   <div class="entry">
     <span class="entry-title">Big Leader AI Academy</span>
-    <span class="entry-venue">KDATA, Project Member, Jul. 2022–Oct. 2022</span>
+    <span class="entry-venue">KDATA, Project Member, Jul. 2022 - Oct. 2022</span>
   </div>
   <div class="entry">
     <span class="entry-title">Data Youth Campus</span>
-    <span class="entry-venue">Dongguk University, Participant, Jul. 2022–Aug. 2022</span>
+    <span class="entry-venue">Dongguk University, Participant, Jul. 2022 - Aug. 2022</span>
   </div>
 </div>
 
@@ -192,7 +192,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
   </div>
   <div class="entry">
     <span class="entry-title">International Work Camp in Iceland</span>
-    <span class="entry-venue">Volunteer, Dec. 2019–Jan. 2020</span>
+    <span class="entry-venue">Volunteer, Dec. 2019 - Jan. 2020</span>
   </div>
   <div class="entry">
     <span class="entry-title">Mission Trip to Vietnam</span>
