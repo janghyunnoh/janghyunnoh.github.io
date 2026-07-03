@@ -138,18 +138,6 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <span class="entry-title">AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발</span>
-    <span class="entry-venue">2024&nbsp;-&nbsp;Present</span>
-  </div>
-  <div class="entry">
-    <span class="entry-title">기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구</span>
-    <span class="entry-venue">2024&nbsp;-&nbsp;Present</span>
-  </div>
-  <div class="entry">
-    <span class="entry-title">공간 전사체 기반 타겟 발굴과 in silico 및 오가노이드 활용 타겟 검증을 통한 난치성 고형암 MLT 신규 치료제 신속 개발</span>
-    <span class="entry-venue">2024&nbsp;-&nbsp;2025</span>
-  </div>
-  <div class="entry">
     <span class="entry-title">CRISPR-Cas9 유도 대규모 DNA 결실 검출ㆍ정량화를 위한 클라이언트 사이드 고속ㆍ고정밀 웹 기반 분석 플랫폼 개발</span>
     <span class="entry-venue">2025&nbsp;-&nbsp;Present</span>
   </div>
@@ -158,8 +146,20 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-venue">2025&nbsp;-&nbsp;Present</span>
   </div>
   <div class="entry">
+    <span class="entry-title">AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발</span>
+    <span class="entry-venue">2024&nbsp;-&nbsp;Present</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구</span>
+    <span class="entry-venue">2024&nbsp;-&nbsp;Present</span>
+  </div>
+  <div class="entry">
     <span class="entry-title">멀티모달 임상ㆍ영상 데이터를 활용한 코로나19 환자 중증도 예측 모델ㆍ환경 구축</span>
     <span class="entry-venue">2025&nbsp;-&nbsp;2025</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">공간 전사체 기반 타겟 발굴과 in silico 및 오가노이드 활용 타겟 검증을 통한 난치성 고형암 MLT 신규 치료제 신속 개발</span>
+    <span class="entry-venue">2024&nbsp;-&nbsp;2025</span>
   </div>
   <div class="entry">
     <span class="entry-title">KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상ㆍ유전적 차이 분석 연구</span>
