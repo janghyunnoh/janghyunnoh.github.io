@@ -136,7 +136,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 ## Projects
 
-<div class="honors-list">
+<div class="honors-list project-list">
   <div class="entry">
     <span class="entry-title">AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발</span>
     <span class="entry-venue">2024 - Present</span>
