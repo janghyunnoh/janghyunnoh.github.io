@@ -138,11 +138,11 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <div class="honors-list">
   <div class="entry">
-    <span class="entry-title">CRISPR-Cas9 유도 대규모 DNA 결실 검출ㆍ정량화를 위한 클라이언트 사이드 고속ㆍ고정밀 웹 기반 분석 플랫폼 개발</span>
+    <span class="entry-title">CRISPR-Cas9 유도 대규모 DNA 결실 검출·정량화를 위한 클라이언트 사이드 고속·고정밀 웹 기반 분석 플랫폼 개발</span>
     <span class="entry-venue">2025&nbsp;-&nbsp;Present</span>
   </div>
   <div class="entry">
-    <span class="entry-title">HCC GeoMx 공간전사체 기반 간경변ㆍ비간경변 조직의 병리적 차이 규명 및 면역조절 타겟 발굴 연구</span>
+    <span class="entry-title">HCC GeoMx 공간전사체 기반 간경변·비간경변 조직의 병리적 차이 규명 및 면역조절 타겟 발굴 연구</span>
     <span class="entry-venue">2025&nbsp;-&nbsp;Present</span>
   </div>
   <div class="entry">
@@ -154,7 +154,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-venue">2024&nbsp;-&nbsp;Present</span>
   </div>
   <div class="entry">
-    <span class="entry-title">멀티모달 임상ㆍ영상 데이터를 활용한 코로나19 환자 중증도 예측 모델ㆍ환경 구축</span>
+    <span class="entry-title">멀티모달 임상·영상 데이터를 활용한 코로나19 환자 중증도 예측 모델·환경 구축</span>
     <span class="entry-venue">2025&nbsp;-&nbsp;2025</span>
   </div>
   <div class="entry">
@@ -162,7 +162,7 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-venue">2024&nbsp;-&nbsp;2025</span>
   </div>
   <div class="entry">
-    <span class="entry-title">KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상ㆍ유전적 차이 분석 연구</span>
+    <span class="entry-title">KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구</span>
     <span class="entry-venue">2023&nbsp;-&nbsp;2024</span>
   </div>
 </div>
