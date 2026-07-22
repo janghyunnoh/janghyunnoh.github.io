@@ -23,14 +23,19 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 <ul class="section-list">
   <li>
-    [<strong>Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data</strong>](https://doi.org/10.1093/bib/bbag395)
+    <a href="https://doi.org/10.1093/bib/bbag395">
+      <strong>Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data</strong>
+    </a>
     <div class="entry-authors"><em><span class="author-name">J. Noh</span>, Y. Shin, M. Kim, and M. Oh</em></div>
-    <div class="entry-venue"><em>Published in Briefings in Bioinformatics <span class="impact">(IF: 7.3, Q1[Top 4.1%])</span></em></div>
+    <div class="entry-venue"><em>Published in Briefings in Bioinformatics <span class="impact">(IF: 7.3, Q1 [Top 4.1%])</span></em></div>
   </li>
+
   <li>
-    [<strong>Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids</strong>](https://doi.org/10.1186/s13046-026-03745-z)
+    <a href="https://doi.org/10.1186/s13046-026-03745-z">
+      <strong>Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids</strong>
+    </a>
     <div class="entry-authors"><em>J. Choi, K. Lee, M. Oh, <span class="author-name">J. Noh</span>, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee</em></div>
-    <div class="entry-venue"><em>Published in Journal of Experimental & Clinical Cancer Research <span class="impact">(IF: 14.3, Q1[Top 6.8%])</span></em></div>
+    <div class="entry-venue"><em>Published in Journal of Experimental & Clinical Cancer Research <span class="impact">(IF: 14.3, Q1 [Top 6.8%])</span></em></div>
   </li>
 </ul>
 
