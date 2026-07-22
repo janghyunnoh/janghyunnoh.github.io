@@ -171,6 +171,10 @@ body {
     font-size: 12px;
 }
 
+.main-content .section-list > li > a > strong {
+    color: #0099cc;
+}
+
 .main-content .section-list > li strong {
     display: block;
     font-size: 16px;
