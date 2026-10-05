@@ -175,7 +175,7 @@ I received my M.S. in Artificial Intelligence from Myongji University, where I w
     <span class="entry-venue">2023&nbsp;-&nbsp;2024</span>
   </div>
   <div class="entry">
-    <span class="entry-title">Customs Notification Analysis and Monitoring System</span>
+    <span class="entry-title">글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발</span>
     <span class="entry-venue">2022</span>
   </div>
 </div>
