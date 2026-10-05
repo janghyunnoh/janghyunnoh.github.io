@@ -102,11 +102,6 @@ body {
     text-align: center;
 }
 
-/* LinkedIn icon color */
-.link-item.linkedin i {
-    color: #0077b5;
-}
-
 /* Main Content Styles */
 .main-content {
     background: white;
