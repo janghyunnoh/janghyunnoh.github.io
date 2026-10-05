@@ -110,15 +110,11 @@ I received my M.S. in Artificial Intelligence from Myongji University, where I w
     <span class="entry-venue">Myongji University, 2026</span>
   </div>
   <div class="entry">
-    <span class="entry-title">Best Poster Award</span>
-    <span class="entry-venue">KIISE Korea Software Congress (KSC), 2025</span>
-  </div>
-  <div class="entry">
     <span class="entry-title">Outstanding Poster Award</span>
     <span class="entry-venue">Korean Society for Bioinformatics (KSBI), 2025</span>
   </div>
   <div class="entry">
-    <span class="entry-title">Best Presentation Award</span>
+    <span class="entry-title">Outstanding Presentation Award</span>
     <span class="entry-venue">KIISE Korea Computer Congress (KCC), 2025</span>
   </div>
   <div class="entry">
@@ -207,7 +203,7 @@ I received my M.S. in Artificial Intelligence from Myongji University, where I w
 
 <div class="honors-list">
   <div class="entry">
-    <span class="entry-title">Camino de Santiago (French Way)</span>
+    <span class="entry-title">Camino de Santiago</span>
     <span class="entry-venue">Pilgrimage, Sep. 2026 - Oct. 2026</span>
   </div>
   <div class="entry">
