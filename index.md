@@ -203,7 +203,7 @@ I received my M.S. in Artificial Intelligence from Myongji University, where I w
 
 <div class="honors-list">
   <div class="entry">
-    <span class="entry-title">Camino de Santiago</span>
+    <span class="entry-title">Camino de Santiago (French Way)</span>
     <span class="entry-venue">Pilgrimage, Sep. 2026 - Oct. 2026</span>
   </div>
   <div class="entry">
