@@ -5,7 +5,7 @@ title: "Janghyun Noh"
 
 ## About Me
 
-I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at Myongji University, advised by Prof. [Minsik Oh](https://minsik-bioinfo.github.io/online-cv/) in the [Artificial Intelligence and Data Analytics (AIDA) Lab](https://ailab-mju.github.io/). My research interests lie in Bioinformatics, Medical AI, Deep Learning, and Single-Cell RNA Sequencing Analysis.
+I received my M.S. in Artificial Intelligence from Myongji University, where I was advised by Prof. [Minsik Oh](https://minsik-bioinfo.github.io/online-cv/) in the [Artificial Intelligence and Data Analytics (AIDA) Lab](https://ailab-mju.github.io/). I’m interested in developing and applying AI methods to solve real-world problems. 
 
 ## Education
 
@@ -105,12 +105,16 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 ## Honors & Awards
 
 <div class="honors-list">
+<div class="entry">
+    <span class="entry-title">Research Honor Award</span>
+    <span class="entry-venue">Myongji University, 2026</span>
+  </div>
   <div class="entry">
     <span class="entry-title">Best Poster Award</span>
     <span class="entry-venue">KIISE Korea Software Congress (KSC), 2025</span>
   </div>
   <div class="entry">
-    <span class="entry-title">Excellent Poster Award</span>
+    <span class="entry-title">Outstanding Poster Award</span>
     <span class="entry-venue">Korean Society for Bioinformatics (KSBI), 2025</span>
   </div>
   <div class="entry">
@@ -170,6 +174,10 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
     <span class="entry-title">KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구</span>
     <span class="entry-venue">2023&nbsp;-&nbsp;2024</span>
   </div>
+  <div class="entry">
+    <span class="entry-title">Customs Notification Analysis and Monitoring System</span>
+    <span class="entry-venue">2022</span>
+  </div>
 </div>
 
 
@@ -198,6 +206,10 @@ I'm Janghyun Noh, an M.S. student in Department of Artificial Intelligence at My
 
 
 <div class="honors-list">
+  <div class="entry">
+    <span class="entry-title">Camino de Santiago (French Way)</span>
+    <span class="entry-venue">Pilgrimage, Sep. 2026 - Oct. 2026</span>
+  </div>
   <div class="entry">
     <span class="entry-title">Medical Mission Trip to the Philippines</span>
     <span class="entry-venue">Global Medical Missions Alliance (GMMA), Volunteer, Jan. 2024</span>
