@@ -196,6 +196,18 @@ I received my M.S. in Artificial Intelligence from Myongji University, where I w
     <span class="entry-title">Data Youth Campus</span>
     <span class="entry-venue">Dongguk University, Participant, Jul. 2022 - Aug. 2022</span>
   </div>
+  <div class="entry">
+    <span class="entry-title">DeepsDeeps</span>
+    <span class="entry-venue">Myongji University, Deep Learning Study Group Member, Mar. 2022 - Jul. 2022</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">FAA Football Analytics Academy</span>
+    <span class="entry-venue">Bepro Company, Data Integration Course Participant, Sep. 2021 - Dec. 2021</span>
+  </div>
+  <div class="entry">
+    <span class="entry-title">Coding 101</span>
+    <span class="entry-venue">Myongji University, Coding Club Member, Mar. 2018 - Jan. 2020</span>
+  </div>
 </div>
 
 ### International
