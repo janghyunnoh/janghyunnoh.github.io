@@ -80,4 +80,16 @@
   period: "2022"
   title: "Customs notice analysis and monitoring system for global supply-chain crises"
   title_ko: "글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발"
-  tags: [Monitoring System]
+  summary: "Built with KOTRA in response to the 2021 urea-solution shortage: crawls foreign customs notices daily, extracts item keywords with NLP, matches them to monitored items and industries, and delivers the results through a web service."
+  summary_ko: "2021년 요소수 대란 같은 공급망 위기를 막기 위해 KOTRA와 연계해 구상한 시스템. 해외 관세청 세관 고시를 매일 수집하고, NLP 키워드 추출과 품목·산업군 매칭으로 국내 영향을 분석해 웹 서비스로 제공합니다."
+  role:
+    - "Scraping customs notices (Japan, Australia)"
+    - "Data preprocessing"
+    - "Testing and results analysis"
+  role_ko:
+    - "해외 세관 고시 스크래핑 (일본, 호주)"
+    - "데이터 전처리"
+    - "테스트 및 결과 분석"
+  tags: [Web Scraping, NLP, Supply Chain, Web Service]
+  links:
+    code: "https://github.com/janghyunnoh/customs-notification-analysis-and-monitoring-system-main"
