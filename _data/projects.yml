@@ -70,17 +70,17 @@
   period: "2023 - 2024"
   title: "Clinical and genetic differences for identifying hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)"
   title_ko: "KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구"
-  summary: "Hypertension and hyperlipidemia often occur together: roughly half of patients with one also have the other. Using the KoGES Ansan–Ansung cohort (9 follow-up waves, 10,030 participants), we predicted which hyperlipidemia patients progress to hypertension and analyzed the clinical and genetic differences. The core challenge was labeling: it was unclear whether to trust self-reported questionnaires (diagnosis and medication history) or clinical lab values (lipids, blood pressure) as ground truth."
-  summary_ko: "고혈압과 고지혈증은 환자의 절반가량이 서로를 동반할 만큼 함께 나타나는 질환입니다. KoGES 안산·안성 코호트(1–9기 추적, 10,030명)로 고지혈증 환자 중 고혈압으로 진행하는 위험군을 예측하고 임상·유전적 차이를 분석했습니다. 핵심 난제는 라벨링으로, 개인 문진(진단·약물력)과 임상 검사(지질·혈압 수치) 중 어느 쪽을 진단 근거로 신뢰할지가 명확하지 않았습니다."
+  summary: "In the KoGES Ansan–Ansung community cohort from the Korea Disease Control and Prevention Agency (adults aged 40–69, 10,030 participants, 9 follow-up waves), hypertension had the highest treatment history in every wave, and hyperlipidemia treatment grew wave over wave. The goal was to find clinical and genetic differences between hyperlipidemia patients who go on to develop hypertension and those who do not, by building a hypertension-onset prediction model. The core challenge was labeling: treatment status came from questionnaires and was unreliable, so labels had to be rebuilt from lab and blood-pressure measurements."
+  summary_ko: "질병관리청 KoGES 안산·안성 지역사회 코호트(40–69세, 10,030명, 9차 추적)에서 차수별 치료력을 보면 고혈압이 모든 차수에서 가장 높았고, 고지혈증 치료력은 차수가 지날수록 늘었습니다. 이를 바탕으로 고지혈증 환자 중 고혈압이 발생하는 경우와 발생하지 않는 경우의 임상·유전적 차이를 고혈압 발생 예측 모델로 규명하고자 했습니다. 핵심 난제는 라벨링으로, 설문으로 수집된 치료 여부는 신뢰도가 낮아 혈액검사·혈압 수치 기반으로 라벨을 다시 설계했습니다."
   role:
-    - "Designed hyperlipidemia and hypertension labeling criteria by comparing questionnaire and clinical-lab data (first-diagnosis wave, missing values)"
+    - "Designed measurement-based labels: hyperlipidemia from TC, HDL, and TG; hypertension from the two-arm average of SBP/DBP; handled raw vs. converted lab values and compared labels by missing-value order (drop-then-label vs. label-then-drop)"
     - "Built a hyperlipidemia→hypertension (n=812) vs. normotensive (n=1,034) dataset and trained XGBoost, CatBoost, and TabNet classifiers (XGBoost accuracy/F1 0.67)"
-    - "Selected top SNPs from K-chip genotypes (467K positions) and tested their added value over clinical features"
+    - "Selected top SNPs from Korean Biobank Array (K-chip) genotypes by logistic-regression p-value and tested their added value over clinical features"
   role_ko:
-    - "문진 vs 임상 검사 비교를 통한 고지혈증·고혈압 라벨링 기준 설계 (최초 진단 차수, 결측 처리)"
+    - "수치 기반 라벨링 설계: 고지혈증(TC·HDL·TG), 고혈압(양팔 평균 SBP/DBP) 기준, 원 측정값·변환값 처리, 결측 처리 순서(선 결측 제거 / 선 기준 적용)별 라벨 비교"
     - "선 고지혈증 → 후 고혈압(812명) vs 정상혈압 유지(1,034명) 데이터셋 구축 및 XGBoost·CatBoost·TabNet 분류 (XGBoost acc/F1 0.67)"
-    - "K-chip SNP(46.7만 위치)에서 상위 SNP 선별 후 임상 변수 대비 추가 효과 검증"
-  tags: [Cohort Study, Data Labeling, XGBoost, SNP]
+    - "Korean Biobank Array(K-chip) 유전정보에서 로지스틱 회귀 p-value 기반 상위 SNP 선별 후 임상 변수 대비 추가 효과 검증"
+  tags: [KoGES, Cohort Study, Data Labeling, XGBoost, SNP]
 
 - status: completed
   period: "2022"
