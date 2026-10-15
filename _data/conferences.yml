@@ -1,4 +1,5 @@
 # type: Oral / Poster    award: optional    scope: international / domestic
+# title_ko: Korean title, shown on the KO page when present
 # links: paper / poster / slides / code — a button appears for each URL you add
 - scope: international
   title: "An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data"
@@ -9,20 +10,22 @@
 
 - scope: domestic
   title: "Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq"
+  title_ko: "scRNA-seq 기반 표현형 예측을 위한 사전 학습 임베딩을 활용한 환자 단위 메타셀 구성"
   authors: "Y. Shin, J. Noh, and M. Oh"
   venue: "Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026"
   type: "Oral"
   links:
-    paper: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=scRNA-seq+%EA%B8%B0%EB%B0%98+%ED%91%9C%ED%98%84%ED%98%95+%EC%98%88%EC%B8%A1%EC%9D%84+%EC%9C%84%ED%95%9C+%EC%82%AC%EC%A0%84+%ED%95%99%EC%8A%B5+%EC%9E%84%EB%B2%A0%EB%94%A9%EC%9D%84+%ED%99%9C%EC%9A%A9%ED%95%9C+%ED%99%98%EC%9E%90+%EB%8B%A8%EC%9C%84+%EB%A9%94%ED%83%80%EC%85%80+%EA%B5%AC%EC%84%B1"  # DBpia search by title; replace with the articleDetail URL when available
+    paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929339"
 
 - scope: domestic
   title: "Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques"
+  title_ko: "scRNA-seq 데이터 축소 기법을 이용한 환자 표현형 예측의 연산 경량화 분석"
   authors: "Y. Shin, J. Noh, and M. Oh"
   venue: "Poster Accepted at KIISE Korea Software Congress (KSC), 2025"
   type: "Poster"
   award: "Best Poster Award"
   links:
-    paper: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=scRNA-seq+%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%B6%95%EC%86%8C+%EA%B8%B0%EB%B2%95%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%9C+%ED%99%98%EC%9E%90+%ED%91%9C%ED%98%84%ED%98%95+%EC%98%88%EC%B8%A1%EC%9D%98+%EC%97%B0%EC%82%B0+%EA%B2%BD%EB%9F%89%ED%99%94+%EB%B6%84%EC%84%9D"  # DBpia search by title; replace with the articleDetail URL when available
+    paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12577614"
 
 - scope: domestic
   title: "Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning"
@@ -40,10 +43,11 @@
   award: "Best Presentation Award"
   first_author: true
   links:
-    paper: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=AMIL%3A+Automated+Cell+Grouping+Framework+for+Phenotype+Prediction+with+Multiple+Instance+Learning"  # DBpia search by title; replace with the articleDetail URL when available
+    paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318547"
 
 - scope: domestic
   title: "Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies"
+  title_ko: "MIMIC-III 데이터를 이용한 급성호흡곤란증후군 환자의 병원 내 사망 예측: 다양한 결측 데이터 처리 전략을 적용한 머신러닝 모델의 비교 연구"
   authors: "J. Noh, G. Choi, and M. Oh"
   venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2023"
   type: "Poster"

@@ -89,7 +89,7 @@
             <ul class="entries">
                 {%- for pub in site.data.publications %}
                 <li>
-                    <div class="entry-title">{{ pub.title }}</div>
+                    <div class="entry-title">{% if ko %}{{ pub.title_ko | default: pub.title }}{% else %}{{ pub.title }}{% endif %}</div>
                     <div class="entry-sub">{{ pub.authors | replace: "J. Noh", me }}</div>
                     <div class="entry-sub"><em>{{ pub.venue }}</em>{% if pub.impact %} <span class="impact">{{ pub.impact }}</span>{% endif %}</div>
                     {% include badges.html item=pub %}
@@ -108,7 +108,7 @@
             <ul class="entries">
                 {%- for c in confs %}
                 <li>
-                    <div class="entry-title">{{ c.title }}</div>
+                    <div class="entry-title">{% if ko %}{{ c.title_ko | default: c.title }}{% else %}{{ c.title }}{% endif %}</div>
                     <div class="entry-sub">{{ c.authors | replace: "J. Noh", me }}</div>
                     <div class="entry-sub"><em>{{ c.venue }}</em></div>
                     {% include badges.html item=c %}
