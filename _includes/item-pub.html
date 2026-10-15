@@ -1,0 +1,7 @@
+{%- assign it = include.item -%}
+<li>
+    <div class="entry-title">{% if ko %}{{ it.title_ko | default: it.title }}{% else %}{{ it.title }}{% endif %}</div>
+    <div class="entry-sub">{{ it.authors | replace: "J. Noh", me }}</div>
+    <div class="entry-sub"><em>{{ it.venue }}</em>{% if it.impact %} <span class="impact">{{ it.impact }}</span>{% endif %}</div>
+    {% include badges.html item=it %}
+</li>

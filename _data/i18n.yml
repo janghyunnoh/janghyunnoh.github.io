@@ -1,5 +1,13 @@
 # UI labels for each language.
 en:
+  nav_home: "Home"
+  nav_research: "Research"
+  nav_projects: "Projects"
+  nav_cv: "CV"
+  selected: "Selected Research"
+  recent_projects: "Ongoing Projects"
+  see_all: "See all →"
+  presentations: "Conference Presentations"
   about: "About Me"
   news: "News"
   education: "Education"
@@ -20,6 +28,14 @@ en:
   cv: "CV (PDF)"
   published_in: "Published in"
 ko:
+  nav_home: "홈"
+  nav_research: "연구"
+  nav_projects: "프로젝트"
+  nav_cv: "이력"
+  selected: "대표 연구"
+  recent_projects: "진행 중인 프로젝트"
+  see_all: "전체 보기 →"
+  presentations: "학회 발표"
   about: "소개"
   news: "소식"
   education: "학력"

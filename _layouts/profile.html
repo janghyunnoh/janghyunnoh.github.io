@@ -3,16 +3,19 @@
 {%- assign p = site.data.profile -%}
 {%- capture me -%}<span class="author-name">J. Noh</span>{%- endcapture -%}
 {%- assign v = site.time | date: "%s" -%}
+{%- if ko -%}{%- assign base = "/ko/" | relative_url -%}{%- assign other = page.url | remove_first: "/ko" -%}{%- assign en_url = other -%}{%- assign ko_url = page.url -%}
+{%- else -%}{%- assign base = "/" | relative_url -%}{%- assign other = page.url | prepend: "/ko" -%}{%- assign en_url = page.url -%}{%- assign ko_url = other -%}{%- endif -%}
+{%- capture nav_label -%}nav_{{ page.section }}{%- endcapture -%}
 <!DOCTYPE html>
 <html lang="{% if ko %}ko{% else %}en{% endif %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if ko %}{{ p.name_ko | default: p.name }} | {{ p.name }}{% else %}{{ p.name }}{% endif %}</title>
+    <title>{% unless page.section == "home" %}{{ L[nav_label] }} | {% endunless %}{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</title>
     <meta name="description" content="{% if ko %}{{ p.title_ko }} · {{ p.affiliation_ko }}{% else %}{{ p.title }} · {{ p.affiliation }}{% endif %}">
-    <link rel="alternate" hreflang="en" href="{{ site.url }}/">
-    <link rel="alternate" hreflang="ko" href="{{ site.url }}/ko/">
-    <link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ en_url }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ ko_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ en_url }}">
     <meta property="og:title" content="{{ p.name }}">
     <meta property="og:description" content="{{ p.title }} · {{ p.affiliation }}">
     <meta property="og:image" content="{{ site.url }}{{ p.photo }}">
@@ -24,188 +27,31 @@
     <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}?v={{ v }}">
 </head>
 <body>
-<div class="container">
-    <aside class="sidebar">
-        <img class="photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
-        <nav class="lang" aria-label="Language">
-            <a href="{{ '/' | relative_url }}" hreflang="en" {% unless ko %}class="active" aria-current="page"{% endunless %}>EN</a>
-            <a href="{{ '/ko/' | relative_url }}" hreflang="ko" {% if ko %}class="active" aria-current="page"{% endif %}>KO</a>
+<header class="nav">
+    <div class="nav-inner">
+        <a class="brand" href="{{ base }}">{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</a>
+        <nav class="menu" aria-label="Main">
+            {%- assign sections = "home,research,projects,cv" | split: "," %}
+            {%- for s in sections %}
+            {%- capture lbl %}nav_{{ s }}{% endcapture %}
+            <a href="{{ base }}{% unless s == 'home' %}{{ s }}/{% endunless %}" {% if page.section == s %}aria-current="page"{% endif %}>{{ L[lbl] }}</a>
+            {%- endfor %}
         </nav>
-        <h1 class="name">{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</h1>
-        <p class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %}</p>
-        <div class="meta">
-            <div><i class="ico fas fa-map-marker-alt"></i><span>{% if ko %}{{ p.location_ko | default: p.location }}{% else %}{{ p.location }}{% endif %}</span></div>
-            {% capture aff %}<i class="ico fas fa-university"></i><span>{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}</span>{% endcapture %}
-            {% if p.affiliation_url %}<a href="{{ p.affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ aff }}</a>{% else %}<div>{{ aff }}</div>{% endif %}
-            <a href="{{ p.scholar }}" target="_blank" rel="noopener noreferrer"><i class="ico fas fa-graduation-cap"></i><span>Google Scholar</span></a>
-            <a href="{{ p.github }}" target="_blank" rel="noopener noreferrer"><i class="ico fa-brands fa-github"></i><span>GitHub</span></a>
-            <a href="{{ p.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="ico fab fa-linkedin"></i><span>LinkedIn</span></a>
-            <a href="mailto:{{ p.email }}"><i class="ico fa-solid fa-envelope"></i><span>{{ p.email }}</span></a>
+        <div class="lang" role="group" aria-label="Language">
+            <a href="{{ en_url | relative_url }}" hreflang="en" {% unless ko %}class="active" aria-current="true"{% endunless %}>EN</a>
+            <a href="{{ ko_url | relative_url }}" hreflang="ko" {% if ko %}class="active" aria-current="true"{% endif %}>KO</a>
         </div>
-        {%- if ko -%}{%- assign cv = p.cv_ko | default: p.cv -%}{%- else -%}{%- assign cv = p.cv -%}{%- endif -%}
-        {%- if cv and cv != "" %}
-        <div class="cv-buttons">
-            <a class="btn primary" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv }}</a>
-        </div>
-        {%- endif %}
-    </aside>
+    </div>
+</header>
 
-    <main>
-        <section id="about">
-            <h2>{{ L.about }}</h2>
-            <p>{% if ko %}{{ p.about_ko | default: p.about }}{% else %}{{ p.about }}{% endif %}</p>
-            {%- if p.interests %}
-            <div class="interests">{% for kw in p.interests %}<span class="chip">{{ kw }}</span>{% endfor %}</div>
-            {%- endif %}
-        </section>
+<main>
+    {% include sections/{{ page.section }}.html %}
+    {{ content }}
+</main>
 
-        {%- if site.data.news and site.data.news.size > 0 %}
-        <section id="news">
-            <h2>{{ L.news }}</h2>
-            <ul class="news">
-                {%- for n in site.data.news %}
-                <li><time>{{ n.date }}</time><span>{% if ko %}{{ n.text_ko | default: n.text }}{% else %}{{ n.text }}{% endif %}</span></li>
-                {%- endfor %}
-            </ul>
-        </section>
-        {%- endif %}
-
-        <section id="education">
-            <h2>{{ L.education }}</h2>
-            <ul class="entries">
-                {%- for e in site.data.education %}
-                <li class="edu">
-                    <span class="entry-title">{% if ko %}{{ e.school_ko | default: e.school }} {{ e.degree_ko | default: e.degree }}{% else %}{{ e.degree }}, {{ e.school }}{% endif %}</span>
-                    <span class="period">{% if ko %}{{ e.period_ko | default: e.period }}{% else %}{{ e.period }}{% endif %}</span>
-                    {%- if e.advisor %}
-                    <span class="entry-sub">{{ L.advisor }}: {% if ko %}{{ e.advisor_ko | default: e.advisor }}{% else %}{{ e.advisor }}{% endif %}</span>
-                    {%- endif %}
-                </li>
-                {%- endfor %}
-            </ul>
-        </section>
-
-        <section id="publications">
-            <h2>{{ L.publications }}</h2>
-            <ul class="entries">
-                {%- for pub in site.data.publications %}
-                <li>
-                    <div class="entry-title">{% if ko %}{{ pub.title_ko | default: pub.title }}{% else %}{{ pub.title }}{% endif %}</div>
-                    <div class="entry-sub">{{ pub.authors | replace: "J. Noh", me }}</div>
-                    <div class="entry-sub"><em>{{ pub.venue }}</em>{% if pub.impact %} <span class="impact">{{ pub.impact }}</span>{% endif %}</div>
-                    {% include badges.html item=pub %}
-                </li>
-                {%- endfor %}
-            </ul>
-        </section>
-
-        <section id="conferences">
-            <h2>{{ L.conferences }}</h2>
-            {%- assign scopes = "international,domestic" | split: "," %}
-            {%- for scope in scopes %}
-            {%- assign confs = site.data.conferences | where: "scope", scope %}
-            {%- if confs.size > 0 %}
-            <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
-            <ul class="entries">
-                {%- for c in confs %}
-                <li>
-                    <div class="entry-title">{% if ko %}{{ c.title_ko | default: c.title }}{% else %}{{ c.title }}{% endif %}</div>
-                    <div class="entry-sub">{{ c.authors | replace: "J. Noh", me }}</div>
-                    <div class="entry-sub"><em>{{ c.venue }}</em></div>
-                    {% include badges.html item=c %}
-                </li>
-                {%- endfor %}
-            </ul>
-            {%- endif %}
-            {%- endfor %}
-        </section>
-
-        <section id="projects">
-            <h2>{{ L.projects }}</h2>
-            <div class="filters" role="group" aria-label="{{ L.projects }}">
-                <button type="button" data-filter="all" aria-pressed="true">{{ L.all }}</button>
-                <button type="button" data-filter="ongoing" aria-pressed="false">{{ L.ongoing }}</button>
-                <button type="button" data-filter="completed" aria-pressed="false">{{ L.completed }}</button>
-            </div>
-            <div class="cards">
-                {%- for pr in site.data.projects %}
-                {%- if ko %}{% assign summary = pr.summary_ko | default: pr.summary %}{% assign role = pr.role_ko | default: pr.role %}{% else %}{% assign summary = pr.summary %}{% assign role = pr.role %}{% endif %}
-                <article class="card" data-status="{{ pr.status }}">
-                    <div class="card-top">
-                        <span class="status {{ pr.status }}">{% if pr.status == "ongoing" %}{{ L.ongoing }}{% else %}{{ L.completed }}{% endif %}</span>
-                        <span>{% if ko %}{{ pr.period | replace: "Present", "현재" }}{% else %}{{ pr.period }}{% endif %}</span>
-                    </div>
-                    <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
-                    {%- if pr.org %}
-                    <div class="org"><i class="fa-regular fa-building"></i><span>{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</span></div>
-                    {%- endif %}
-                    {%- if summary %}
-                    <p class="summary">{{ summary }}</p>
-                    {%- endif %}
-                    {%- if role and role.size > 0 %}
-                    <div>
-                        <div class="role-label">{{ L.my_role }}</div>
-                        <ul>{% for r in role %}<li>{{ r }}</li>{% endfor %}</ul>
-                    </div>
-                    {%- endif %}
-                    <div class="card-foot">
-                        <div class="tags">{% for tg in pr.tags %}<span class="tag">{{ tg }}</span>{% endfor %}</div>
-                        {% include link-buttons.html links=pr.links %}
-                    </div>
-                </article>
-                {%- endfor %}
-            </div>
-        </section>
-
-        {%- if site.data.skills %}
-        <section id="skills">
-            <h2>{{ L.skills }}</h2>
-            <ul class="entries compact">
-                {%- for s in site.data.skills %}
-                <li><span class="entry-title">{% if ko %}{{ s.category_ko | default: s.category }}{% else %}{{ s.category }}{% endif %}</span> <span class="entry-sub">· {{ s.items }}</span></li>
-                {%- endfor %}
-            </ul>
-        </section>
-        {%- endif %}
-
-        <section id="awards">
-            <h2>{{ L.awards }}</h2>
-            <ul class="entries compact">
-                {%- for a in site.data.awards %}
-                <li><span class="entry-title">{% if ko %}{{ a.title_ko | default: a.title }}{% else %}{{ a.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ a.org_ko | default: a.org }}{% else %}{{ a.org }}{% endif %}</span></li>
-                {%- endfor %}
-            </ul>
-        </section>
-
-        <section id="activities">
-            <h2>{{ L.activities }}</h2>
-            {%- assign actscopes = "domestic,international" | split: "," %}
-            {%- for scope in actscopes %}
-            <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
-            <ul class="entries compact">
-                {%- for act in site.data.activities[scope] %}
-                <li><span class="entry-title">{% if ko %}{{ act.title_ko | default: act.title }}{% else %}{{ act.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ act.detail_ko | default: act.detail }}{% else %}{{ act.detail }}{% endif %}</span></li>
-                {%- endfor %}
-            </ul>
-            {%- endfor %}
-        </section>
-
-        {{ content }}
-    </main>
-</div>
-
-<script>
-(function () {
-    var buttons = document.querySelectorAll('.filters button');
-    var cards = document.querySelectorAll('.card');
-    buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var f = btn.getAttribute('data-filter');
-            buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
-            cards.forEach(function (c) { c.hidden = !(f === 'all' || c.getAttribute('data-status') === f); });
-        });
-    });
-})();
-</script>
+<footer>
+    <span>© {{ site.time | date: "%Y" }} {{ p.name }}</span>
+    <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+</footer>
 </body>
 </html>

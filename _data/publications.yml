@@ -5,6 +5,7 @@
   venue: "Briefings in Bioinformatics"
   impact: "(IF: 7.3, Q1 [Top 4.1%])"
   first_author: true
+  selected: true
   links:
     paper: "https://doi.org/10.1093/bib/bbag395"
 

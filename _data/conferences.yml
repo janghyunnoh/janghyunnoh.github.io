@@ -1,4 +1,5 @@
 # type: Oral / Poster    award: optional    scope: international / domestic
+# selected: true -> also shown on the home page
 # title_ko: Korean title, shown on the KO page when present
 # links: paper / poster / slides / code — a button appears for each URL you add
 - scope: international
@@ -34,6 +35,7 @@
   type: "Poster"
   award: "Excellent Poster Award"
   first_author: true
+  selected: true
 
 - scope: domestic
   title: "AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning"
@@ -42,6 +44,7 @@
   type: "Oral"
   award: "Best Presentation Award"
   first_author: true
+  selected: true
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318547"
 

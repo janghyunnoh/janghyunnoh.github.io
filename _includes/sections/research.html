@@ -1,0 +1,22 @@
+<h1 class="page-title">{{ L.nav_research }}</h1>
+
+<section id="publications">
+    <h2>{{ L.publications }}</h2>
+    <ul class="entries">
+        {%- for it in site.data.publications %}{% include item-pub.html item=it %}{% endfor %}
+    </ul>
+</section>
+
+<section id="presentations">
+    <h2>{{ L.presentations }}</h2>
+    {%- assign scopes = "international,domestic" | split: "," %}
+    {%- for scope in scopes %}
+    {%- assign confs = site.data.conferences | where: "scope", scope %}
+    {%- if confs.size > 0 %}
+    <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
+    <ul class="entries">
+        {%- for it in confs %}{% include item-pub.html item=it %}{% endfor %}
+    </ul>
+    {%- endif %}
+    {%- endfor %}
+</section>

@@ -1,0 +1,45 @@
+<div class="hero">
+    <img class="photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+    <div class="hero-text">
+        <h1>{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</h1>
+        <div class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %} · <a href="{{ p.affiliation_url }}" target="_blank" rel="noopener">{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}</a></div>
+        <p>{% if ko %}{{ p.about_ko | default: p.about }}{% else %}{{ p.about }}{% endif %}</p>
+        {%- if p.interests %}
+        <div class="chips">{% for kw in p.interests %}<span class="chip">{{ kw }}</span>{% endfor %}</div>
+        {%- endif %}
+        <div class="links-row">
+            <a class="pill" href="{{ p.scholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            <a class="pill" href="{{ p.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="pill" href="{{ p.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a class="pill" href="mailto:{{ p.email }}"><i class="fa-solid fa-envelope"></i> {{ p.email }}</a>
+        </div>
+    </div>
+</div>
+
+{%- if site.data.news and site.data.news.size > 0 %}
+<section>
+    <h2>{{ L.news }}</h2>
+    <ul class="news">
+        {%- for n in site.data.news %}
+        <li><time>{{ n.date }}</time><span>{% if ko %}{{ n.text_ko | default: n.text }}{% else %}{{ n.text }}{% endif %}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{%- endif %}
+
+<section>
+    <h2>{{ L.selected }}<a class="more" href="{{ base }}research/">{{ L.see_all }}</a></h2>
+    <ul class="entries">
+        {%- for it in site.data.publications %}{% if it.selected %}{% include item-pub.html item=it %}{% endif %}{% endfor %}
+        {%- for it in site.data.conferences %}{% if it.selected %}{% include item-pub.html item=it %}{% endif %}{% endfor %}
+    </ul>
+</section>
+
+<section>
+    <h2>{{ L.recent_projects }}<a class="more" href="{{ base }}projects/">{{ L.see_all }}</a></h2>
+    <ul class="mini-list">
+        {%- for pr in site.data.projects %}{% if pr.status == "ongoing" %}
+        <li><span class="entry-title">{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</span><span class="period">{% if ko %}{{ pr.period | replace: "Present", "현재" }}{% else %}{{ pr.period }}{% endif %}</span></li>
+        {%- endif %}{% endfor %}
+    </ul>
+</section>
