@@ -46,7 +46,7 @@
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
-\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionTopSkip}{0mm}
 \renewcommand{\acvSectionContentTopSkip}{1.5mm}
 
 % If you would like to change the social information separator from a pipe (|) to something else
@@ -83,11 +83,13 @@
 
 
 %-------------------------------------------------------------------------------
+\let\origcvsection\cvsection
+\renewcommand{\cvsection}[1]{\origcvsection{#1}}
 \begin{document}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader\vspace{4mm}
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
@@ -150,12 +152,11 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Research Experience}
+\vspace{-3.5mm}\cvsection{Research Experience}
 
 
 %-------------------------------------------------------------------------------
@@ -180,13 +181,12 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Publications \& Presentations}
+\vspace{-3.5mm}\cvsection{Publications \& Presentations}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -217,8 +217,6 @@
       I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee
     }
 \end{cventries}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	CONFERENCE PRESENTATIONS
@@ -281,13 +279,12 @@
       \textbf{J. Noh}, G. Choi, and M. Oh
     }
 \end{cventries}
-\vspace{2mm}
 
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Honors \& Awards}
+\vspace{1mm}\cvsection{Honors \& Awards}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -333,8 +330,6 @@
 
 %---------------------------------------------------------
 \end{cvhonors}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -386,13 +381,11 @@
 
 \end{cvhonors}
 
-\vspace{2mm}
-
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
 \filbreak
-\cvsection{Projects}
+\vspace{1mm}\cvsection{Projects}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -410,10 +403,9 @@
   \skilltypestyle{\makebox[1.9cm][l]{2023}} & \leavevmode\skillsetstyle{CatchYou: criminal composite sketch generation from witness descriptions} \\
   \skilltypestyle{\makebox[1.9cm][l]{2022}} & \leavevmode\skillsetstyle{Customs notice analysis and monitoring system for global supply-chain crises} \\
 \end{tabularx}\par
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
-\cvsection{Technical Skills}
+\vspace{1mm}\cvsection{Technical Skills}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -452,12 +444,11 @@
 
 %---------------------------------------------------------
 \end{cvskills}
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Extracurricular Activities}
+\vspace{1mm}\cvsection{Extracurricular Activities}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -505,8 +496,6 @@
       \end{cvitems}
     }
 \end{cventries}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -557,6 +546,5 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 \end{document}

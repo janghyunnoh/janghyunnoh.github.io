@@ -58,7 +58,7 @@
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
-\renewcommand{\acvSectionTopSkip}{1.5mm}
+\renewcommand{\acvSectionTopSkip}{0mm}
 \renewcommand{\acvSectionContentTopSkip}{1.5mm}
 
 % If you would like to change the social information separator from a pipe (|) to something else
@@ -96,11 +96,13 @@
 
 
 %-------------------------------------------------------------------------------
+\let\origcvsection\cvsection
+\renewcommand{\cvsection}[1]{\origcvsection{#1}}
 \begin{document}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader\vspace{4mm}
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
@@ -162,12 +164,11 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{연구 경력}
+\vspace{-3.5mm}\cvsection{연구 경력}
 
 
 %-------------------------------------------------------------------------------
@@ -182,7 +183,7 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities     
         \item {단일세포 RNA-seq 데이터의 세포 주석 없는 표현형 예측 프레임워크 scCap 개발 및 코드·Docker 이미지 공개 (Briefings in Bioinformatics 1저자)}
-        \item {scRNA-seq 기반 MSI/MSS 표현형 예측 모델 개발 및 AI 기반 타겟 발굴 연구 ((주)아이겐드럭)}
+        \item {scRNA-seq 기반 MSI/MSS 표현형 예측 모델 개발 및 AI 기반 타겟 발굴 연구 (아이겐드럭)}
         \item {TNBC Xenium 공간전사체 데이터 기반 세포 niche 및 종양 미세환경(TME) 분석 (서울대학교병원)}
         \item {HCC GeoMx 공간전사체 기반 간경변·비간경변 조직 비교 및 면역조절 타겟 발굴}
         \item {CRISPR-Cas9 유도 대규모 DNA 결실 분석을 위한 Biomni 기반 AI 에이전트 환경 구축}
@@ -192,13 +193,12 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{논문 및 학회 발표}
+\vspace{-3.5mm}\cvsection{논문 및 학회 발표}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -229,8 +229,6 @@
       I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee
     }
 \end{cventries}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	CONFERENCE PRESENTATIONS
@@ -292,13 +290,12 @@
       \textbf{J. Noh}, G. Choi, and M. Oh
     }
 \end{cventries}
-\vspace{2mm}
 
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{수상 및 장학}
+\vspace{1mm}\cvsection{수상 및 장학}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -344,8 +341,6 @@
 
 %---------------------------------------------------------
 \end{cvhonors}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -397,13 +392,11 @@
 
 \end{cvhonors}
 
-\vspace{2mm}
-
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
 \filbreak
-\cvsection{프로젝트}
+\vspace{1mm}\cvsection{프로젝트}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -421,10 +414,9 @@
   \skilltypestyle{\makebox[1.9cm][l]{2023}} & \leavevmode\skillsetstyle{그놈을 잡아라 (CatchYou): 진술 기반 몽타주 생성 서비스} \\
   \skilltypestyle{\makebox[1.9cm][l]{2022}} & \leavevmode\skillsetstyle{글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발} \\
 \end{tabularx}\par
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
-\cvsection{기술 역량}
+\vspace{1mm}\cvsection{기술 역량}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
@@ -463,12 +455,11 @@
 
 %---------------------------------------------------------
 \end{cvskills}
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{대외활동}
+\vspace{1mm}\cvsection{대외활동}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -514,8 +505,6 @@
       \end{cvitems}
     }
 \end{cventries}
-
-\vspace{2mm}
 
 %-------------------------------------------------------------------------------
 %	SUBSECTION TITLE
@@ -566,6 +555,5 @@
       \end{cvitems}
     }
 \end{cventries}
-\vspace{2mm}
 
 \end{document}
