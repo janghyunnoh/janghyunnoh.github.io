@@ -162,7 +162,7 @@ p { margin-bottom: 12px; max-width: 72ch; }
 .badge.first { border-color: var(--accent); color: var(--accent); }
 .badge.award { border-color: var(--award); color: var(--award); display: inline-flex; align-items: center; gap: 5px; }
 .badge.award i { font-size: 10px; }
-.badge.oral { border-color: var(--fg); color: var(--fg); }
+.badge.oral, .badge.poster { border-color: var(--fg); color: var(--fg); }
 .linkbtn {
   display: inline-flex;
   align-items: center;
