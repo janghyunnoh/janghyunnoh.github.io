@@ -10,6 +10,8 @@
 - period: "2024 - 2026"
   title: "AI-based target discovery platform for CAR-Treg cell therapy in chronic inflammatory disease"
   title_ko: "AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발"
+  org: "EigenDrug Inc."
+  org_ko: "주식회사 아이겐드럭"
   summary: "Build an AI platform that discovers targets for CAR-Treg cell therapies against chronic inflammatory diseases."
   summary_ko: "만성 염증성 질환을 조절하는 CAR-Treg 세포 치료제의 타겟을 AI로 발굴하는 플랫폼 구축"
   role:
@@ -38,6 +40,8 @@
 - period: "2024 - 2026"
   title: "Spatial transcriptomics-based target discovery with in silico and organoid validation for refractory solid tumors"
   title_ko: "공간 전사체 기반 타겟 발굴과 in silico 및 오가노이드 활용 타겟 검증을 통한 난치성 고형암 MLT 신규 치료제 신속 개발"
+  org: "Seoul National University Hospital"
+  org_ko: "서울대학교병원"
   summary: "Find therapeutic targets for refractory solid tumors from spatial transcriptomics and validate them in silico and in organoids."
   summary_ko: "공간전사체로 난치성 고형암의 치료 타겟을 발굴하고 in silico·오가노이드로 검증"
   role:
@@ -51,6 +55,8 @@
 - period: "2025 - 2026"
   title: "Client-side web platform for fast, accurate detection and quantification of CRISPR-Cas9-induced large DNA deletions"
   title_ko: "CRISPR-Cas9 유도 대규모 DNA 결실 검출·정량화를 위한 클라이언트 사이드 고속·고정밀 웹 기반 분석 플랫폼 개발"
+  org: "Myongji University"
+  org_ko: "명지대학교"
   summary: "Develop a browser-based platform that quickly and accurately detects and quantifies large DNA deletions induced by CRISPR-Cas9."
   summary_ko: "CRISPR-Cas9으로 생긴 대규모 DNA 결실을 브라우저에서 빠르고 정확하게 검출·정량화하는 웹 분석 플랫폼 개발"
   role:
