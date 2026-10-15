@@ -17,14 +17,22 @@
   --nav-bg: rgba(255, 255, 255, .88);
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Helvetica Neue", Arial, sans-serif;
 }
+/* Dark theme: follows the system by default; the nav toggle sets data-theme to override. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #15181b; --fg: #e3e6e9; --muted: #a3a9b0; --faint: #747b83; --rule: #2a2f34;
     --card: #1c2024; --card-border: #2c3237; --accent: #4cc0e8; --accent-soft: #15323d;
     --impact: #e48787; --award: #e6b450; --award-soft: #33290f; --ongoing: #5cc488;
     --nav-bg: rgba(21, 24, 27, .88);
     color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+    --bg: #15181b; --fg: #e3e6e9; --muted: #a3a9b0; --faint: #747b83; --rule: #2a2f34;
+    --card: #1c2024; --card-border: #2c3237; --accent: #4cc0e8; --accent-soft: #15323d;
+    --impact: #e48787; --award: #e6b450; --award-soft: #33290f; --ongoing: #5cc488;
+    --nav-bg: rgba(21, 24, 27, .88);
+    color-scheme: dark;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -80,6 +88,22 @@ em { font-style: italic; }
 }
 .lang a { font-size: 12.5px; font-weight: 600; color: var(--muted); padding: 3px 12px; border-radius: 999px; }
 .lang a:hover { text-decoration: none; color: var(--fg); }
+.nav-right { justify-self: end; display: flex; align-items: center; gap: 8px; }
+.lang { justify-self: auto; }
+.theme-toggle {
+  width: 32px; height: 32px;
+  display: inline-grid; place-items: center;
+  border: 1px solid var(--card-border); border-radius: 999px;
+  background: var(--card); color: var(--muted); cursor: pointer; font-size: 14px;
+}
+.theme-toggle:hover { color: var(--fg); }
+.theme-toggle .fa-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .fa-sun { display: inline; }
+:root[data-theme="dark"] .theme-toggle .fa-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .fa-sun { display: inline; }
+  :root:not([data-theme="light"]) .theme-toggle .fa-moon { display: none; }
+}
 .lang a.active { background: var(--bg); color: var(--fg); box-shadow: 0 1px 3px rgba(0, 0, 0, .12); }
 
 main {

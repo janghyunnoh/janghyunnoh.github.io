@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}?v={{ v }}">
+    <script>
+    (function () {
+        try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    })();
+    </script>
 </head>
 <body>
 <header class="nav">
@@ -37,9 +42,14 @@
             <a href="{{ base }}{% unless s == 'home' %}{{ s }}/{% endunless %}" {% if page.section == s %}aria-current="page"{% endif %}>{{ L[lbl] }}</a>
             {%- endfor %}
         </nav>
+        <div class="nav-right">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Dark / Light">
+            <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+        </button>
         <div class="lang" role="group" aria-label="Language">
             <a href="{{ en_url | relative_url }}" hreflang="en" {% unless ko %}class="active" aria-current="true"{% endunless %}>EN</a>
             <a href="{{ ko_url | relative_url }}" hreflang="ko" {% if ko %}class="active" aria-current="true"{% endif %}>KO</a>
+        </div>
         </div>
     </div>
 </header>
@@ -53,5 +63,19 @@
     <span>© {{ site.time | date: "%Y" }} {{ p.name }}</span>
     <a href="mailto:{{ p.email }}">{{ p.email }}</a>
 </footer>
+<script>
+(function () {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+        var root = document.documentElement;
+        var cur = root.getAttribute('data-theme');
+        if (!cur) cur = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+})();
+</script>
 </body>
 </html>
