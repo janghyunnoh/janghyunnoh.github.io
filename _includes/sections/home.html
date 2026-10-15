@@ -13,6 +13,9 @@
             <a class="pill" href="{{ p.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
             <a class="pill" href="{{ p.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a class="pill" href="mailto:{{ p.email }}"><i class="fa-solid fa-envelope"></i> {{ p.email }}</a>
+            {%- if p.cv and p.cv != "" %}
+            <a class="pill" href="{{ base }}cv/"><i class="fa-solid fa-file-lines"></i> CV</a>
+            {%- endif %}
         </div>
     </div>
 </div>

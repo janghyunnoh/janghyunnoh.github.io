@@ -18,10 +18,11 @@ scholar: "https://scholar.google.com/citations?user=NPIG8VoAAAAJ&hl=ko&oi=ao"
 github: "https://github.com/janghyunnoh"
 linkedin: "https://www.linkedin.com/in/janghyun-noh-411587195/"
 
-# CV / resume PDFs. Leave empty to hide the button.
-# Example: cv: "/assets/cv/Janghyun_Noh_CV.pdf"
-cv: ""
+# CV / resume PDFs (files in assets/cv/). Leave empty to hide a button.
+cv: "/assets/cv/Janghyun_Noh_CV.pdf"
 cv_ko: ""
+resume: "/assets/cv/Janghyun_Noh_Resume.pdf"
+resume_ko: "/assets/cv/Janghyun_Noh_Resume_KO.pdf"
 
 about: >-
   I received my M.S. in Artificial Intelligence from Myongji University, where I was advised by

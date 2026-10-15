@@ -1,7 +1,10 @@
 <h1 class="page-title">{{ L.nav_cv }}</h1>
-{%- if ko -%}{%- assign cv = p.cv_ko | default: p.cv -%}{%- else -%}{%- assign cv = p.cv -%}{%- endif -%}
-{%- if cv and cv != "" %}
-<div class="links-row page-actions"><a class="pill primary" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv }}</a></div>
+{%- if ko -%}{%- assign cv = p.cv_ko | default: p.cv -%}{%- assign resume = p.resume_ko | default: p.resume -%}{%- else -%}{%- assign cv = p.cv -%}{%- assign resume = p.resume -%}{%- endif -%}
+{%- if cv != "" or resume != "" %}
+<div class="links-row page-actions">
+    {%- if resume and resume != "" %}<a class="pill primary" href="{{ resume | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.resume }}</a>{% endif %}
+    {%- if cv and cv != "" %}<a class="pill" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv }}</a>{% endif %}
+</div>
 {%- endif %}
 
 <section>
