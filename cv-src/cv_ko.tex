@@ -24,6 +24,7 @@
 
 
 % Configure page margins with geometry
+\usepackage{needspace}
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
 
 % Specify the location of the included fonts
@@ -97,7 +98,9 @@
 
 %-------------------------------------------------------------------------------
 \let\origcvsection\cvsection
-\renewcommand{\cvsection}[1]{\origcvsection{#1}}
+\renewcommand{\cvsection}[1]{\needspace{7\baselineskip}\origcvsection{#1}}
+\let\origcvsubsection\cvsubsection
+\renewcommand{\cvsubsection}[1]{\needspace{5\baselineskip}\origcvsubsection{#1}}
 \begin{document}
 
 % Print the header with above personal informations
@@ -395,7 +398,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\filbreak
+\needspace{5\baselineskip}
 \vspace{1mm}\cvsection{프로젝트}
 
 %-------------------------------------------------------------------------------
