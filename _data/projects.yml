@@ -108,6 +108,21 @@
     - "SNP 선별 및 임상 변수 대비 추가 효과 검증"
   tags: [Machine Learning, Statistics, Data Labeling, XGBoost, CatBoost, TabNet, SNP Analysis]
 
+- period: "2023"
+  title: "CatchYou: generating criminal composite sketches from witness descriptions"
+  title_ko: "그놈을 잡아라 (CatchYou): 진술 기반 몽타주 생성 서비스"
+  summary: "A service where generative AI draws a composite sketch from a witness's description, which can then be refined by editing the text."
+  summary_ko: "목격자 진술을 입력하면 생성형 AI가 몽타주를 그려주고, 설명을 고쳐 가며 이미지를 다듬을 수 있는 서비스"
+  role:
+    - "Developed text-to-image models for Korean descriptions (DALL-E with VQ-GAN, Stable Diffusion with LoRA fine-tuning)"
+    - "Served the model through a FastAPI backend"
+  role_ko:
+    - "한국어 진술 기반 이미지 생성 모델 개발 (DALL-E·VQ-GAN, Stable Diffusion LoRA 파인튜닝)"
+    - "FastAPI 기반 모델 서빙 및 배포"
+  tags: [Generative AI, Text-to-Image, Stable Diffusion, LoRA, VQ-GAN, FastAPI]
+  links:
+    code: "https://github.com/Catch-You/CatchYou-AI"
+
 - period: "2022"
   title: "Customs notice analysis and monitoring system for global supply-chain crises"
   title_ko: "글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발"
