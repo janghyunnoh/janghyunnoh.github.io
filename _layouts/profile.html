@@ -168,7 +168,7 @@
             <h2>{{ L.awards }}</h2>
             <ul class="entries compact">
                 {%- for a in site.data.awards %}
-                <li><span class="entry-title">{{ a.title }}</span> <span class="entry-sub">· {{ a.org }}</span></li>
+                <li><span class="entry-title">{% if ko %}{{ a.title_ko | default: a.title }}{% else %}{{ a.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ a.org_ko | default: a.org }}{% else %}{{ a.org }}{% endif %}</span></li>
                 {%- endfor %}
             </ul>
         </section>
