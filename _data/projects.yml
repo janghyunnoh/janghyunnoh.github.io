@@ -4,7 +4,7 @@
 #   org / org_ko            : partner or funding organization (shown under the title)
 #   summary / summary_ko    : one line on the project goal
 #   role / role_ko          : what YOU did (1-3 bullets)
-#   tags                    : tools / methods used (shown as chips)
+#   tags                    : field → method → tools, broad to specific (shown as chips)
 #   links                   : code / paper / demo / poster — buttons appear only when a URL is set
 
 - period: "2024 - 2026"
@@ -20,7 +20,7 @@
   role_ko:
     - "scRNA-seq 기반 MSI/MSS 표현형 예측 모델 개발"
     - "예측 모델을 활용한 AI 기반 타겟 발굴 연구"
-  tags: [scRNA-seq, Phenotype Prediction, Target Discovery]
+  tags: [Machine Learning, Bioinformatics, scRNA-seq, Phenotype Prediction, Target Discovery]
 
 - period: "2024 - 2026"
   title: "Genetic and physiological mechanisms of apple blossom dormancy release and flower development under climate change"
@@ -35,7 +35,7 @@
   role_ko:
     - "nf-core/sarek 기반 variant calling 파이프라인 구축"
     - "유전체 변이 분석 수행"
-  tags: [nf-core/sarek, Nextflow, Variant Calling]
+  tags: [Bioinformatics, Genomics, Variant Calling, Nextflow, nf-core/sarek]
 
 - period: "2024 - 2026"
   title: "Spatial transcriptomics-based target discovery with in silico and organoid validation for refractory solid tumors"
@@ -50,7 +50,7 @@
   role_ko:
     - "TNBC Xenium 공간전사체 데이터 기반 세포 niche 분석"
     - "종양 미세환경(TME) 특성 분석"
-  tags: [Xenium, Spatial Transcriptomics, TME Analysis]
+  tags: [Bioinformatics, Spatial Transcriptomics, Xenium, Niche Analysis, Tumor Microenvironment]
 
 - period: "2025 - 2026"
   title: "Client-side web platform for fast, accurate detection and quantification of CRISPR-Cas9-induced large DNA deletions"
@@ -65,7 +65,7 @@
   role_ko:
     - "Biomni 기반 AI 에이전트 환경 구축"
     - "에이전트를 활용한 분석 수행"
-  tags: [Biomni, LLM Agent]
+  tags: [LLM, AI Agent, Biomni, Bioinformatics]
 
 - period: "2025 - 2026"
   title: "GeoMx spatial transcriptomics of cirrhotic vs. non-cirrhotic HCC tissue for immunomodulatory target discovery"
@@ -76,7 +76,7 @@
     - "Compared cirrhotic and non-cirrhotic tissue using HCC GeoMx spatial transcriptomics"
   role_ko:
     - "HCC GeoMx 공간전사체 기반 간경변·비간경변 조직 비교 분석"
-  tags: [GeoMx, Spatial Transcriptomics]
+  tags: [Bioinformatics, Spatial Transcriptomics, GeoMx, Comparative Analysis]
 
 - period: "2025"
   title: "COVID-19 severity prediction model and environment using multimodal clinical and imaging data"
@@ -89,7 +89,7 @@
     - "Multimodal modeling that combines MIMIC-IV clinical data with MIMIC-CXR chest X-rays"
   role_ko:
     - "MIMIC-IV 임상 데이터와 MIMIC-CXR 흉부 X-ray를 결합한 멀티모달 연구"
-  tags: [MIMIC-IV, MIMIC-CXR, Multimodal]
+  tags: [Deep Learning, Multimodal Learning, Medical Imaging, EHR, MIMIC-IV, MIMIC-CXR]
 
 - period: "2023 - 2024"
   title: "Clinical and genetic differences for identifying hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)"
@@ -106,7 +106,7 @@
     - "설문 대신 혈액검사·혈압 수치 기반 라벨링 기준 설계"
     - "고혈압 발생 예측 모델 구축 (XGBoost·CatBoost·TabNet)"
     - "SNP 선별 및 임상 변수 대비 추가 효과 검증"
-  tags: [XGBoost, CatBoost, TabNet, SNP Analysis]
+  tags: [Machine Learning, Statistics, Data Labeling, XGBoost, CatBoost, TabNet, SNP Analysis]
 
 - period: "2022"
   title: "Customs notice analysis and monitoring system for global supply-chain crises"
@@ -123,6 +123,6 @@
     - "Selenium 기반 일본·호주 세관 고시 스크래핑"
     - "수집 데이터 전처리"
     - "테스트 및 결과 분석: 키워드 추출 결과 샘플 검토, 모니터링 품목·HSCODE 매칭 검증, 스크래퍼 일일 수집 동작 확인"
-  tags: [Selenium, Django, Sentence-BERT, SQLite]
+  tags: [NLP, Web Scraping, Sentence-BERT, Selenium, Django, SQLite]
   links:
     code: "https://github.com/janghyunnoh/customs-notification-analysis-and-monitoring-system-main"
