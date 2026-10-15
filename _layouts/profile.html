@@ -35,7 +35,8 @@
         <p class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %}</p>
         <div class="meta">
             <div><i class="ico fas fa-map-marker-alt"></i><span>{% if ko %}{{ p.location_ko | default: p.location }}{% else %}{{ p.location }}{% endif %}</span></div>
-            <div><i class="ico fas fa-university"></i><span>{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}</span></div>
+            {% capture aff %}<i class="ico fas fa-university"></i><span>{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}</span>{% endcapture %}
+            {% if p.affiliation_url %}<a href="{{ p.affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ aff }}</a>{% else %}<div>{{ aff }}</div>{% endif %}
             <a href="{{ p.scholar }}" target="_blank" rel="noopener noreferrer"><i class="ico fas fa-graduation-cap"></i><span>Google Scholar</span></a>
             <a href="{{ p.github }}" target="_blank" rel="noopener noreferrer"><i class="ico fa-brands fa-github"></i><span>GitHub</span></a>
             <a href="{{ p.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="ico fab fa-linkedin"></i><span>LinkedIn</span></a>
