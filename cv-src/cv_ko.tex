@@ -1,0 +1,770 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{1E4E8C}
+\definecolor{awesome}{HTML}{2563EB}
+
+% Korean: switch to Noto Sans CJK KR for Hangul automatically (XeTeX interchar classes)
+\newfontfamily\hangulfont{Noto Sans CJK KR}[Scale=0.94]
+\newfontfamily\hangulfontbold{Noto Sans CJK KR Medium}[Scale=0.94]
+\XeTeXinterchartokenstate=1
+\newXeTeXintercharclass\HangulClass
+\count255="AC00 \loop\ifnum\count255<"D7A4 \XeTeXcharclass\count255=\HangulClass \advance\count255 by 1 \repeat
+\count255="3131 \loop\ifnum\count255<"318F \XeTeXcharclass\count255=\HangulClass \advance\count255 by 1 \repeat
+\XeTeXinterchartoks 0 \HangulClass = {\begingroup\hangulfont}
+\XeTeXinterchartoks 4095 \HangulClass = {\begingroup\hangulfont}
+\XeTeXinterchartoks \HangulClass 0 = {\endgroup}
+\XeTeXinterchartoks \HangulClass 4095 = {\endgroup}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./examples/profile.png}
+\name{노}{장현}
+\renewcommand{\acvHeaderNameDelim}{}
+\position{AI 연구자}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+82) 10-5266-9114}
+\email{watercar99@naver.com}
+\homepage{janghyunnoh.github.io}
+\github{janghyunnoh}
+\linkedin{janghyun-noh-411587195}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\googlescholar{NPIG8VoAAAAJ}{Google Scholar}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\the\year 년 \the\month 월 \the\day 일}
+  {노장현~~~·~~~이력서}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+% \lettersection{Research Interests}
+% Bioinformatics, Medical AI, Deep Learning, Multimodal Learning, Single-cell RNA Sequencing Analysis
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{연구 관심 분야}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+%---------------------------------------------------------
+머신러닝, 딥러닝, 멀티모달 학습, 의료 AI, 바이오인포매틱스
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{학력}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {인공지능학 석사}
+    {명지대학교}
+    {서울}
+    {2024.09 -- 2026.08}
+    {
+      \begin{cvitems}
+        \item {인공지능 및 데이터 분석(AIDA) 연구실에서 오민식 교수님 지도 아래 연구 수행}
+        \item {서울대학교병원, 질병관리청, 경북대학교, (주)아이겐드럭 등 외부 기관과 공동 연구 수행}
+        \item {딥러닝, 머신러닝, 데이터마이닝, 프로그래밍 등 학부 과목 조교 (2024년 2학기 -- 2026년 1학기)}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+\cventry
+    {융합소프트웨어학부 데이터테크놀로지 전공 학사}
+    {명지대학교}
+    {서울}
+    {2018.03 -- 2024.08}
+    {
+      \begin{cvitems}
+        \item {인공지능 및 데이터 분석(AIDA) 연구실 학부연구생으로 오민식 교수님 지도 아래 연구 수행}
+        \item {질병관리청과 고지혈증 환자의 고혈압 진행 관련 임상·유전적 요인 공동 연구}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+\cventry
+    {재학}
+    {레드스쿨 (대안 중고등학교)}
+    {금산}
+    {2012.03 -- 2018.01}
+    {
+      \begin{cvitems}
+        \item {2년 연속 성적 우수 장학금 수혜}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{연구 경력}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {학부연구생 / 석사과정 연구원} % Job title
+    {명지대학교 인공지능 및 데이터 분석(AIDA) 연구실} % Organization
+    {서울} % Location
+    {2022.12 -- 2026.08} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities     
+        \item {단일세포 RNA-seq 데이터의 세포 주석 없는 표현형 예측 프레임워크 scCap 개발 및 코드·Docker 이미지 공개 (Briefings in Bioinformatics 1저자)}
+        \item {scRNA-seq 기반 MSI/MSS 표현형 예측 모델 개발 및 AI 기반 타겟 발굴 연구 ((주)아이겐드럭)}
+        \item {TNBC Xenium 공간전사체 데이터 기반 세포 niche 및 종양 미세환경(TME) 분석 (서울대학교병원)}
+        \item {HCC GeoMx 공간전사체 기반 간경변·비간경변 조직 비교 및 면역조절 타겟 발굴}
+        \item {CRISPR-Cas9 유도 대규모 DNA 결실 분석을 위한 Biomni 기반 AI 에이전트 환경 구축}
+        \item {MIMIC-IV 임상 데이터와 MIMIC-CXR 흉부 X-ray 기반 코로나19 중증도 예측 멀티모달 모델 개발 (질병관리청)}
+        \item {사과 전장 유전체 데이터를 위한 nf-core/sarek 변이 분석 파이프라인 구축 (경북대학교)}
+        \item {KoGES 코호트 데이터의 수치 기반 라벨링 설계 및 고혈압 진행 예측 모델 개발 (질병관리청)}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+  % \vspace{2mm}
+
+  % \cventry
+  %   {Researcher} % Job title
+  %   {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
+  %   {Pohang, S.Korea} % Location
+  %   {Mar. 2016 - Exp. Jun. 2017} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
+  %       \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+  %     \end{cvitems}
+  %   }
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{논문 및 학회 발표}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	JOURNAL ARTICLES
+%-------------------------------------------------------------------------------
+\cvsubsection{저널 논문}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {게재}
+    {Annotation-free phenotype prediction using knowledge-augmented clustering \newline from single-cell RNA sequencing data}
+    {Briefings in Bioinformatics (BIB)}
+    {2026}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+\cventry
+    {게재}
+    {Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids}
+    {Journal of Experimental \& Clinical Cancer Research (JECCR)}
+    {2026}
+    {
+      J. Choi, K. Lee, M. Oh, \textbf{J. Noh}, Y. Kim, E. Hwang,
+      I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee
+    }
+
+\end{cventries}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	CONFERENCE PRESENTATIONS
+%-------------------------------------------------------------------------------
+\filbreak
+\cvsubsection{학회 발표}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {구두 발표}
+    {scRNA-seq 기반 표현형 예측을 위한 사전 학습 임베딩을 활용한 환자 단위 메타셀 구성}
+    {한국정보과학회 \newline 한국컴퓨터종합학술대회}
+    {2026}
+    {
+      Y. Shin, \textbf{J. Noh}, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+%---------------------------------------------------------
+\cventry
+    {포스터 발표 (우수 포스터상)}
+    {scRNA-seq 데이터 축소 기법을 이용한 환자 표현형 예측의 연산 경량화 분석}
+    {한국정보과학회 \newline 한국소프트웨어종합학술대회}
+    {2025}
+    {
+      Y. Shin, \textbf{J. Noh}, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+\cventry
+    {포스터 발표}
+    {An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data}
+    {International Conference on Genome Informatics ISCB-Asia}
+    {2025}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {포스터 발표 (우수 포스터상)}
+    {Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning}
+    {한국생명정보학회 \newline BIOINFO 2025}
+    {2025}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {구두 발표 (우수발표논문상)}
+    {AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning}
+    {한국정보과학회 \newline 한국컴퓨터종합학술대회}
+    {2025}
+    {
+      \textbf{J. Noh}, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {포스터 발표}
+    {MIMIC-III 데이터를 이용한 급성호흡곤란증후군 환자의 병원 내 사망 예측: 다양한 결측 데이터 처리 전략을 적용한 머신러닝 모델의 비교 연구}
+    {한국정보과학회 \newline 한국소프트웨어종합학술대회}
+    {2023}
+    {
+      \textbf{J. Noh}, G. Choi, and M. Oh
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{수상 및 장학}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{수상}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {우수연구상}
+    {명지대학교}
+    {서울}
+    {2026}
+%---------------------------------------------------------
+  \cvhonor
+    {우수 포스터상}
+    {한국정보과학회 한국소프트웨어종합학술대회}
+    {서울}
+    {2025}
+%---------------------------------------------------------
+  \cvhonor
+    {우수 포스터상}
+    {한국생명정보학회 BIOINFO 2025}
+    {서울}
+    {2025}
+%---------------------------------------------------------
+  \cvhonor
+    {우수발표논문상}
+    {한국정보과학회 한국컴퓨터종합학술대회}
+    {서울}
+    {2025}
+
+%---------------------------------------------------------
+  \cvhonor
+    {기관장 표창장}
+    {대한무역투자진흥공사 (KOTRA)}
+    {서울}
+    {2022}
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{장학}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------
+
+\begin{cvhonors}
+
+\cvhonor
+    {TriBIG 프로젝트 장학금}
+    {대한무역투자진흥공사 (KOTRA)}
+    {서울}
+    {2022}
+%---------------------------------------------------------
+
+  \cvhonor
+    {세계화 장학금}
+    {명지대학교}
+    {서울}
+    {2019}
+
+%---------------------------------------------------------
+  \cvhonor
+    {신입생 성적 우수 장학금 3종}
+    {명지대학교}
+    {서울}
+    {2018}
+
+\cvhonor
+    {성적 우수 장학금}
+    {레드스쿨}
+    {금산}
+    {2016}
+
+\cvhonor
+    {성적 우수 장학금}
+    {레드스쿨}
+    {금산}
+    {2015}
+
+%---------------------------------------------------------
+
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{프로젝트}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {공간 전사체 기반 타겟 발굴과 오가노이드 검증을 통한 난치성 고형암 신규 치료제 개발}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025 -- 2026}
+    {CRISPR-Cas9 유도 대규모 DNA 결실 검출·정량화 웹 분석 플랫폼 개발}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025 -- 2026}
+    {HCC GeoMx 공간전사체 기반 간경변·비간경변 조직의 병리적 차이 규명}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025}
+    {멀티모달 임상·영상 데이터를 활용한 코로나19 환자 중증도 예측}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2023 -- 2024}
+    {KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2023}
+    {그놈을 잡아라 (CatchYou): 진술 기반 몽타주 생성 서비스}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2022}
+    {글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발}
+
+\end{cvskills}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{기술 역량}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {언어}
+    {Python, R}
+
+%---------------------------------------------------------
+  \cvskill
+    {프레임워크}
+    {PyTorch, TensorFlow, Scikit-learn, XGBoost, Scanpy, FastAPI}
+
+%---------------------------------------------------------
+  \cvskill
+    {도구}
+    {Linux, Git, Docker, Nextflow}
+
+%---------------------------------------------------------
+  \cvskill
+    {연구 분야}
+    {머신러닝, 딥러닝, 멀티모달 학습, 의료 AI, 바이오인포매틱스}
+
+%---------------------------------------------------------
+  \cvskill
+    {외국어}
+    {한국어(모국어), 영어}
+
+%---------------------------------------------------------
+\end{cvskills}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{대외활동}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{국내}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {AI 팀원}
+    {Google Developer Student Clubs, 명지대학교}
+    {서울}
+    {2022.10 -- 2023.12}
+    {
+      \begin{cvitems}
+        \item {머신러닝·딥러닝 스터디 활동}
+        \item {AI 프로젝트 협업 및 AI 경진대회 참가}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {프로젝트 팀원}
+    {빅리더 AI 아카데미}
+    {서울}
+    {2022.07 -- 2022.10}
+    {
+      \begin{cvitems}
+        \item {KOTRA 빅데이터팀과 세관 고시 분석 및 모니터링 시스템 개발}
+        \item {TriBIG 프로젝트 우수 성과로 장학금 수혜}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {참가자}
+    {데이터 청년 캠퍼스, 동국대학교}
+    {서울}
+    {2022.07 -- 2022.08}
+    {
+      \begin{cvitems}
+        \item {한국데이터산업진흥원 주관 데이터 사이언스 기반 지능형 소프트웨어 과정 수료}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{국외}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {순례자}
+    {산티아고 성지순례 (프랑스길)}
+    {스페인}
+    {2026.09 -- 2026.10}
+    {}
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {봉사자}
+    {필리핀 의료선교 (GMMA)}
+    {필리핀 마닐라}
+    {2024.01}
+    {
+      \begin{cvitems}
+        \item {국제 의료진과 함께 의료 봉사 활동 참여}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {봉사자}
+    {아이슬란드 국제 워크캠프}
+    {아이슬란드 레이캬비크}
+    {2019.12 -- 2020.01}
+    {
+      \begin{cvitems}
+        \item {환경 캠페인 및 국제 봉사자들과의 문화 교류 활동}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {봉사자}
+    {베트남 단기선교}
+    {베트남 하노이}
+    {2018.08}
+    {
+      \begin{cvitems}
+        \item {현지 주민·대학생과의 문화 교류 및 지역 봉사 활동}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{기타}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{어학}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {OPIc}
+    {IH}
+    {}
+    {2026}
+%---------------------------------------------------------
+  \cvhonor
+    {TOEIC}
+    {920점 (RC 430, LC 490)}
+    {}
+    {2023}
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{자격증}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {정보처리기사}
+    {한국산업인력공단}
+    {}
+    {2023}
+%---------------------------------------------------------
+  \cvhonor
+    {SQL 개발자 (SQLD)}
+    {한국데이터산업진흥원}
+    {}
+    {2023}
+
+
+%---------------------------------------------------------
+\end{cvhonors}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

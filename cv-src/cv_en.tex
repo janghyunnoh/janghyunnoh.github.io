@@ -1,0 +1,760 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+
+
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+% \colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{1E4E8C}
+\definecolor{awesome}{HTML}{2563EB}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo{./examples/profile.png}
+\name{Janghyun}{Noh}
+\position{AI Researcher}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+82) 10-5266-9114}
+\email{watercar99@naver.com}
+\homepage{janghyunnoh.github.io}
+\github{janghyunnoh}
+\linkedin{janghyun-noh-411587195}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+\googlescholar{NPIG8VoAAAAJ}{Janghyun Noh}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Janghyun Noh~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+% \lettersection{Research Interests}
+% Bioinformatics, Medical AI, Deep Learning, Multimodal Learning, Single-cell RNA Sequencing Analysis
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Research Interest}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+%---------------------------------------------------------
+Machine Learning, Deep Learning, Multimodal Learning, Medical AI, Bioinformatics
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {M.S. in Artificial Intelligence}
+    {Myongji University}
+    {Seoul, S.Korea}
+    {Sep. 2024 - Aug. 2026}
+    {
+      \begin{cvitems}
+        \item {Conducted research at the Artificial Intelligence and Data Analytics Laboratory under the supervision of Prof. Minsik Oh.}
+        \item {Conducted collaborative research with external institutions including Seoul National University Hospital (SNUH), the Korea Disease Control and Prevention Agency (KDCA), Kyungpook National University, and AIgenDrug Co., Ltd.}
+        \item {Served as a teaching assistant for undergraduate courses including Deep Learning, Machine Learning, Data Mining, and Programming (Fall 2024 -- Spring 2026).}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+\cventry
+    {B.S. in Convergence Software and Data Technology}
+    {Myongji University}
+    {Seoul, S.Korea}
+    {Mar. 2018 - Aug. 2024}
+    {
+      \begin{cvitems}
+        \item {Conducted undergraduate research at the Artificial Intelligence and Data Analytics Laboratory under the supervision of Prof. Minsik Oh.}
+        \item {Conducted collaborative research on clinical and genetic factors associated with hypertension progression in patients with hyperlipidemia in collaboration with the Korea Disease Control and Prevention Agency (KDCA).}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+\cventry
+    {Student}
+    {RED School -- Alternative Middle-High School}
+    {Geumsan, S.Korea}
+    {Mar. 2012 - Jan. 2018}
+    {
+      \begin{cvitems}
+        \item {Received academic excellence scholarships for two consecutive years.}
+        \item {Participated in student leadership and community activities.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Research Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {Undergraduate Research Intern / Graduate Researcher} % Job title
+    {Artificial Intelligence and Data Analytics Lab, Myongji University} % Organization
+    {Seoul, S.Korea} % Location
+    {Dec. 2022 - Aug. 2026} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities     
+        \item {Developed scCap, an annotation-free phenotype prediction framework for single-cell RNA-seq data (first-author paper in Briefings in Bioinformatics), released with code and a Docker image.}
+        \item {Built scRNA-seq models for MSI/MSS phenotype prediction and applied them to AI-based target discovery (with AIgenDrug).}
+        \item {Conducted spatial transcriptomics analyses of TNBC Xenium datasets for cellular niche and tumor microenvironment characterization (with SNUH).}
+        \item {Compared cirrhotic and non-cirrhotic HCC tissues using GeoMx spatial transcriptomics for immunomodulatory target discovery.}
+        \item {Built a Biomni-based AI agent environment for analyzing CRISPR-Cas9-induced large DNA deletions.}
+        \item {Developed multimodal COVID-19 severity prediction models combining MIMIC-IV clinical data and MIMIC-CXR chest X-rays (with KDCA).}
+        \item {Implemented an nf-core/sarek variant-calling pipeline for apple whole-genome sequencing data (with Kyungpook National University).}
+        \item {Designed measurement-based labels and prediction models for hypertension progression in KoGES cohort data (with KDCA).}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+  % \vspace{2mm}
+
+  % \cventry
+  %   {Researcher} % Job title
+  %   {Undergraduate Research, Machine Learning Lab(Prof. Seungjin Choi)} % Organization
+  %   {Pohang, S.Korea} % Location
+  %   {Mar. 2016 - Exp. Jun. 2017} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Researched classification algorithms(SVM, CNN) to improve accuracy of human exercise recognition with wearable device.}
+  %       \item {Developed two TIZEN applications to collect sample data set and to recognize user exercise on SAMSUNG Gear S.}
+  %     \end{cvitems}
+  %   }
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Publications \& Presentations}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	JOURNAL ARTICLES
+%-------------------------------------------------------------------------------
+\cvsubsection{Journal Articles}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {Published}
+    {Annotation-free phenotype prediction using knowledge-augmented clustering \newline from single-cell RNA sequencing data}
+    {Briefings in Bioinformatics (BIB)}
+    {2026}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+\cventry
+    {Published}
+    {Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids}
+    {Journal of Experimental \& Clinical Cancer Research (JECCR)}
+    {2026}
+    {
+      J. Choi, K. Lee, M. Oh, \textbf{J. Noh}, Y. Kim, E. Hwang,
+      I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee
+    }
+
+\end{cventries}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	CONFERENCE PRESENTATIONS
+%-------------------------------------------------------------------------------
+\filbreak
+\cvsubsection{Conference Presentations}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {Oral Presentation}
+    {Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq}
+    {KIISE Korea Computer \newline Congress (KCC)}
+    {2026}
+    {
+      Y. Shin, \textbf{J. Noh}, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+%---------------------------------------------------------
+\cventry
+    {Poster Presentation (Best Poster Award)}
+    {Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq \newline Data Reduction Techniques}
+    {KIISE Korea Software \newline Congress (KSC)}
+    {2025}
+    {
+      Y. Shin, \textbf{J. Noh}, and M. Oh
+    }
+
+\vspace{1mm}%---------------------------------------------------------
+
+\cventry
+    {Poster Presentation}
+    {An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data}
+    {International Conference on Genome Informatics ISCB-Asia}
+    {2025}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Poster Presentation (Excellent Poster Award)}
+    {Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning}
+    {BIOINFO 2025, Korean Society \newline for Bioinformatics (KSBI)}
+    {2025}
+    {
+      \textbf{J. Noh}, Y. Shin, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Oral Presentation (Best Presentation Award)}
+    {AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning}
+    {KIISE Korea Computer \newline Congress (KCC)}
+    {2025}
+    {
+      \textbf{J. Noh}, M. Kim, and M. Oh
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Poster Presentation}
+    {Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies}
+    {KIISE Korea Software \newline Congress (KSC)}
+    {2023}
+    {
+      \textbf{J. Noh}, G. Choi, and M. Oh
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Honors \& Awards}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Awards}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {Research Honor Award}
+    {Myongji University}
+    {Seoul, S.Korea}
+    {2026}
+%---------------------------------------------------------
+  \cvhonor
+    {Best Poster Award}
+    {KIISE Korea Software Congress (KSC)}
+    {Seoul, S.Korea}
+    {2025}
+%---------------------------------------------------------
+  \cvhonor
+    {Excellent Poster Award}
+    {BIOINFO 2025, Korean Society for Bioinformatics (KSBI)}
+    {Seoul, S.Korea}
+    {2025}
+%---------------------------------------------------------
+  \cvhonor
+    {Best Presentation Award}
+    {KIISE Korea Computer Congress (KCC)}
+    {Seoul, S.Korea}
+    {2025}
+
+%---------------------------------------------------------
+  \cvhonor
+    {President’s Merit Award}
+    {Korea Trade-Investment Promotion Agency (KOTRA)}
+    {Seoul, S.Korea}
+    {2022}
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Scholarships}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------
+
+\begin{cvhonors}
+
+\cvhonor
+    {TriBIG Project Scholarship}
+    {Korea Trade-Investment Promotion Agency (KOTRA)}
+    {Seoul, S.Korea}
+    {2022}
+%---------------------------------------------------------
+
+  \cvhonor
+    {Globalization Scholarship}
+    {Myongji University}
+    {Seoul, S.Korea}
+    {2019}
+
+%---------------------------------------------------------
+  \cvhonor
+    {Scholarship III}
+    {Myongji University}
+    {Seoul, S.Korea}
+    {2018}
+
+\cvhonor
+    {Academic Excellence Scholarship}
+    {RED School}
+    {Geumsan, S.Korea}
+    {2016}
+
+\cvhonor
+    {Academic Excellence Scholarship}
+    {RED School}
+    {Geumsan, S.Korea}
+    {2015}
+
+%---------------------------------------------------------
+
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {AI-based target discovery platform for CAR-Treg cell therapy in chronic inflammatory disease}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {Genetic and physiological mechanisms of apple blossom dormancy release under climate change}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2024 -- 2026}
+    {Spatial transcriptomics-based target discovery and validation for refractory solid tumors}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025 -- 2026}
+    {Client-side web platform for detecting large CRISPR-Cas9-induced DNA deletions}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025 -- 2026}
+    {GeoMx spatial transcriptomics of cirrhotic vs. non-cirrhotic HCC tissue}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2025}
+    {COVID-19 severity prediction using multimodal clinical and imaging data}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2023 -- 2024}
+    {Hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2023}
+    {CatchYou: criminal composite sketch generation from witness descriptions}
+
+\end{cvskills}\vspace{-3.2mm}
+\begin{cvskills}
+%---------------------------------------------------------
+  \cvskill
+    {2022}
+    {Customs notice analysis and monitoring system for global supply-chain crises}
+
+\end{cvskills}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {Programming}
+    {Python, R}
+
+%---------------------------------------------------------
+  \cvskill
+    {Frameworks}
+    {PyTorch, TensorFlow, Scikit-learn, XGBoost, Scanpy, FastAPI}
+
+%---------------------------------------------------------
+  \cvskill
+    {Tools}
+    {Linux, Git, Docker, Nextflow}
+
+%---------------------------------------------------------
+  \cvskill
+    {Research}
+    {Machine Learning, Deep Learning, Multimodal Learning, Medical AI, Bioinformatics}
+
+%---------------------------------------------------------
+  \cvskill
+    {Languages}
+    {Korean (Native), English}
+
+%---------------------------------------------------------
+\end{cvskills}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Extracurricular Activities}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Domestic}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {AI Team Member}
+    {Google Developer Student Clubs, Myongji University}
+    {Seoul, S.Korea}
+    {Oct. 2022 - Dec. 2023}
+    {
+      \begin{cvitems}
+        \item {Engaged in machine learning and deep learning study groups}
+        \item {Collaborated on AI projects and participated in AI competitions}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Project Member}
+    {Big Leader AI Academy}
+    {Seoul, S.Korea}
+    {Jul. 2022 - Oct. 2022}
+    {
+      \begin{cvitems}
+        \item {Developed a customs notice analysis and monitoring system in collaboration with the Big Data Team of KOTRA}
+        \item {Participated in an industry-collaborative AI project for KOTRA internal service applications (TriBIG)}
+        \item {Received a scholarship through outstanding performance in the TriBIG project}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Participant}
+    {Data Youth Campus, Dongguk University}
+    {Seoul, S.Korea}
+    {Jul. 2022 - Aug. 2022}
+    {
+      \begin{cvitems}
+        \item {Completed a data science-based intelligent software program affiliated with Korea Data Agency (KDATA)}
+        \item {Conducted practical projects and training in machine learning and data analysis}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{International}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+\cventry
+    {Pilgrim}
+    {Camino de Santiago (French Way)}
+    {Spain}
+    {Sep. 2026 - Oct. 2026}
+    {}
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Volunteer}
+    {Medical Mission Trip to the Philippines (GMMA)}
+    {Manila, Philippines}
+    {Jan. 2024}
+    {
+      \begin{cvitems}
+        \item {Participated in medical volunteer activities with international healthcare professionals}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Volunteer}
+    {International Work Camp in Iceland}
+    {Reykjavik, Iceland}
+    {Dec. 2019 - Jan. 2020}
+    {
+      \begin{cvitems}
+        \item {Participated in environmental campaigns and intercultural exchange with international volunteers}
+      \end{cvitems}
+    }
+
+\vspace{2mm}
+
+%---------------------------------------------------------
+\cventry
+    {Volunteer}
+    {Mission Trip to Vietnam}
+    {Hanoi, Vietnam}
+    {Aug. 2018}
+    {
+      \begin{cvitems}
+        \item {Participated in intercultural exchange and community volunteer activities}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Others}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Language}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {OPIc}
+    {IH (Intermediate High)}
+    {}
+    {2026}
+%---------------------------------------------------------
+  \cvhonor
+    {TOEIC}
+    {Total 920 (RC 430, LC 490)}
+    {}
+    {2023}
+
+%---------------------------------------------------------
+\end{cvhonors}
+
+\vspace{2mm}
+
+%-------------------------------------------------------------------------------
+%	SUBSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsubsection{Certifications}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvhonors}
+
+%---------------------------------------------------------
+  \cvhonor
+    {Engineer Information Processing}
+    {Human Resources Development Service of Korea}
+    {}
+    {2023}
+%---------------------------------------------------------
+  \cvhonor
+    {SQL Developer (SQLD)}
+    {Korea Data Industry Promotion Agency}
+    {}
+    {2023}
+
+
+%---------------------------------------------------------
+\end{cvhonors}
+\vspace{2mm}
+
+
+%-------------------------------------------------------------------------------
+\end{document}

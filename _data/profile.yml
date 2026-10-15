@@ -20,7 +20,7 @@ linkedin: "https://www.linkedin.com/in/janghyun-noh-411587195/"
 
 # CV PDF (files in assets/cv/). Leave empty to hide a button. resume fields are optional.
 cv: "/assets/cv/Janghyun_Noh_CV.pdf"
-cv_ko: ""
+cv_ko: "/assets/cv/Janghyun_Noh_CV_KO.pdf"
 resume: ""
 resume_ko: ""
 

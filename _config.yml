@@ -8,3 +8,9 @@ email: "watercar99@naver.com"
 google_scholar: "https://scholar.google.com/citations?user=NPIG8VoAAAAJ&hl=ko&oi=ao" 
 github: "https://github.com/janghyunnoh"
 # linkedin: "https://www.linkedin.com/in/your-id/"
+
+exclude:
+  - cv-src
+  - README.md
+  - Gemfile
+  - Gemfile.lock
