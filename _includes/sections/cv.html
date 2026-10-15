@@ -4,9 +4,6 @@
     <div class="links-row">
         <a class="pill primary" href="{{ cv | relative_url }}" download><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv_download }}</a>
         <a class="pill" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> {{ L.cv_open }}</a>
-        {%- if other_cv and other_cv != "" and other_cv != cv %}
-        <a class="pill" href="{{ other_cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-language"></i> {{ L.cv_other }}</a>
-        {%- endif %}
     </div>
 </div>
 <div class="cv-viewer">
