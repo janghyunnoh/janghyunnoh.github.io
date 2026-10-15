@@ -2,7 +2,8 @@
     <img class="photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
     <div class="hero-text">
         <h1>{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</h1>
-        <div class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %} · <a href="{{ p.affiliation_url }}" target="_blank" rel="noopener">{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}</a></div>
+        <div class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %}
+            {%- if p.affiliation and p.affiliation != "" %} · {% if p.affiliation_url and p.affiliation_url != "" %}<a href="{{ p.affiliation_url }}" target="_blank" rel="noopener">{% endif %}{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}{% if p.affiliation_url and p.affiliation_url != "" %}</a>{% endif %}{% endif %}</div>
         <p>{% if ko %}{{ p.about_ko | default: p.about }}{% else %}{{ p.about }}{% endif %}</p>
         {%- if p.interests %}
         <div class="chips">{% for kw in p.interests %}<span class="chip">{{ kw }}</span>{% endfor %}</div>

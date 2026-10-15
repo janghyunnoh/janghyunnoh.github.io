@@ -12,12 +12,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% unless page.section == "home" %}{{ L[nav_label] }} | {% endunless %}{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</title>
-    <meta name="description" content="{% if ko %}{{ p.title_ko }} · {{ p.affiliation_ko }}{% else %}{{ p.title }} · {{ p.affiliation }}{% endif %}">
+    <meta name="description" content="{% if ko %}{{ p.name_ko }} · {{ p.title_ko }}{% else %}{{ p.name }} · {{ p.title }}{% endif %}">
     <link rel="alternate" hreflang="en" href="{{ site.url }}{{ en_url }}">
     <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ ko_url }}">
     <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ en_url }}">
     <meta property="og:title" content="{{ p.name }}">
-    <meta property="og:description" content="{{ p.title }} · {{ p.affiliation }}">
+    <meta property="og:description" content="{{ p.title }}">
     <meta property="og:image" content="{{ site.url }}{{ p.photo }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
