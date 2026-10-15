@@ -1,10 +1,10 @@
 {%- assign lk = include.links -%}
 {%- if lk -%}
-<span class="link-buttons">
-    {%- if lk.paper and lk.paper != "" %}<a class="link-button" href="{{ lk.paper }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Paper</a>{% endif -%}
-    {%- if lk.code and lk.code != "" %}<a class="link-button" href="{{ lk.code }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>{% endif -%}
-    {%- if lk.demo and lk.demo != "" %}<a class="link-button" href="{{ lk.demo }}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>{% endif -%}
-    {%- if lk.poster and lk.poster != "" %}<a class="link-button" href="{{ lk.poster }}" target="_blank" rel="noopener"><i class="fa-regular fa-image"></i> Poster</a>{% endif -%}
-    {%- if lk.slides and lk.slides != "" %}<a class="link-button" href="{{ lk.slides }}" target="_blank" rel="noopener"><i class="fa-solid fa-person-chalkboard"></i> Slides</a>{% endif -%}
+<span class="links">
+    {%- if lk.paper and lk.paper != "" %}<a class="linkbtn" href="{{ lk.paper }}" target="_blank" rel="noopener">Paper</a>{% endif -%}
+    {%- if lk.code and lk.code != "" %}<a class="linkbtn" href="{{ lk.code }}" target="_blank" rel="noopener">Code</a>{% endif -%}
+    {%- if lk.demo and lk.demo != "" %}<a class="linkbtn" href="{{ lk.demo }}" target="_blank" rel="noopener">Demo</a>{% endif -%}
+    {%- if lk.poster and lk.poster != "" %}<a class="linkbtn" href="{{ lk.poster }}" target="_blank" rel="noopener">Poster</a>{% endif -%}
+    {%- if lk.slides and lk.slides != "" %}<a class="linkbtn" href="{{ lk.slides }}" target="_blank" rel="noopener">Slides</a>{% endif -%}
 </span>
 {%- endif -%}
