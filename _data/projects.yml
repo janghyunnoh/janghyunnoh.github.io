@@ -116,13 +116,13 @@
   summary: "Collect and analyze foreign customs notices daily to flag supply-chain risks for Korean industries early."
   summary_ko: "해외 관세청 세관 고시를 매일 수집·분석해 공급망 위기 신호를 산업 관계자에게 빠르게 전달"
   role:
-    - "Scraping customs notices (Japan, Australia)"
-    - "Data preprocessing"
-    - "Testing and results analysis"
+    - "Scraped Japanese and Australian customs notices with Selenium (~2,100 notices)"
+    - "Preprocessed the collected notice data"
+    - "Testing and results analysis: reviewed sampled keyword-extraction outputs, validated matching to monitored items and HS codes, and checked that the daily scraper ran without gaps"
   role_ko:
-    - "해외 세관 고시 스크래핑 (일본, 호주)"
-    - "데이터 전처리"
-    - "테스트 및 결과 분석"
-  tags: [Web Scraping, NLP, Keyword Extraction]
+    - "Selenium 기반 일본·호주 세관 고시 스크래핑 (약 2,100건)"
+    - "수집 데이터 전처리"
+    - "테스트 및 결과 분석: 키워드 추출 결과 샘플 검토, 모니터링 품목·HSCODE 매칭 검증, 스크래퍼 일일 수집 동작 확인"
+  tags: [Selenium, Django, Sentence-BERT, SQLite]
   links:
     code: "https://github.com/janghyunnoh/customs-notification-analysis-and-monitoring-system-main"
