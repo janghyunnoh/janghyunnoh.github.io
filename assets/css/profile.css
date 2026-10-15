@@ -175,10 +175,9 @@ p { margin-bottom: 12px; max-width: 72ch; }
   color: var(--accent);
   transition: background .15s, color .15s;
 }
-.linkbtn::after { content: "\2197"; font-size: 12px; line-height: 1; }
-.linkbtn:hover { text-decoration: none; background: var(--accent); color: var(--bg); }
+.linkbtn:hover { text-decoration: none; filter: brightness(.95); }
 .links { display: inline-flex; flex-wrap: wrap; gap: 6px; }
-.badges .links { margin-left: auto; }
+
 
 /* Project cards */
 .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
