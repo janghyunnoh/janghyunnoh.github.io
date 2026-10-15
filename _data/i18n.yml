@@ -67,7 +67,7 @@ ko:
   type_poster: "포스터"
   link_paper: "논문"
   link_code: "코드"
-  link_docker: "Docker"
+  link_docker: "도커"
   link_demo: "데모"
   link_poster: "포스터"
   link_slides: "발표자료"
