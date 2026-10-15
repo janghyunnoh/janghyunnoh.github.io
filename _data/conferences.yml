@@ -60,3 +60,4 @@
   first_author: true
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705183"
+    code: "https://github.com/janghyunnoh/MIMIC-III-mortality-prediction"
