@@ -136,6 +136,9 @@
                         <span>{% if ko %}{{ pr.period | replace: "Present", "현재" }}{% else %}{{ pr.period }}{% endif %}</span>
                     </div>
                     <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
+                    {%- if pr.org %}
+                    <div class="org"><i class="fa-regular fa-building"></i><span>{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</span></div>
+                    {%- endif %}
                     {%- if summary %}
                     <p class="summary">{{ summary }}</p>
                     {%- endif %}
