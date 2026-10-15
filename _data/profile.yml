@@ -32,10 +32,3 @@ about_ko: >-
   명지대학교 인공지능학과에서 <a href="https://minsik-bioinfo.github.io/online-cv/">오민식 교수님</a>의 지도 아래
   <a href="https://ailab-mju.github.io/">인공지능 및 데이터 분석(AIDA) 연구실</a>에서 석사 학위를 받았습니다.
   AI 방법론을 개발하고 이를 실제 문제 해결에 적용하는 데 관심이 있습니다.
-
-# Research keywords shown as chips under About.
-interests:
-  - Medical AI
-  - Bioinformatics
-  - Deep Learning
-  - Single-cell RNA-seq
