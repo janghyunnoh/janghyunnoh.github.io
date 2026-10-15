@@ -1,0 +1,56 @@
+<h1 class="page-title">{{ L.nav_cv }}</h1>
+{%- if ko -%}{%- assign cv = p.cv_ko | default: p.cv -%}{%- assign resume = p.resume_ko | default: p.resume -%}{%- else -%}{%- assign cv = p.cv -%}{%- assign resume = p.resume -%}{%- endif -%}
+{%- if cv != "" or resume != "" %}
+<div class="links-row page-actions">
+    {%- if resume and resume != "" %}<a class="pill primary" href="{{ resume | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.resume }}</a>{% endif %}
+    {%- if cv and cv != "" %}<a class="pill primary" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv }}</a>{% endif %}
+</div>
+{%- endif %}
+
+<section>
+    <h2>{{ L.education }}</h2>
+    <ul class="entries">
+        {%- for e in site.data.education %}
+        <li class="edu">
+            <span class="entry-title">{% if ko %}{{ e.school_ko | default: e.school }} {{ e.degree_ko | default: e.degree }}{% else %}{{ e.degree }}, {{ e.school }}{% endif %}</span>
+            <span class="period">{% if ko %}{{ e.period_ko | default: e.period }}{% else %}{{ e.period }}{% endif %}</span>
+            {%- if e.advisor %}
+            <span class="entry-sub">{{ L.advisor }}: {% if ko %}{{ e.advisor_ko | default: e.advisor }}{% else %}{{ e.advisor }}{% endif %}</span>
+            {%- endif %}
+        </li>
+        {%- endfor %}
+    </ul>
+</section>
+
+{%- if site.data.skills %}
+<section>
+    <h2>{{ L.skills }}</h2>
+    <ul class="entries compact">
+        {%- for s in site.data.skills %}
+        <li><span class="entry-title">{% if ko %}{{ s.category_ko | default: s.category }}{% else %}{{ s.category }}{% endif %}</span> <span class="entry-sub">· {{ s.items }}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{%- endif %}
+
+<section>
+    <h2>{{ L.awards }}</h2>
+    <ul class="entries compact">
+        {%- for a in site.data.awards %}
+        <li><span class="entry-title">{% if ko %}{{ a.title_ko | default: a.title }}{% else %}{{ a.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ a.org_ko | default: a.org }}{% else %}{{ a.org }}{% endif %}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+
+<section>
+    <h2>{{ L.activities }}</h2>
+    {%- assign actscopes = "domestic,international" | split: "," %}
+    {%- for scope in actscopes %}
+    <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
+    <ul class="entries compact">
+        {%- for act in site.data.activities[scope] %}
+        <li><span class="entry-title">{% if ko %}{{ act.title_ko | default: act.title }}{% else %}{{ act.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ act.detail_ko | default: act.detail }}{% else %}{{ act.detail }}{% endif %}</span></li>
+        {%- endfor %}
+    </ul>
+    {%- endfor %}
+</section>
