@@ -25,6 +25,7 @@
   venue: "Poster Accepted at KIISE Korea Software Congress (KSC), 2025"
   type: "Poster"
   award: "Best Poster Award"
+  award_ko: "우수 포스터상"
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12577614"
 
@@ -34,6 +35,7 @@
   venue: "Poster Presentation at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025"
   type: "Poster"
   award: "Excellent Poster Award"
+  award_ko: "우수 포스터상"
   first_author: true
   selected: true
 
@@ -43,6 +45,7 @@
   venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2025"
   type: "Oral"
   award: "Best Presentation Award"
+  award_ko: "우수발표논문상"
   first_author: true
   selected: true
   links:

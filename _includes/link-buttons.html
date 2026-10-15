@@ -1,11 +1,13 @@
 {%- assign lk = include.links -%}
 {%- if lk -%}
 <span class="links">
-    {%- if lk.paper and lk.paper != "" %}<a class="linkbtn" href="{{ lk.paper }}" target="_blank" rel="noopener">Paper</a>{% endif -%}
-    {%- if lk.code and lk.code != "" %}<a class="linkbtn" href="{{ lk.code }}" target="_blank" rel="noopener">Code</a>{% endif -%}
-    {%- if lk.docker and lk.docker != "" %}<a class="linkbtn" href="{{ lk.docker }}" target="_blank" rel="noopener">Docker</a>{% endif -%}
-    {%- if lk.demo and lk.demo != "" %}<a class="linkbtn" href="{{ lk.demo }}" target="_blank" rel="noopener">Demo</a>{% endif -%}
-    {%- if lk.poster and lk.poster != "" %}<a class="linkbtn" href="{{ lk.poster }}" target="_blank" rel="noopener">Poster</a>{% endif -%}
-    {%- if lk.slides and lk.slides != "" %}<a class="linkbtn" href="{{ lk.slides }}" target="_blank" rel="noopener">Slides</a>{% endif -%}
+    {%- assign kinds = "paper,code,docker,demo,poster,slides" | split: "," -%}
+    {%- for kd in kinds -%}
+    {%- assign url = lk[kd] -%}
+    {%- if url and url != "" -%}
+    {%- capture lbl %}link_{{ kd }}{% endcapture -%}
+    <a class="linkbtn" href="{{ url }}" target="_blank" rel="noopener">{{ L[lbl] }}</a>
+    {%- endif -%}
+    {%- endfor -%}
 </span>
 {%- endif -%}

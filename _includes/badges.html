@@ -1,8 +1,8 @@
 {%- assign it = include.item -%}
 {%- if it.type or it.award or it.first_author or it.links -%}
 <div class="badges">
-    {%- if it.type %}<span class="badge {{ it.type | downcase }}">{{ it.type }}</span>{% endif -%}
-    {%- if it.award %}<span class="badge award"><i class="fa-solid fa-trophy"></i>{{ it.award }}</span>{% endif -%}
+    {%- if it.type %}{% assign tkey = it.type | downcase | prepend: "type_" %}<span class="badge {{ it.type | downcase }}">{{ L[tkey] | default: it.type }}</span>{% endif -%}
+    {%- if it.award %}<span class="badge award"><i class="fa-solid fa-trophy"></i>{% if ko %}{{ it.award_ko | default: it.award }}{% else %}{{ it.award }}{% endif %}</span>{% endif -%}
     {%- if it.first_author %}<span class="badge first">{{ L.first_author }}</span>{% endif -%}
     {% include link-buttons.html links=it.links %}
 </div>
