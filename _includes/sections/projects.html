@@ -1,25 +1,28 @@
 <h1 class="page-title">{{ L.nav_projects }}</h1>
-<div class="cards">
+<ol class="proj-list">
     {%- for pr in site.data.projects %}
     {%- if ko %}{% assign summary = pr.summary_ko | default: pr.summary %}{% assign role = pr.role_ko | default: pr.role %}{% else %}{% assign summary = pr.summary %}{% assign role = pr.role %}{% endif %}
-    <article class="card">
-        <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
-        {%- if pr.org %}
-        <div class="org"><i class="fa-regular fa-building"></i><span>{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</span></div>
-        {%- endif %}
-        {%- if summary %}
-        <p class="summary">{{ summary }}</p>
-        {%- endif %}
-        {%- if role and role.size > 0 %}
-        <div>
-            <div class="role-label">{{ L.my_role }}</div>
-            <ul>{% for r in role %}<li>{{ r }}</li>{% endfor %}</ul>
+    <li class="proj">
+        <div class="proj-year">{% if ko %}{{ pr.period | replace: "Present", "현재" }}{% else %}{{ pr.period }}{% endif %}</div>
+        <div class="proj-main">
+            <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
+            {%- if pr.org %}
+            <div class="org"><i class="fa-regular fa-building"></i><span>{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</span></div>
+            {%- endif %}
+            {%- if summary %}
+            <p class="summary">{{ summary }}</p>
+            {%- endif %}
+            {%- if role and role.size > 0 %}
+            <div class="role">
+                <span class="role-label">{{ L.my_role }}</span>
+                <ul>{% for r in role %}<li>{{ r }}</li>{% endfor %}</ul>
+            </div>
+            {%- endif %}
+            <div class="proj-foot">
+                <div class="tags">{% for tg in pr.tags %}<span class="tag">{{ tg }}</span>{% endfor %}</div>
+                {% include link-buttons.html links=pr.links %}
+            </div>
         </div>
-        {%- endif %}
-        <div class="card-foot">
-            <div class="tags">{% for tg in pr.tags %}<span class="tag">{{ tg }}</span>{% endfor %}</div>
-            {% include link-buttons.html links=pr.links %}
-        </div>
-    </article>
+    </li>
     {%- endfor %}
-</div>
+</ol>
