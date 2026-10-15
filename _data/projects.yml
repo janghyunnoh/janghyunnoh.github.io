@@ -1,5 +1,5 @@
 # One entry = one card. Only filled-in fields are shown.
-#   status: ongoing / completed
+#   period                  : YOUR participation period (not the full project term)
 #   title / title_ko        : card title (English titles are draft translations — please review)
 #   org / org_ko            : partner or funding organization (shown under the title)
 #   summary / summary_ko    : one line on the project goal
@@ -7,8 +7,7 @@
 #   tags                    : keywords
 #   links                   : code / paper / demo / poster — buttons appear only when a URL is set
 
-- status: ongoing
-  period: "2024 - 2028"
+- period: "2024 - 2028"
   title: "AI-based target discovery platform for CAR-Treg cell therapy in chronic inflammatory disease"
   title_ko: "AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발"
   role:
@@ -17,8 +16,7 @@
     - "MSI/MSS 기반 scRNA-seq phenotype prediction 및 AI 기반 타겟 발굴 연구"
   tags: [scRNA-seq, Phenotype Prediction, Target Discovery]
 
-- status: ongoing
-  period: "2024 - 2029"
+- period: "2024 - 2029"
   title: "Genetic and physiological mechanisms of apple blossom dormancy release and flower development under climate change"
   title_ko: "기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구"
   role:
@@ -27,8 +25,7 @@
     - "nf-core/sarek 기반 variant calling pipeline 구축 및 분석 수행"
   tags: [Variant Calling, nf-core, Plant Genomics]
 
-- status: ongoing
-  period: "2024 - 2029"
+- period: "2024 - 2029"
   title: "Spatial transcriptomics-based target discovery with in silico and organoid validation for refractory solid tumors"
   title_ko: "공간 전사체 기반 타겟 발굴과 in silico 및 오가노이드 활용 타겟 검증을 통한 난치성 고형암 MLT 신규 치료제 신속 개발"
   role:
@@ -37,8 +34,7 @@
     - "TNBC Xenium spatial transcriptomics 기반 niche 및 종양 미세환경(TME) 분석"
   tags: [Spatial Transcriptomics, Xenium, TNBC]
 
-- status: ongoing
-  period: "2025 - 2026"
+- period: "2025 - 2026"
   title: "Client-side web platform for fast, accurate detection and quantification of CRISPR-Cas9-induced large DNA deletions"
   title_ko: "CRISPR-Cas9 유도 대규모 DNA 결실 검출·정량화를 위한 클라이언트 사이드 고속·고정밀 웹 기반 분석 플랫폼 개발"
   role:
@@ -47,8 +43,7 @@
     - "Biomni 기반 Agent 환경 구축 및 분석 수행"
   tags: [AI Agent, Biomni, CRISPR]
 
-- status: completed
-  period: "2025 - 2026"
+- period: "2025 - 2026"
   title: "GeoMx spatial transcriptomics of cirrhotic vs. non-cirrhotic HCC tissue for immunomodulatory target discovery"
   title_ko: "HCC GeoMx 공간전사체 기반 간경변·비간경변 조직의 병리적 차이 규명 및 면역조절 타겟 발굴 연구"
   role:
@@ -57,8 +52,7 @@
     - "HCC GeoMx spatial transcriptomics 기반 cirrhotic/non-cirrhotic 조직 비교 분석"
   tags: [Spatial Transcriptomics, GeoMx, HCC]
 
-- status: completed
-  period: "2025"
+- period: "2025"
   title: "COVID-19 severity prediction model and environment using multimodal clinical and imaging data"
   title_ko: "멀티모달 임상·영상 데이터를 활용한 코로나19 환자 중증도 예측 모델·환경 구축"
   org: "Division of Healthcare and AI, Korea Disease Control and Prevention Agency (KDCA)"
@@ -69,8 +63,7 @@
     - "MIMIC-IV + MIMIC-CXR 기반 멀티모달 연구"
   tags: [Multimodal, MIMIC-IV, MIMIC-CXR]
 
-- status: completed
-  period: "2023 - 2024"
+- period: "2023 - 2024"
   title: "Clinical and genetic differences for identifying hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)"
   title_ko: "KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구"
   org: "Division of Healthcare and AI, Korea Disease Control and Prevention Agency (KDCA)"
@@ -87,8 +80,7 @@
     - "SNP 선별 및 임상 변수 대비 추가 효과 검증"
   tags: [KoGES, Cohort Study, Data Labeling, XGBoost, SNP]
 
-- status: completed
-  period: "2022"
+- period: "2022"
   title: "Customs notice analysis and monitoring system for global supply-chain crises"
   title_ko: "글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발"
   org: "Korea Trade-Investment Promotion Agency (KOTRA)"

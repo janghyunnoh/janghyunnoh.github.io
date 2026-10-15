@@ -1,15 +1,9 @@
 <h1 class="page-title">{{ L.nav_projects }}</h1>
-<div class="filters" role="group" aria-label="{{ L.projects }}">
-    <button type="button" data-filter="all" aria-pressed="true">{{ L.all }}</button>
-    <button type="button" data-filter="ongoing" aria-pressed="false">{{ L.ongoing }}</button>
-    <button type="button" data-filter="completed" aria-pressed="false">{{ L.completed }}</button>
-</div>
 <div class="cards">
     {%- for pr in site.data.projects %}
     {%- if ko %}{% assign summary = pr.summary_ko | default: pr.summary %}{% assign role = pr.role_ko | default: pr.role %}{% else %}{% assign summary = pr.summary %}{% assign role = pr.role %}{% endif %}
-    <article class="card" data-status="{{ pr.status }}">
+    <article class="card">
         <div class="card-top">
-            <span class="status {{ pr.status }}">{% if pr.status == "ongoing" %}{{ L.ongoing }}{% else %}{{ L.completed }}{% endif %}</span>
             <span>{% if ko %}{{ pr.period | replace: "Present", "현재" }}{% else %}{{ pr.period }}{% endif %}</span>
         </div>
         <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
@@ -32,16 +26,3 @@
     </article>
     {%- endfor %}
 </div>
-<script>
-(function () {
-    var buttons = document.querySelectorAll('.filters button');
-    var cards = document.querySelectorAll('.card');
-    buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            var f = btn.getAttribute('data-filter');
-            buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === btn)); });
-            cards.forEach(function (c) { c.hidden = !(f === 'all' || c.getAttribute('data-status') === f); });
-        });
-    });
-})();
-</script>
