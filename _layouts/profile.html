@@ -180,7 +180,7 @@
             <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
             <ul class="entries compact">
                 {%- for act in site.data.activities[scope] %}
-                <li><span class="entry-title">{{ act.title }}</span> <span class="entry-sub">· {{ act.detail }}</span></li>
+                <li><span class="entry-title">{% if ko %}{{ act.title_ko | default: act.title }}{% else %}{{ act.title }}{% endif %}</span> <span class="entry-sub">· {% if ko %}{{ act.detail_ko | default: act.detail }}{% else %}{{ act.detail }}{% endif %}</span></li>
                 {%- endfor %}
             </ul>
             {%- endfor %}
