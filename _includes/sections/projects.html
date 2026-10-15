@@ -1,36 +1,24 @@
 <h1 class="page-title">{{ L.nav_projects }}</h1>
 <div class="cards">
     {%- for pr in site.data.projects %}
-    {%- if ko %}{% assign summary = pr.summary_ko | default: pr.summary %}{% assign role = pr.role_ko | default: pr.role %}{% assign ptitle = pr.title_ko | default: pr.title %}{% else %}{% assign summary = pr.summary %}{% assign role = pr.role %}{% assign ptitle = pr.title %}{% endif %}
-    {%- assign hue = forloop.index0 | modulo: 4 %}
+    {%- if ko %}{% assign summary = pr.summary_ko | default: pr.summary %}{% assign role = pr.role_ko | default: pr.role %}{% else %}{% assign summary = pr.summary %}{% assign role = pr.role %}{% endif %}
     <article class="card">
-        {%- if pr.image and pr.image != "" %}
-        <div class="thumb{% if pr.image_fit == 'contain' %} contain{% endif %}"><img src="{{ pr.image | relative_url }}" alt="{{ ptitle }}" loading="lazy"></div>
-        {%- else %}
-        <div class="thumb placeholder hue-{{ hue }}" aria-hidden="true"><span>{{ pr.tags | first }}</span></div>
+        <h4>{% if ko %}{{ pr.title_ko | default: pr.title }}{% else %}{{ pr.title }}{% endif %}</h4>
+        {%- if pr.org %}
+        <div class="org"><i class="fa-regular fa-building"></i><span>{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</span></div>
         {%- endif %}
-        <div class="card-body">
-            <h4>{{ ptitle }}</h4>
-            {%- if pr.org %}
-            <div class="org">{% if ko %}{{ pr.org_ko | default: pr.org }}{% else %}{{ pr.org }}{% endif %}</div>
-            {%- endif %}
-            {%- if summary %}
-            <p class="summary">{{ summary }}</p>
-            {%- endif %}
-            {%- if role and role.size > 0 %}
-            <div class="role">
-                <div class="role-label">{{ L.my_role }}</div>
-                <ul>{% for r in role %}<li>{{ r }}</li>{% endfor %}</ul>
-            </div>
-            {%- endif %}
-            {%- if pr.links %}
-            <div class="card-links">
-                {%- assign kinds = "code,paper,docker,demo,poster,slides" | split: "," %}
-                {%- for kd in kinds %}{% assign url = pr.links[kd] %}{% if url and url != "" %}{% capture lbl %}link_{{ kd }}{% endcapture %}
-                <a class="pill-link" href="{{ url }}" target="_blank" rel="noopener">{% case kd %}{% when "code" %}<i class="fa-brands fa-github"></i>{% when "paper" %}<i class="fa-regular fa-file-lines"></i>{% when "docker" %}<i class="fa-brands fa-docker"></i>{% else %}<i class="fa-solid fa-arrow-up-right-from-square"></i>{% endcase %}{{ L[lbl] }}</a>
-                {%- endif %}{% endfor %}
-            </div>
-            {%- endif %}
+        {%- if summary %}
+        <p class="summary">{{ summary }}</p>
+        {%- endif %}
+        {%- if role and role.size > 0 %}
+        <div>
+            <div class="role-label">{{ L.my_role }}</div>
+            <ul>{% for r in role %}<li>{{ r }}</li>{% endfor %}</ul>
+        </div>
+        {%- endif %}
+        <div class="card-foot">
+            <div class="tags">{% for tg in pr.tags %}<span class="tag">{{ tg }}</span>{% endfor %}</div>
+            {% include link-buttons.html links=pr.links %}
         </div>
     </article>
     {%- endfor %}

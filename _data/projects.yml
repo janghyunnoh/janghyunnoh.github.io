@@ -1,5 +1,4 @@
 # One entry = one card. Only filled-in fields are shown.
-#   image                   : thumbnail path, e.g. /assets/img/projects/xxx.jpg (16:9 works best); image_fit: contain for diagrams
 #   title / title_ko        : card title (English titles are draft translations — please review)
 #   org / org_ko            : partner or funding organization (shown under the title)
 #   summary / summary_ko    : one line on the project goal
@@ -59,8 +58,6 @@
 
 - title: "Clinical and genetic differences for identifying hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)"
   title_ko: "KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구"
-  image: "/assets/img/projects/koges.jpg"
-  image_fit: contain
   org: "Division of Healthcare and AI, Korea Disease Control and Prevention Agency (KDCA)"
   org_ko: "질병관리청 헬스케어인공지능연구과"
   summary: "Find clinical and genetic differences between hyperlipidemia patients who develop hypertension and those who do not."
