@@ -1,0 +1,16 @@
+# "J. Noh" in authors is highlighted automatically.
+# links: add code / paper / poster / slides when available; empty ones are hidden.
+- title: "Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data"
+  authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
+  venue: "Briefings in Bioinformatics"
+  impact: "(IF: 7.3, Q1 [Top 4.1%])"
+  first_author: true
+  links:
+    paper: "https://doi.org/10.1093/bib/bbag395"
+
+- title: "Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids"
+  authors: "J. Choi, K. Lee, M. Oh, J. Noh, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee"
+  venue: "Journal of Experimental & Clinical Cancer Research"
+  impact: "(IF: 14.3, Q1 [Top 6.8%])"
+  links:
+    paper: "https://doi.org/10.1186/s13046-026-03745-z"

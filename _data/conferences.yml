@@ -1,0 +1,43 @@
+# type: Oral / Poster    award: optional    scope: international / domestic
+- scope: international
+  title: "An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data"
+  authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
+  venue: "Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025"
+  type: "Poster"
+  first_author: true
+
+- scope: domestic
+  title: "Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq"
+  authors: "Y. Shin, J. Noh, and M. Oh"
+  venue: "Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026"
+  type: "Oral"
+
+- scope: domestic
+  title: "Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques"
+  authors: "Y. Shin, J. Noh, and M. Oh"
+  venue: "Poster Accepted at KIISE Korea Software Congress (KSC), 2025"
+  type: "Poster"
+  award: "Best Poster Award"
+
+- scope: domestic
+  title: "Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning"
+  authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
+  venue: "Poster Presentation at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025"
+  type: "Poster"
+  award: "Excellent Poster Award"
+  first_author: true
+
+- scope: domestic
+  title: "AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning"
+  authors: "J. Noh, M. Kim, and M. Oh"
+  venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2025"
+  type: "Oral"
+  award: "Best Presentation Award"
+  first_author: true
+
+- scope: domestic
+  title: "Predicting In-Hospital Mortality in Patients with Acute Respiratory Distress Syndrome Using MIMIC-III Data: A Comparative Study of Machine Learning Models with Varied Missing Data Handling Strategies"
+  authors: "J. Noh, G. Choi, and M. Oh"
+  venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2023"
+  type: "Poster"
+  first_author: true

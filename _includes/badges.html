@@ -1,0 +1,9 @@
+{%- assign it = include.item -%}
+{%- if it.type or it.award or it.first_author or it.links -%}
+<div class="entry-badges">
+    {%- if it.type %}<span class="badge badge-{{ it.type | downcase }}">{{ it.type }}</span>{% endif -%}
+    {%- if it.award %}<span class="badge badge-award"><i class="fa-solid fa-award"></i> {{ it.award }}</span>{% endif -%}
+    {%- if it.first_author %}<span class="badge badge-first">{{ L.first_author }}</span>{% endif -%}
+    {% include link-buttons.html links=it.links %}
+</div>
+{%- endif -%}

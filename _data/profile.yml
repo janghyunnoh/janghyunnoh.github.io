@@ -1,0 +1,39 @@
+# Basic profile shown in the sidebar and About section.
+# Any field ending in _ko is used on the Korean page (/ko/); if it is missing, the English value is used.
+
+name: "Janghyun Noh"
+name_ko: "노장현"
+title: "M.S. in Artificial Intelligence"
+title_ko: "인공지능학 석사"
+location: "Seoul, Korea"
+location_ko: "대한민국 서울"
+affiliation: "AIDA, Myongji University"
+affiliation_ko: "명지대학교 AIDA 연구실"
+photo: "/assets/img/profile.jpg"
+
+email: "watercar99@naver.com"
+scholar: "https://scholar.google.com/citations?user=NPIG8VoAAAAJ&hl=ko&oi=ao"
+github: "https://github.com/janghyunnoh"
+linkedin: "https://www.linkedin.com/in/janghyun-noh-411587195/"
+
+# CV / resume PDFs. Leave empty to hide the button.
+# Example: cv: "/assets/cv/Janghyun_Noh_CV.pdf"
+cv: ""
+cv_ko: ""
+
+about: >-
+  I received my M.S. in Artificial Intelligence from Myongji University, where I was advised by
+  Prof. <a href="https://minsik-bioinfo.github.io/online-cv/">Minsik Oh</a> in the
+  <a href="https://ailab-mju.github.io/">Artificial Intelligence and Data Analytics (AIDA) Lab</a>.
+  I’m interested in developing and applying AI methods to solve real-world problems.
+about_ko: >-
+  명지대학교 인공지능학과에서 <a href="https://minsik-bioinfo.github.io/online-cv/">오민식 교수님</a>의 지도 아래
+  <a href="https://ailab-mju.github.io/">인공지능 및 데이터 분석(AIDA) 연구실</a>에서 석사 학위를 받았습니다.
+  AI 방법론을 개발하고 이를 실제 문제 해결에 적용하는 데 관심이 있습니다.
+
+# Research keywords shown as chips under About.
+interests:
+  - Medical AI
+  - Bioinformatics
+  - Deep Learning
+  - Single-cell RNA-seq
