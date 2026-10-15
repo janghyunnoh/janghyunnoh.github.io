@@ -70,11 +70,17 @@
   period: "2023 - 2024"
   title: "Clinical and genetic differences for identifying hypertension-progression risk groups in hyperlipidemia patients (KoGES cohort)"
   title_ko: "KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구"
+  summary: "Hypertension and hyperlipidemia often occur together: roughly half of patients with one also have the other. Using the KoGES Ansan–Ansung cohort (9 follow-up waves, 10,030 participants), we predicted which hyperlipidemia patients progress to hypertension and analyzed the clinical and genetic differences. The core challenge was labeling: it was unclear whether to trust self-reported questionnaires (diagnosis and medication history) or clinical lab values (lipids, blood pressure) as ground truth."
+  summary_ko: "고혈압과 고지혈증은 환자의 절반가량이 서로를 동반할 만큼 함께 나타나는 질환입니다. KoGES 안산·안성 코호트(1–9기 추적, 10,030명)로 고지혈증 환자 중 고혈압으로 진행하는 위험군을 예측하고 임상·유전적 차이를 분석했습니다. 핵심 난제는 라벨링으로, 개인 문진(진단·약물력)과 임상 검사(지질·혈압 수치) 중 어느 쪽을 진단 근거로 신뢰할지가 명확하지 않았습니다."
   role:
-    - "Phenotype prediction with tabular clinical modeling, and feature-importance analysis of clinical and genetic differences"
+    - "Designed hyperlipidemia and hypertension labeling criteria by comparing questionnaire and clinical-lab data (first-diagnosis wave, missing values)"
+    - "Built a hyperlipidemia→hypertension (n=812) vs. normotensive (n=1,034) dataset and trained XGBoost, CatBoost, and TabNet classifiers (XGBoost accuracy/F1 0.67)"
+    - "Selected top SNPs from K-chip genotypes (467K positions) and tested their added value over clinical features"
   role_ko:
-    - "tabular clinical modeling 기반 phenotype prediction 및 feature importance 기반 임상·유전적 차이 분석"
-  tags: [Tabular ML, Cohort Study]
+    - "문진 vs 임상 검사 비교를 통한 고지혈증·고혈압 라벨링 기준 설계 (최초 진단 차수, 결측 처리)"
+    - "선 고지혈증 → 후 고혈압(812명) vs 정상혈압 유지(1,034명) 데이터셋 구축 및 XGBoost·CatBoost·TabNet 분류 (XGBoost acc/F1 0.67)"
+    - "K-chip SNP(46.7만 위치)에서 상위 SNP 선별 후 임상 변수 대비 추가 효과 검증"
+  tags: [Cohort Study, Data Labeling, XGBoost, SNP]
 
 - status: completed
   period: "2022"
