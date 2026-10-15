@@ -24,11 +24,30 @@ cv: ""
 cv_ko: ""
 
 about: >-
-  I received my M.S. in Artificial Intelligence from Myongji University, where I was advised by
+  I'm an AI researcher who builds machine learning methods for complex, noisy real-world data.
+  I received my M.S. in Artificial Intelligence from Myongji University, advised by
   Prof. <a href="https://minsik-bioinfo.github.io/online-cv/">Minsik Oh</a> in the
-  <a href="https://ailab-mju.github.io/">Artificial Intelligence and Data Analytics (AIDA) Lab</a>.
-  I’m interested in developing and applying AI methods to solve real-world problems.
+  <a href="https://ailab-mju.github.io/">AIDA Lab</a>.
+  <br><br>
+  My work spans weakly supervised learning, representation learning with pretrained foundation models,
+  and multimodal modeling. As first author, I developed <strong>scCap</strong>, a framework that combines
+  foundation-model embeddings with hierarchical multiple instance learning to make set-level predictions
+  without instance-level labels (<em>Briefings in Bioinformatics</em>, 2026). I have also designed labeling
+  schemes for noisy longitudinal data, built multimodal models over tabular and image data, set up
+  LLM-based agent workflows, and worked on vision-language models.
+  <br><br>
+  I enjoy taking a problem from messy data to a working model, and I'm looking for roles where I can
+  apply and extend these methods across domains.
 about_ko: >-
-  명지대학교 인공지능학과에서 <a href="https://minsik-bioinfo.github.io/online-cv/">오민식 교수님</a>의 지도 아래
-  <a href="https://ailab-mju.github.io/">인공지능 및 데이터 분석(AIDA) 연구실</a>에서 석사 학위를 받았습니다.
-  AI 방법론을 개발하고 이를 실제 문제 해결에 적용하는 데 관심이 있습니다.
+  복잡하고 노이즈가 많은 실제 데이터를 위한 머신러닝 방법론을 만드는 AI 연구자입니다.
+  명지대학교 인공지능학과 <a href="https://ailab-mju.github.io/">AIDA 연구실</a>에서
+  <a href="https://minsik-bioinfo.github.io/online-cv/">오민식 교수님</a>의 지도 아래 석사 학위를 받았습니다.
+  <br><br>
+  약지도 학습(weakly supervised learning), 사전학습 파운데이션 모델을 활용한 표현 학습, 멀티모달 모델링을 주로 다뤄왔습니다.
+  1저자로 개발한 <strong>scCap</strong>은 파운데이션 모델 임베딩과 계층적 다중 인스턴스 학습을 결합해
+  개별 인스턴스 라벨 없이 집합 단위 예측을 수행하는 프레임워크입니다(<em>Briefings in Bioinformatics</em>, 2026).
+  이 밖에도 노이즈가 많은 장기 추적 데이터의 라벨링 기준 설계, 정형·이미지 데이터를 아우르는 멀티모달 모델 구축,
+  LLM 기반 에이전트 환경 구축, 비전-언어 모델 연구를 수행했습니다.
+  <br><br>
+  복잡한 데이터에서 출발해 실제로 작동하는 모델까지 만들어 내는 과정을 즐기며,
+  이러한 방법론을 다양한 도메인에 적용하고 확장할 수 있는 역할을 찾고 있습니다.
