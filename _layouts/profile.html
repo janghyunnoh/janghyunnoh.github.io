@@ -89,7 +89,7 @@
             <ul class="entries">
                 {%- for pub in site.data.publications %}
                 <li>
-                    <div class="entry-title">{% if pub.links.paper %}<a href="{{ pub.links.paper }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+                    <div class="entry-title">{{ pub.title }}</div>
                     <div class="entry-sub">{{ pub.authors | replace: "J. Noh", me }}</div>
                     <div class="entry-sub"><em>{{ pub.venue }}</em>{% if pub.impact %} <span class="impact">{{ pub.impact }}</span>{% endif %}</div>
                     {% include badges.html item=pub %}

@@ -1,4 +1,5 @@
 # type: Oral / Poster    award: optional    scope: international / domestic
+# links: paper / poster / slides / code — a button appears for each URL you add
 - scope: international
   title: "An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data"
   authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
@@ -41,3 +42,5 @@
   venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2023"
   type: "Poster"
   first_author: true
+  links:
+    paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11705183"
