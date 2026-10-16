@@ -312,9 +312,18 @@ p { margin-bottom: 12px; max-width: 72ch; }
 }
 @media (max-width: 760px) {
   .nav-inner { grid-template-columns: 1fr auto; height: auto; padding: 10px 0; row-gap: 8px; }
-  .menu { grid-column: 1 / -1; grid-row: 2; overflow-x: auto; margin: 0 -4px; }
-  .hero { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-  .photo { width: 140px; }
+  .menu { grid-column: 1 / -1; grid-row: 2; justify-content: center; overflow-x: auto; margin: 0 -4px; gap: 2px; }
+  .menu a { padding: 6px 10px; }
+  main { padding-top: 28px; }
+  .hero { grid-template-columns: 108px minmax(0, 1fr); column-gap: 18px; row-gap: 20px; align-items: center; margin-bottom: 36px; }
+  .photo { width: 108px; border-radius: 12px; }
+  .hero-text { display: contents; }
+  .hero-heading { grid-column: 2; min-width: 0; }
+  .hero h1 { font-size: clamp(20px, 5.3vw, 26px); line-height: 1.2; margin: 0 0 8px; overflow-wrap: normal; }
+  .hero .role { font-size: 13.5px; line-height: 1.5; margin: 0; }
+  .hero-details { grid-column: 1 / -1; min-width: 0; }
+  .hero-details p { margin-bottom: 14px; }
+  .hero-details .links-row { margin-top: 16px; }
   .cards { grid-template-columns: minmax(0, 1fr); }
   .mini-list li { grid-template-columns: minmax(0, 1fr); gap: 0; }
 }
