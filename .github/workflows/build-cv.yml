@@ -37,7 +37,9 @@ jobs:
           pre_compile: |
             set -eu
             mkdir -p /usr/local/share/fonts/custom
-            curl -fLSs --retry 3 'https://github.com/google/fonts/raw/refs/heads/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf' -o /usr/local/share/fonts/custom/SourceSans3.ttf
+            for name in Regular It Light LightIt Bold BoldIt Medium MediumIt Semibold SemiboldIt ExtraLight ExtraLightIt Black BlackIt; do
+              curl -fLSs --retry 3 "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/OTF/SourceSans3-${name}.otf" -o "/usr/local/share/fonts/custom/SourceSans3-${name}.otf"
+            done
             curl -fLSs --retry 3 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/otfs/Font%20Awesome%206%20Free-Solid-900.otf' -o '/usr/local/share/fonts/custom/Font Awesome 6 Free-Solid-900.otf'
             curl -fLSs --retry 3 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/otfs/Font%20Awesome%206%20Brands-Regular-400.otf' -o '/usr/local/share/fonts/custom/Font Awesome 6 Brands-Regular-400.otf'
             fc-cache -f
