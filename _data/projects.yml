@@ -27,8 +27,8 @@
   title_ko: "기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구"
   org: "Kyungpook National University"
   org_ko: "경북대학교"
-  summary: "Uncover the genetic mechanisms behind apple blossom dormancy release and flowering time as the climate changes."
-  summary_ko: "기후 변화에 따라 달라지는 사과꽃의 휴면 타파·개화 시기를 결정하는 유전적 메커니즘 규명"
+  summary: "Find the genes that affect when apple trees bloom as the climate changes."
+  summary_ko: "기후 변화로 달라지는 사과꽃 개화 시기에 영향을 주는 유전자 탐색"
   role:
     - "Built a variant-calling pipeline with nf-core/sarek"
     - "Ran the genomic variant analysis"
