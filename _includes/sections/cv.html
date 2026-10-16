@@ -2,13 +2,13 @@
 <div class="cv-head">
     <h1 class="page-title">{{ L.nav_cv }}</h1>
     <div class="links-row">
-        <a class="pill primary" href="{{ cv | relative_url }}" download><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv_download }}</a>
-        <a class="pill" href="{{ cv | relative_url }}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> {{ L.cv_open }}</a>
+        <a class="pill primary" href="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}" download><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv_download }}</a>
+        <a class="pill" href="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> {{ L.cv_open }}</a>
     </div>
 </div>
 <div class="cv-viewer">
-    <object data="{{ cv | relative_url }}#view=FitH" type="application/pdf" aria-label="{{ L.nav_cv }}">
-        <iframe src="{{ cv | relative_url }}#view=FitH" title="{{ L.nav_cv }}"></iframe>
+    <object data="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}#view=FitH" type="application/pdf" aria-label="{{ L.nav_cv }}">
+        <iframe src="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}#view=FitH" title="{{ L.nav_cv }}"></iframe>
     </object>
 </div>
-<p class="cv-fallback">{{ L.cv_fallback }} <a href="{{ cv | relative_url }}" target="_blank" rel="noopener">{{ L.cv_open }}</a></p>
+<p class="cv-fallback">{{ L.cv_fallback }} <a href="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}" target="_blank" rel="noopener">{{ L.cv_open }}</a></p>
