@@ -41,7 +41,6 @@
   award: "Excellent Poster Award"
   award_ko: "우수 포스터상"
   first_author: true
-  selected: true
 
 - scope: domestic
   title: "AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning"
