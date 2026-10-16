@@ -1,0 +1,74 @@
+name: Build and publish CV PDFs
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'cv-src/**'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cv-pdf-build
+  cancel-in-progress: false
+
+jobs:
+  build-cv:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Compile both CVs with XeLaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          os: debian
+          working_directory: cv-src
+          root_file: |
+            cv_en.tex
+            cv_ko.tex
+          latexmk_use_xelatex: true
+          extra_system_packages: "curl fontconfig fonts-noto-cjk fonts-roboto"
+          pre_compile: |
+            set -eu
+            mkdir -p /usr/local/share/fonts/custom
+            curl -fLSs --retry 3 'https://github.com/google/fonts/raw/refs/heads/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf' -o /usr/local/share/fonts/custom/SourceSans3.ttf
+            curl -fLSs --retry 3 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/otfs/Font%20Awesome%206%20Free-Solid-900.otf' -o '/usr/local/share/fonts/custom/Font Awesome 6 Free-Solid-900.otf'
+            curl -fLSs --retry 3 'https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/otfs/Font%20Awesome%206%20Brands-Regular-400.otf' -o '/usr/local/share/fonts/custom/Font Awesome 6 Brands-Regular-400.otf'
+            fc-cache -f
+            fc-match 'Source Sans 3'
+            fc-match 'Font Awesome 6 Free Solid'
+
+      - name: Check page counts and stage PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          for f in cv_en cv_ko; do
+            pages=$(pdfinfo "cv-src/${f}.pdf" | awk '/^Pages:/ {print $2}')
+            echo "${f}: ${pages} pages"
+            test "${pages}" -le 3 && test "${pages}" -ge 1
+          done
+          mkdir -p assets/cv
+          cp cv-src/cv_en.pdf assets/cv/Janghyun_Noh_CV.pdf
+          cp cv-src/cv_ko.pdf assets/cv/Janghyun_Noh_CV_KO.pdf
+
+      - name: Commit compiled PDFs to master
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/cv/Janghyun_Noh_CV.pdf assets/cv/Janghyun_Noh_CV_KO.pdf
+          if git diff --cached --quiet; then
+            echo 'No PDF changes'
+          else
+            git commit -m 'Build bilingual CV PDFs from updated LaTeX'
+            git push origin HEAD:master
+          fi
