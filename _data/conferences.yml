@@ -1,11 +1,12 @@
 # type: Oral / Poster    award: optional    scope: international / domestic
 # selected: true -> also shown on the home page
-# title_ko: Korean title, shown on the KO page when present
+# title_ko / venue_ko: Korean title / venue, shown on the KO page when present
 # links: paper / poster / slides / code — a button appears for each URL you add
 - scope: international
   title: "An annotation-free framework for phenotype prediction using hierarchical multiple instance learning with single-cell RNA-sequencing data"
   authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
   venue: "Poster Accepted at International Conference on Genome Informatics ISCB-Asia, 2025"
+  venue_ko: "International Conference on Genome Informatics ISCB-Asia 2025 포스터 채택"
   type: "Poster"
   first_author: true
 
@@ -14,6 +15,7 @@
   title_ko: "scRNA-seq 기반 표현형 예측을 위한 사전 학습 임베딩을 활용한 환자 단위 메타셀 구성"
   authors: "Y. Shin, J. Noh, and M. Oh"
   venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2026"
+  venue_ko: "한국정보과학회 한국컴퓨터종합학술대회(KCC) 2026 구두 발표"
   type: "Oral"
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929339"
@@ -23,6 +25,7 @@
   title_ko: "scRNA-seq 데이터 축소 기법을 이용한 환자 표현형 예측의 연산 경량화 분석"
   authors: "Y. Shin, J. Noh, and M. Oh"
   venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2025"
+  venue_ko: "한국정보과학회 한국소프트웨어종합학술대회(KSC) 2025 포스터 발표"
   type: "Poster"
   award: "Best Poster Award"
   award_ko: "우수 포스터상"
@@ -33,6 +36,7 @@
   title: "Patient Phenotype Prediction from Single-cell RNA-seq Data through Annotation-free Multiple Instance Learning"
   authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
   venue: "Poster Presentation at BIOINFO 2025, Korean Society for Bioinformatics (KSBI), 2025"
+  venue_ko: "한국생명정보학회(KSBI) BIOINFO 2025 포스터 발표"
   type: "Poster"
   award: "Excellent Poster Award"
   award_ko: "우수 포스터상"
@@ -43,6 +47,7 @@
   title: "AMIL: Automated Cell Grouping Framework for Phenotype Prediction with Multiple Instance Learning"
   authors: "J. Noh, M. Kim, and M. Oh"
   venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2025"
+  venue_ko: "한국정보과학회 한국컴퓨터종합학술대회(KCC) 2025 구두 발표"
   type: "Oral"
   award: "Best Presentation Award"
   award_ko: "우수발표논문상"
@@ -56,6 +61,7 @@
   title_ko: "MIMIC-III 데이터를 이용한 급성호흡곤란증후군 환자의 병원 내 사망 예측: 다양한 결측 데이터 처리 전략을 적용한 머신러닝 모델의 비교 연구"
   authors: "J. Noh, G. Choi, and M. Oh"
   venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2023"
+  venue_ko: "한국정보과학회 한국소프트웨어종합학술대회(KSC) 2023 포스터 발표"
   type: "Poster"
   first_author: true
   links:
