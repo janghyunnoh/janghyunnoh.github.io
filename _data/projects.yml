@@ -12,8 +12,8 @@
   title_ko: "AI 기반 타겟 발굴 플랫폼 확립을 통한 만성 염증성 질환 조절 CAR-Treg 세포 치료제 개발"
   org: "AIgenDrug Co., Ltd."
   org_ko: "㈜아이겐드럭"
-  summary: "Use AI on single-cell data to find target candidates for a cell therapy (CAR-Treg) that controls chronic inflammation."
-  summary_ko: "단일세포 데이터를 AI로 분석해 만성 염증 질환 세포 치료제(CAR-Treg)의 타겟 후보를 찾는 플랫폼 구축"
+  summary: "Analyze single-cell data and develop AI prediction models to discover new therapeutic targets for chronic inflammatory diseases."
+  summary_ko: "단일세포 데이터 분석과 AI 예측 모델 개발을 통한 만성 염증성 질환의 새로운 치료 타겟 발굴"
   role:
     - "Developed scRNA-seq models to predict MSI/MSS phenotypes"
     - "Applied the models to AI-based target discovery"
@@ -27,8 +27,8 @@
   title_ko: "기후 변화 대응을 위한 사과꽃 휴면타파 및 꽃 발달 시기의 유전적 생리학적 메커니즘 연구"
   org: "Kyungpook National University"
   org_ko: "경북대학교"
-  summary: "Analyze genome data to identify the genetic factors behind apple bloom timing under climate change."
-  summary_ko: "유전체 데이터를 분석해 기후 변화에 따른 사과꽃 개화 시기의 유전적 요인 파악"
+  summary: "Analyze apple genome data to identify genetic factors linked to bloom timing under climate change."
+  summary_ko: "사과 유전체 데이터 분석을 통한 기후 변화에 따른 사과꽃 개화 시기 관련 유전적 요인 파악"
   role:
     - "Built a variant-calling pipeline with nf-core/sarek"
     - "Ran the genomic variant analysis"
@@ -42,8 +42,8 @@
   title_ko: "공간 전사체 기반 타겟 발굴과 in silico 및 오가노이드 활용 타겟 검증을 통한 난치성 고형암 MLT 신규 치료제 신속 개발"
   org: "Seoul National University Hospital"
   org_ko: "서울대학교병원"
-  summary: "Analyze spatial gene-expression data from tumor tissue to find treatment targets for hard-to-treat solid cancers."
-  summary_ko: "암 조직의 공간 유전자 발현 데이터를 분석해 난치성 고형암의 치료 타겟 후보 발굴"
+  summary: "Analyze spatial gene-expression data from tumor tissue to characterize cancer cells and their surroundings, and discover new therapeutic targets."
+  summary_ko: "암 조직의 공간 유전자 발현 데이터를 분석하여 암세포의 특성과 주변 환경을 파악하고 새로운 치료 타겟 발굴"
   role:
     - "Cellular niche analysis of TNBC Xenium spatial transcriptomics"
     - "Characterized the tumor microenvironment (TME)"
@@ -57,8 +57,8 @@
   title_ko: "CRISPR-Cas9 유도 대규모 DNA 결실 검출·정량화를 위한 클라이언트 사이드 고속·고정밀 웹 기반 분석 플랫폼 개발"
   org: "Myongji University"
   org_ko: "명지대학교"
-  summary: "Build a web tool that automatically detects and measures large DNA deletions caused by gene editing (CRISPR-Cas9)."
-  summary_ko: "유전자 편집(CRISPR-Cas9)으로 생긴 대규모 DNA 결실을 자동으로 찾아 정량화하는 웹 분석 도구 개발"
+  summary: "Build an AI agent and a web-based analysis environment for efficient analysis of large-scale genomic data."
+  summary_ko: "대규모 유전체 데이터를 효율적으로 분석하기 위한 AI Agent 및 웹 기반 분석 환경 구축"
   role:
     - "Set up a Biomni-based AI agent environment"
     - "Ran analyses with the agent"
@@ -70,8 +70,8 @@
 - period: "2025 - 2026"
   title: "GeoMx spatial transcriptomics of cirrhotic vs. non-cirrhotic HCC tissue for immunomodulatory target discovery"
   title_ko: "HCC GeoMx 공간전사체 기반 간경변·비간경변 조직의 병리적 차이 규명 및 면역조절 타겟 발굴 연구"
-  summary: "Compare spatial gene expression in liver cancer with and without cirrhosis to find immunotherapy target candidates."
-  summary_ko: "간경변 유무에 따른 간암 조직의 공간 유전자 발현을 비교해 면역 치료 타겟 후보 발굴"
+  summary: "Analyze spatial gene-expression data from liver cancer tissue to compare tissue characteristics and gene expression with and without cirrhosis."
+  summary_ko: "간암 조직의 공간 유전자 발현 데이터를 분석하여 간경변 여부에 따른 조직 특성과 유전자 발현 차이 비교"
   role:
     - "Compared cirrhotic and non-cirrhotic tissue using HCC GeoMx spatial transcriptomics"
   role_ko:
@@ -83,8 +83,8 @@
   title_ko: "멀티모달 임상·영상 데이터를 활용한 코로나19 환자 중증도 예측 모델·환경 구축"
   org: "Division of Healthcare and AI, Korea Disease Control and Prevention Agency (KDCA)"
   org_ko: "질병관리청 헬스케어인공지능연구과"
-  summary: "Predict COVID-19 severity with a multimodal model that combines clinical records and chest X-rays."
-  summary_ko: "임상 기록과 흉부 X-ray를 결합한 멀티모달 모델로 코로나19 환자의 중증도 예측"
+  summary: "Develop a multimodal AI model that combines clinical data and chest X-rays to predict COVID-19 severity."
+  summary_ko: "임상 데이터와 흉부 X-ray 영상을 결합해 코로나19 환자의 중증도를 예측하는 멀티모달 AI 모델 개발"
   role:
     - "Multimodal modeling that combines MIMIC-IV clinical data with MIMIC-CXR chest X-rays"
   role_ko:
@@ -96,8 +96,8 @@
   title_ko: "KoGES 코호트 기반 고지혈증 환자의 고혈압 진행 위험군 규명을 위한 임상·유전적 차이 분석 연구"
   org: "Division of Healthcare and AI, Korea Disease Control and Prevention Agency (KDCA)"
   org_ko: "질병관리청 헬스케어인공지능연구과"
-  summary: "Use large cohort data to predict which hyperlipidemia patients develop hypertension and identify the clinical and genetic factors involved."
-  summary_ko: "대규모 코호트 데이터로 고지혈증 환자의 고혈압 진행 위험을 예측하고 관련 임상·유전 요인 파악"
+  summary: "Analyze large-scale medical data and develop machine learning models to predict hypertension risk and identify key risk factors."
+  summary_ko: "대규모 의료 데이터 분석과 머신러닝 모델 개발을 통한 고혈압 발생 위험 예측 및 주요 위험 요인 분석"
   role:
     - "Designed labels from lab and blood-pressure measurements instead of questionnaires"
     - "Built hypertension-onset prediction models (XGBoost, CatBoost, TabNet)"
@@ -111,8 +111,8 @@
 - period: "2023"
   title: "CatchYou: generating criminal composite sketches from witness descriptions"
   title_ko: "그놈을 잡아라 (CatchYou): 진술 기반 몽타주 생성 서비스"
-  summary: "A service where generative AI draws a composite sketch from a witness's description, which can then be refined by editing the text."
-  summary_ko: "목격자 진술을 입력하면 생성형 AI가 몽타주를 그려주고, 설명을 고쳐 가며 이미지를 다듬을 수 있는 서비스"
+  summary: "A web service where AI generates and edits images of a person from a text description of their appearance."
+  summary_ko: "사용자가 입력한 인물의 외형 묘사를 바탕으로 AI가 이미지를 생성·수정하는 웹 서비스 개발"
   role:
     - "Developed text-to-image models for Korean descriptions (DALL-E with VQ-GAN, Stable Diffusion with LoRA fine-tuning)"
     - "Served the model through a FastAPI backend"
@@ -128,8 +128,8 @@
   title_ko: "글로벌 공급망 위기 대응을 위한 세관 고시 분석 및 모니터링 시스템 개발"
   org: "Korea Trade-Investment Promotion Agency (KOTRA)"
   org_ko: "대한무역투자진흥공사 (KOTRA)"
-  summary: "Automatically collect and analyze foreign customs notices every day to flag supply-chain risks early."
-  summary_ko: "해외 세관 고시를 매일 자동 수집·분석해 공급망 위험 신호를 조기에 알려주는 시스템 개발"
+  summary: "Build a monitoring system that automatically collects and analyzes foreign customs data to detect supply-chain risks early."
+  summary_ko: "해외 세관 데이터를 자동으로 수집·분석해 공급망 위험 신호를 조기에 감지하는 모니터링 시스템 개발"
   role:
     - "Scraped Japanese and Australian customs notices with Selenium"
     - "Preprocessed the collected notice data"
