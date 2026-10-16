@@ -1,9 +1,12 @@
 <div class="hero">
     <img class="photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
     <div class="hero-text">
+        <div class="hero-heading">
         <h1>{% if ko %}{{ p.name_ko | default: p.name }}{% else %}{{ p.name }}{% endif %}</h1>
         <div class="role">{% if ko %}{{ p.title_ko | default: p.title }}{% else %}{{ p.title }}{% endif %}
             {%- if p.affiliation and p.affiliation != "" %} · {% if p.affiliation_url and p.affiliation_url != "" %}<a href="{{ p.affiliation_url }}" target="_blank" rel="noopener">{% endif %}{% if ko %}{{ p.affiliation_ko | default: p.affiliation }}{% else %}{{ p.affiliation }}{% endif %}{% if p.affiliation_url and p.affiliation_url != "" %}</a>{% endif %}{% endif %}</div>
+        </div>
+        <div class="hero-details">
         <p>{% if ko %}{{ p.about_ko | default: p.about }}{% else %}{{ p.about }}{% endif %}</p>
         {%- if p.interests %}
         <div class="chips">{% for kw in p.interests %}<span class="chip">{{ kw }}</span>{% endfor %}</div>
@@ -13,6 +16,7 @@
             <a class="pill" href="{{ p.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a class="pill" href="{{ p.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
             <a class="pill" href="{{ p.scholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        </div>
         </div>
     </div>
 </div>
