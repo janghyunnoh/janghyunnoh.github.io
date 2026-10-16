@@ -15,11 +15,11 @@
   summary: "Analyze single-cell data and develop AI prediction models to discover new therapeutic targets for chronic inflammatory diseases."
   summary_ko: "단일세포 데이터 분석과 AI 예측 모델 개발을 통한 만성 염증성 질환의 새로운 치료 타겟 발굴"
   role:
-    - "Developed AI prediction models for target discovery using single-cell data"
-    - "Discovered therapeutic target candidates using the prediction models"
+    - "Developed deep learning models that classify tumor subtypes from single-cell data"
+    - "Applied the classification models to drug target discovery"
   role_ko:
-    - "단일세포 데이터 기반 타겟 발굴을 위한 AI 예측 모델 개발"
-    - "예측 모델을 활용한 치료 타겟 후보 발굴 연구"
+    - "단일세포 데이터 기반 암 아형 분류 딥러닝 모델 개발"
+    - "분류 모델을 활용한 신약 타겟 후보 발굴"
   tags: [Machine Learning, Bioinformatics, scRNA-seq, Phenotype Prediction, Target Discovery]
 
 - period: "2024 - 2026"
