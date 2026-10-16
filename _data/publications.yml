@@ -1,6 +1,8 @@
 # "J. Noh" in authors is highlighted automatically.
+# scope: international / domestic (grouped under these headings on the Research page)
 # links: add paper / code / docker / poster / slides when available; empty ones are hidden.
-- title: "Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data"
+- scope: international
+  title: "Annotation-free phenotype prediction using knowledge-augmented clustering from single-cell RNA sequencing data"
   authors: "J. Noh, Y. Shin, M. Kim, and M. Oh"
   venue: "Briefings in Bioinformatics"
   impact: "(IF: 7.3, Q1 [Top 4.1%])"
@@ -11,7 +13,8 @@
     code: "https://github.com/janghyunnoh/scCap"
     docker: "https://hub.docker.com/r/mjuailab/sccap"
 
-- title: "Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids"
+- scope: international
+  title: "Ferroptosis-based therapeutic strategy targeting iron metabolism and SLC7A11 overcomes oxaliplatin resistance in patient-derived pancreatic cancer organoids"
   authors: "J. Choi, K. Lee, M. Oh, J. Noh, Y. Kim, E. Hwang, I. Cho, W. Paik, J. Ryu, J. Ku, and S. Lee"
   venue: "Journal of Experimental & Clinical Cancer Research"
   impact: "(IF: 14.3, Q1 [Top 6.8%])"

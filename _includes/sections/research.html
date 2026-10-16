@@ -2,9 +2,16 @@
 
 <section id="publications">
     <h2>{{ L.publications }}</h2>
+    {%- assign scopes = "international,domestic" | split: "," %}
+    {%- for scope in scopes %}
+    {%- assign pubs = site.data.publications | where: "scope", scope %}
+    {%- if pubs.size > 0 %}
+    <h3 class="scope-head">{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
     <ul class="entries">
-        {%- for it in site.data.publications %}{% include item-pub.html item=it %}{% endfor %}
+        {%- for it in pubs %}{% include item-pub.html item=it %}{% endfor %}
     </ul>
+    {%- endif %}
+    {%- endfor %}
 </section>
 
 <section id="presentations">
@@ -13,7 +20,7 @@
     {%- for scope in scopes %}
     {%- assign confs = site.data.conferences | where: "scope", scope %}
     {%- if confs.size > 0 %}
-    <h3>{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
+    <h3 class="scope-head">{% if scope == "domestic" %}{{ L.domestic }}{% else %}{{ L.international }}{% endif %}</h3>
     <ul class="entries">
         {%- for it in confs %}{% include item-pub.html item=it %}{% endfor %}
     </ul>
