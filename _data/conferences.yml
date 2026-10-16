@@ -13,7 +13,7 @@
   title: "Patient-Level Metacell Construction with Pre-trained Embeddings for Phenotype Prediction from scRNA-seq"
   title_ko: "scRNA-seq 기반 표현형 예측을 위한 사전 학습 임베딩을 활용한 환자 단위 메타셀 구성"
   authors: "Y. Shin, J. Noh, and M. Oh"
-  venue: "Oral Presentation Accepted at KIISE Korea Computer Congress (KCC), 2026"
+  venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2026"
   type: "Oral"
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929339"
@@ -22,7 +22,7 @@
   title: "Lightweight Analysis of Patient Phenotype Prediction Based on Single-Cell RNA-seq Data Reduction Techniques"
   title_ko: "scRNA-seq 데이터 축소 기법을 이용한 환자 표현형 예측의 연산 경량화 분석"
   authors: "Y. Shin, J. Noh, and M. Oh"
-  venue: "Poster Accepted at KIISE Korea Software Congress (KSC), 2025"
+  venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2025"
   type: "Poster"
   award: "Best Poster Award"
   award_ko: "우수 포스터상"
