@@ -81,21 +81,21 @@
 \defaultfontfeatures{
   Renderer=HarfBuzz,
 }
-\setmainfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
+\setmainfont{SourceSans3-Regular.otf}[
+  Path=/usr/local/share/fonts/custom/,
+  ItalicFont=SourceSans3-It.otf,
+  BoldFont=SourceSans3-Bold.otf,
+  BoldItalicFont=SourceSans3-BoldIt.otf,
+  FontFace={l}{n}{Font=SourceSans3-Light.otf},
+  FontFace={l}{it}{Font=SourceSans3-LightIt.otf},
 ]
-\setsansfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
+\setsansfont{SourceSans3-Regular.otf}[
+  Path=/usr/local/share/fonts/custom/,
+  ItalicFont=SourceSans3-It.otf,
+  BoldFont=SourceSans3-Bold.otf,
+  BoldItalicFont=SourceSans3-BoldIt.otf,
+  FontFace={l}{n}{Font=SourceSans3-Light.otf},
+  FontFace={l}{it}{Font=SourceSans3-LightIt.otf},
 ]
 \newfontfamily\roboto{Roboto}[
   UprightFont=*,
