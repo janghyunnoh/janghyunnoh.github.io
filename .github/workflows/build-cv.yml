@@ -35,7 +35,7 @@ jobs:
           latexmk_use_xelatex: true
           extra_system_packages: "curl fontconfig fonts-noto-cjk fonts-roboto"
           pre_compile: |
-            set -eu
+            set -e
             mkdir -p /usr/local/share/fonts/custom
             for name in Regular It Light LightIt Bold BoldIt Medium MediumIt Semibold SemiboldIt ExtraLight ExtraLightIt Black BlackIt; do
               curl -fLSs --retry 3 "https://raw.githubusercontent.com/adobe-fonts/source-sans/release/OTF/SourceSans3-${name}.otf" -o "/usr/local/share/fonts/custom/SourceSans3-${name}.otf"
