@@ -28,6 +28,8 @@ jobs:
         uses: xu-cheng/latex-action@v4
         with:
           os: debian
+          # Keep layout consistent with the visually verified local build.
+          texlive_version: 2023
           working_directory: cv-src
           root_file: |
             cv_en.tex
