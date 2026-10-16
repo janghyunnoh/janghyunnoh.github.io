@@ -27,7 +27,7 @@
   venue: "Poster Presentation at KIISE Korea Software Congress (KSC), 2025"
   venue_ko: "한국정보과학회 한국소프트웨어종합학술대회(KSC) 2025 포스터 발표"
   type: "Poster"
-  award: "Best Poster Award"
+  award: "Excellent Poster Award"
   award_ko: "우수 포스터상"
   links:
     paper: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12577614"
@@ -49,7 +49,7 @@
   venue: "Oral Presentation at KIISE Korea Computer Congress (KCC), 2025"
   venue_ko: "한국정보과학회 한국컴퓨터종합학술대회(KCC) 2025 구두 발표"
   type: "Oral"
-  award: "Best Presentation Award"
+  award: "Excellent Presentation Award"
   award_ko: "우수발표논문상"
   first_author: true
   selected: true

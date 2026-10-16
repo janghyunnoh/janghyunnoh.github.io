@@ -9,10 +9,10 @@
         <div class="chips">{% for kw in p.interests %}<span class="chip">{{ kw }}</span>{% endfor %}</div>
         {%- endif %}
         <div class="links-row">
-            <a class="pill" href="{{ p.scholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-            <a class="pill" href="{{ p.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-            <a class="pill" href="{{ p.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a class="pill" href="mailto:{{ p.email }}"><i class="fa-solid fa-envelope"></i> {{ p.email }}</a>
+            <a class="pill" href="{{ p.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a class="pill" href="{{ p.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="pill" href="{{ p.scholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
         </div>
     </div>
 </div>

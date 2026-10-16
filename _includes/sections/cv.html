@@ -1,6 +1,11 @@
 {%- if ko -%}{%- assign cv = p.cv_ko | default: p.cv -%}{%- assign other_cv = p.cv -%}{%- else -%}{%- assign cv = p.cv -%}{%- assign other_cv = p.cv_ko -%}{%- endif -%}
 <div class="cv-head">
-    <h1 class="page-title">{{ L.nav_cv }}</h1>
+    <div class="cv-title">
+        <h1 class="page-title">{{ L.nav_cv }}</h1>
+        {%- if site.data.cv_meta.updated %}
+        <p class="cv-updated"><i class="fa-regular fa-clock"></i> {{ L.cv_updated }}: {% if ko %}{{ site.data.cv_meta.updated | date: "%Y.%m.%d" }}{% else %}{{ site.data.cv_meta.updated | date: "%b %-d, %Y" }}{% endif %}</p>
+        {%- endif %}
+    </div>
     <div class="links-row">
         <a class="pill primary" href="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}" download><i class="fa-solid fa-file-arrow-down"></i> {{ L.cv_download }}</a>
         <a class="pill" href="{{ cv | relative_url }}?v={{ site.time | date: "%s" }}" target="_blank" rel="noopener"><i class="fa-solid fa-up-right-from-square"></i> {{ L.cv_open }}</a>
