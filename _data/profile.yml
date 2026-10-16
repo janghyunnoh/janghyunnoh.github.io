@@ -3,14 +3,14 @@
 
 name: "Janghyun Noh"
 name_ko: "노장현"
-title: "M.S. in Artificial Intelligence"
-title_ko: "인공지능학 석사"
+title: "M.S. in Artificial Intelligence, Myongji University"
+title_ko: "명지대학교 인공지능학 석사"
 location: "Seoul, Korea"
 location_ko: "대한민국 서울"
 # Current affiliation (company / lab). Leave empty to hide.
-affiliation: "AIDA Lab, Myongji University"
-affiliation_ko: "명지대학교 AIDA 연구실"
-affiliation_url: "https://ailab-mju.github.io/"
+affiliation: ""
+affiliation_ko: ""
+affiliation_url: ""
 photo: "/assets/img/profile.jpg"
 
 email: "watercar99@naver.com"
