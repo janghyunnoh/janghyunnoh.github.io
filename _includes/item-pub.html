@@ -1,6 +1,7 @@
 {%- assign it = include.item -%}
 <li>
-    <div class="entry-title">{% if ko %}{{ it.title_ko | default: it.title }}{% else %}{{ it.title }}{% endif %}</div>
+    {%- capture t %}{% if ko %}{{ it.title_ko | default: it.title }}{% else %}{{ it.title }}{% endif %}{% endcapture %}
+    <div class="entry-title">{% if it.links.paper and it.links.paper != "" %}<a class="title-link" href="{{ it.links.paper }}" target="_blank" rel="noopener">{{ t }}</a>{% else %}{{ t }}{% endif %}</div>
     <div class="entry-sub">{{ it.authors | replace: "J. Noh", me }}</div>
     <div class="entry-sub"><em>{% if ko %}{{ it.venue_ko | default: it.venue }}{% else %}{{ it.venue }}{% endif %}</em>{% if it.impact %} <span class="impact">{{ it.impact }}</span>{% endif %}</div>
     {% include badges.html item=it %}
