@@ -11,6 +11,8 @@ github: "https://github.com/janghyunnoh"
 
 exclude:
   - cv-src
+  - AGENTS.md
+  - CLAUDE.md
   - README.md
   - Gemfile
   - Gemfile.lock
