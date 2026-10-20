@@ -10,16 +10,14 @@
 - period: "2026"
   title: "AdSight: AI Assistant for Advertising Data Analysis"
   title_ko: "AdSight: AI 기반 광고 데이터 분석 어시스턴트"
-  summary: "A web-based AI assistant that integrates advertising data with Lark OpenAPI MCP and supports performance analysis, data visualization, and LLM-based insight generation."
-  summary_ko: "Lark OpenAPI MCP를 활용하여 광고 데이터를 연동하고, 광고 성과 분석과 데이터 시각화 및 LLM 기반 인사이트 도출을 지원하는 웹 기반 AI 어시스턴트"
+  summary: "A web-based AI assistant developed around practical marketing needs, integrating advertising data with Lark OpenAPI MCP to support performance analysis, visualization, and LLM-based insights."
+  summary_ko: "실제 마케팅 업무의 요구사항을 바탕으로 개발한 웹 기반 AI 어시스턴트로, Lark OpenAPI MCP를 활용해 광고 데이터를 연동하고 성과 분석·시각화 및 LLM 기반 인사이트 도출 지원"
   role:
-    - "Designed and developed a web-based advertising analytics application based on practical marketing requirements"
-    - "Implemented advertising performance dashboards and data analysis features"
-    - "Improved data retrieval, analysis workflows, and the user interface based on feedback from marketing practitioners"
+    - "Integrated advertising data with Lark OpenAPI MCP and implemented performance analysis dashboards and visualization features"
+    - "Refined data retrieval, analysis workflows, and the user interface based on feedback from marketing practitioners"
   role_ko:
-    - "실제 광고 데이터 관리 및 마케팅 업무의 요구사항을 바탕으로 웹 기반 광고 분석 애플리케이션 기획·개발"
-    - "광고 성과 대시보드 및 데이터 분석 기능 구현"
-    - "마케팅 실무자 피드백을 반영하여 데이터 조회·분석 과정과 사용자 인터페이스 개선"
+    - "Lark OpenAPI MCP를 활용한 광고 데이터 연동 및 성과 분석 대시보드·시각화 기능 구현"
+    - "마케팅 실무자 피드백을 반영한 데이터 조회·분석 과정 및 사용자 인터페이스 개선"
   tags: [Data Analytics, Data Visualization, Python, FastAPI, Lark OpenAPI MCP, LLM]
 
 - period: "2024 - 2026"
