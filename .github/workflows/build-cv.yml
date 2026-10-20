@@ -76,6 +76,24 @@ jobs:
             today=$(TZ=Asia/Seoul date +%Y-%m-%d)
             printf '# Written automatically by .github/workflows/build-cv.yml whenever the CV PDFs change.\nupdated: "%s"\n' "$today" > _data/cv_meta.yml
             git add _data/cv_meta.yml
-            git commit -m 'Build bilingual CV PDFs from updated LaTeX'
-            git push origin HEAD:master
+            # Rebase the generated PDFs onto the latest master to avoid
+            # non-fast-forward push failures when CV sources change rapidly.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin master
+              git reset --soft origin/master
+              git add assets/cv/Janghyun_Noh_CV.pdf assets/cv/Janghyun_Noh_CV_KO.pdf _data/cv_meta.yml
+              if git diff --cached --quiet; then
+                echo 'Generated PDFs are already up to date'
+                break
+              fi
+              git commit -m 'Build bilingual CV PDFs from updated LaTeX'
+              if git push origin HEAD:master; then
+                break
+              fi
+              if [ "$attempt" -eq 5 ]; then
+                echo 'Failed to push PDFs after 5 attempts' >&2
+                exit 1
+              fi
+              sleep 3
+            done
           fi
