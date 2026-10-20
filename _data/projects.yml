@@ -19,6 +19,8 @@
     - "Lark OpenAPI MCP를 활용한 광고 데이터 연동 및 성과 분석 대시보드·시각화 기능 구현"
     - "마케팅 실무자 피드백을 반영한 데이터 조회·분석 과정 및 사용자 인터페이스 개선"
   tags: [Data Analytics, Data Visualization, Python, FastAPI, Lark OpenAPI MCP, LLM]
+  links:
+    code: "https://github.com/janghyunnoh/AdSight"
 
 - period: "2024 - 2026"
   title: "CAR-Treg cell therapy for chronic inflammatory disease through an AI-based target discovery platform"
