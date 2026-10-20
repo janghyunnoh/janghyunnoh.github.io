@@ -10,14 +10,14 @@
 - period: "2026"
   title: "AdSight: AI Assistant for Advertising Data Analytics"
   title_ko: "AdSight: AI 기반 광고 데이터 분석 어시스턴트"
-  summary: "An AI assistant for advertising data analytics, developed based on real-world marketing requirements. It integrates advertising data through Lark REST APIs and provides interactive dashboards, performance comparisons, and performance change detection with LLM-generated insights."
-  summary_ko: "실제 마케팅 업무의 요구사항을 바탕으로 개발한 AI 기반 광고 데이터 분석 어시스턴트. Lark REST API를 통해 광고 데이터를 연동하고, 인터랙티브 대시보드와 성과 비교, 광고 성과 변동 탐지 및 LLM 기반 인사이트 생성 기능을 제공합니다."
+  summary: "An AI assistant for advertising analytics, integrating Lark data with interactive dashboards and LLM-based performance insights."
+  summary_ko: "Lark 데이터 연동을 기반으로 광고 성과 분석·시각화 및 LLM 기반 특이사항 해석 기능을 제공하는 AI 어시스턴트"
   role:
-    - "Integrated advertising data using Lark REST APIs and developed interactive dashboards for performance analysis and comparison"
-    - "Implemented rule-based performance change detection and LLM-generated explanations, along with AI-supported column interpretation"
+    - "Developed Lark API integration and interactive dashboards for advertising performance analysis."
+    - "Implemented rule-based change detection and LLM-based explanations of performance changes."
   role_ko:
-    - "Lark REST API 기반 광고 데이터 연동 및 성과 분석·비교를 위한 인터랙티브 대시보드 개발"
-    - "규칙 기반 성과 변동 탐지 및 LLM 기반 설명 생성 기능과 AI 활용 데이터 컬럼 해석 기능 구현"
+    - "Lark API 기반 광고 데이터 연동 및 인터랙티브 성과 분석 대시보드 개발"
+    - "규칙 기반 성과 변동 탐지 및 LLM 기반 특이사항 해석 기능 구현"
   tags: [Data Analytics, Data Visualization, Python, FastAPI, JavaScript, Lark REST API, LLM]
   links:
     code: "https://github.com/janghyunnoh/AdSight"
